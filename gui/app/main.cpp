@@ -66,7 +66,7 @@ int main(int, char**)
 #endif
 
     // Create window with graphics context
-    GLFWwindow* window = glfwCreateWindow(1280, 720, "Dear ImGui GLFW+OpenGL3 example", nullptr, nullptr);
+    GLFWwindow* window = glfwCreateWindow(1280, 720, "Room store", nullptr, nullptr);
     if (window == nullptr)
         return 1;
     glfwMakeContextCurrent(window);
@@ -120,9 +120,8 @@ int main(int, char**)
     //IM_ASSERT(font != nullptr);
 
     // Our state
-    bool show_demo_window = true;
+    bool show_storage_window = false;
     bool show_another_window = false;
-    bool my_tool_active = true;
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
     // Main loop
@@ -146,67 +145,21 @@ int main(int, char**)
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
-
-        // 1. Show the big demo window (Most of the sample code is in ImGui::ShowDemoWindow()! You can browse its code to learn more about Dear ImGui!).
-        if (show_demo_window)
-            ImGui::ShowDemoWindow(&show_demo_window);
-
-        // 2. Show a simple window that we create ourselves. We use a Begin/End pair to create a named window.
-        {
-            static float f = 0.0f;
-            static int counter = 0;
-
-            ImGui::Begin("Hello, world!");                          // Create a window called "Hello, world!" and append into it.
-
-            ImGui::Text("This is some useful text.");               // Display some text (you can use a format strings too)
-            ImGui::Checkbox("Demo Window", &show_demo_window);      // Edit bools storing our window open/close state
-            ImGui::Checkbox("Another Window", &show_another_window);
-
-            ImGui::SliderFloat("float", &f, 0.0f, 1.0f);            // Edit 1 float using a slider from 0.0f to 1.0f
-            ImGui::ColorEdit3("clear color", (float*)&clear_color); // Edit 3 floats representing a color
-
-            if (ImGui::Button("Button"))                            // Buttons return true when clicked (most widgets return true when edited/activated)
-                counter++;
-            ImGui::SameLine();
-            ImGui::Text("counter = %d", counter);
-
-            ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / io.Framerate, io.Framerate);
-            ImGui::End();
-        }
-
-        // 3. Show another simple window.
-        if (show_another_window)
-        {
-            ImGui::Begin("Another Window", &show_another_window);   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked)
-            ImGui::Text("Hello from another window!");
-            if (ImGui::Button("Close Me"))
-                show_another_window = false;
-            ImGui::End();
-        }
-
-        // 4. Show custom measuring window
-        ImGui::Begin("My First Tool", &my_tool_active, ImGuiWindowFlags_MenuBar);
-        if (ImGui::BeginMenuBar())
-        {
-            if (ImGui::BeginMenu("File"))
-            {
-                if (ImGui::MenuItem("Open..", "Ctrl+O")) { /* Do stuff */ }
-                if (ImGui::MenuItem("Save", "Ctrl+S"))   { /* Do stuff */ }
-                if (ImGui::MenuItem("Close", "Ctrl+W"))  { my_tool_active = false; }
-                if (ImGui::MenuItem("CUSTOM", "Ctrl+W"))  {  }
-                ImGui::EndMenu();
-            }
-             if (ImGui::BeginMenu("EDIT"))
-            {
-                if (ImGui::MenuItem("RRR")) {}
-                ImGui::EndMenu();
-            }
-            ImGui::EndMenuBar();
- if (ImGui::BeginMainMenuBar())
+        if (ImGui::BeginMainMenuBar())
     {
-        if (ImGui::BeginMenu("File"))
+        if (ImGui::BeginMenu("Select section"))
         {
-            // ShowExampleMenuFile();
+            if (ImGui::MenuItem("Storage")) {
+                show_storage_window = true;
+            }
+            ImGui::Separator();
+            if (ImGui::MenuItem("Items")) {
+
+            }
+            ImGui::Separator();
+            if (ImGui::MenuItem("Statistic")) {
+
+            }
             ImGui::EndMenu();
         }
         if (ImGui::BeginMenu("Edit"))
@@ -221,25 +174,144 @@ int main(int, char**)
         }
         ImGui::EndMainMenuBar();
     }
+
+        if (show_storage_window) {
+            ImGui::Begin("Storage", &show_storage_window);
+
+            if (ImGui::CollapsingHeader("Shoes")) {
+                if (ImGui::TreeNode("Sneakers")) {
+                    static ImGuiTableFlags flags = ImGuiTableFlags_SizingFixedFit | ImGuiTableFlags_RowBg | ImGuiTableFlags_Borders | ImGuiTableFlags_Resizable | ImGuiTableFlags_Reorderable | ImGuiTableFlags_Hideable;
+
+                    if (ImGui::BeginTable("Sneakers", 5, flags))
+                    {
+                        ImGui::TableSetupColumn("Manufacture", ImGuiTableColumnFlags_WidthFixed);
+                        ImGui::TableSetupColumn("Model", ImGuiTableColumnFlags_WidthFixed);
+                        ImGui::TableSetupColumn("Origin country", ImGuiTableColumnFlags_WidthFixed);
+                        ImGui::TableSetupColumn("Price", ImGuiTableColumnFlags_WidthFixed);
+                        ImGui::TableSetupColumn("Stock balance", ImGuiTableColumnFlags_WidthStretch);
+                        ImGui::TableHeadersRow();
+                        for (int row = 0; row < 300; row++)
+                        {
+                            ImGui::TableNextRow();
+                            for (int column = 0; column < 4; column++)
+                            {
+                                ImGui::TableSetColumnIndex(column);
+                                if (row < 100 && column == 0 ) {
+                                    ImGui::Text("Adidas");
+                                } else if (row >= 100 && column == 0) {
+                                    ImGui::Text("Bosco");
+                                }
+                            }
+                        }
+                        ImGui::EndTable();
+                    }
+                    ImGui::TreePop();
+                }
+
+                if (ImGui::TreeNode("Boots")) {
+                    ImGui::Text("Empty");
+                    ImGui::TreePop();
+                }
+            }
+            //ImGui::Spacing();
+            ImGui::CollapsingHeader("Clothes");
+            ImGui::End();
         }
 
-        // Edit a color stored as 4 floats
-        float my_color[] = {4.4f, 2.2f, 5.5f, 6.6f};
-        ImGui::ColorEdit4("Color", my_color);
 
-        // Generate samples and plot them
-        float samples[100];
-        for (int n = 0; n < 100; n++)
-            samples[n] = tgammaf(n * 0.2f + ImGui::GetTime() * 1.5f);
-        ImGui::PlotLines("Samples", samples, 100);
+        // 1. Show the big demo window (Most of the sample code is in ImGui::ShowDemoWindow()! You can browse its code to learn more about Dear ImGui!).
+        // if (show_demo_window)
+        //     ImGui::ShowDemoWindow(&show_demo_window);
 
-        // Display contents in a scrolling region
-        ImGui::TextColored(ImVec4(1,1,0,1), "Important Stuff");
-        ImGui::BeginChild("Scrolling");
-        for (int n = 0; n < 50; n++)
-            ImGui::Text("Point %d = %.3f", n, samples[n]);
-        ImGui::EndChild();
-        ImGui::End();
+        // 2. Show a simple window that we create ourselves. We use a Begin/End pair to create a named window.
+        // {
+        //     static float f = 0.0f;
+        //     static int counter = 0;
+
+        //     ImGui::Begin("Hello, world!");                          // Create a window called "Hello, world!" and append into it.
+
+        //     ImGui::Text("This is some useful text.");               // Display some text (you can use a format strings too)
+        //     //ImGui::Checkbox("Demo Window", &show_demo_window);      // Edit bools storing our window open/close state
+        //     ImGui::Checkbox("Another Window", &show_another_window);
+
+        //     ImGui::SliderFloat("float", &f, 0.0f, 1.0f);            // Edit 1 float using a slider from 0.0f to 1.0f
+        //     ImGui::ColorEdit3("clear color", (float*)&clear_color); // Edit 3 floats representing a color
+
+        //     if (ImGui::Button("Button"))                            // Buttons return true when clicked (most widgets return true when edited/activated)
+        //         counter++;
+        //     ImGui::SameLine();
+        //     ImGui::Text("counter = %d", counter);
+
+        //     ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / io.Framerate, io.Framerate);
+        //     ImGui::End();
+        // }
+
+        // 3. Show another simple window.
+        if (show_another_window)
+        {
+            ImGui::Begin("Another Window", &show_another_window);   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked)
+            ImGui::Text("Hello from another window!");
+            if (ImGui::Button("Close Me"))
+                show_another_window = false;
+            ImGui::End();
+        }
+
+//         // 4. Show custom measuring window
+//         ImGui::Begin("My First Tool", &my_tool_active, ImGuiWindowFlags_MenuBar);
+//         if (ImGui::BeginMenuBar())
+//         {
+//             if (ImGui::BeginMenu("File"))
+//             {
+//                 if (ImGui::MenuItem("Open..", "Ctrl+O")) { /* Do stuff */ }
+//                 if (ImGui::MenuItem("Save", "Ctrl+S"))   { /* Do stuff */ }
+//                 if (ImGui::MenuItem("Close", "Ctrl+W"))  { my_tool_active = false; }
+//                 if (ImGui::MenuItem("CUSTOM", "Ctrl+W"))  {  }
+//                 ImGui::EndMenu();
+//             }
+//              if (ImGui::BeginMenu("EDIT"))
+//             {
+//                 if (ImGui::MenuItem("RRR")) {}
+//                 ImGui::EndMenu();
+//             }
+//             ImGui::EndMenuBar();
+//  if (ImGui::BeginMainMenuBar())
+//     {
+//         if (ImGui::BeginMenu("File"))
+//         {
+//             // ShowExampleMenuFile();
+//             ImGui::EndMenu();
+//         }
+//         if (ImGui::BeginMenu("Edit"))
+//         {
+//             if (ImGui::MenuItem("Undo", "CTRL+Z")) {}
+//             if (ImGui::MenuItem("Redo", "CTRL+Y", false, false)) {}  // Disabled item
+//             ImGui::Separator();
+//             if (ImGui::MenuItem("Cut", "CTRL+X")) {}
+//             if (ImGui::MenuItem("Copy", "CTRL+C")) {}
+//             if (ImGui::MenuItem("Paste", "CTRL+V")) {}
+//             ImGui::EndMenu();
+//         }
+//         ImGui::EndMainMenuBar();
+//     }
+//         }
+
+//         // Edit a color stored as 4 floats
+//         float my_color[] = {4.4f, 2.2f, 5.5f, 6.6f};
+//         ImGui::ColorEdit4("Color", my_color);
+
+//         // Generate samples and plot them
+//         float samples[100];
+//         for (int n = 0; n < 100; n++)
+//             samples[n] = tgammaf(n * 0.2f + ImGui::GetTime() * 1.5f);
+//         ImGui::PlotLines("Samples", samples, 100);
+
+//         // Display contents in a scrolling region
+//         ImGui::TextColored(ImVec4(1,1,0,1), "Important Stuff");
+//         ImGui::BeginChild("Scrolling");
+//         for (int n = 0; n < 50; n++)
+//             ImGui::Text("Point %d = %.3f", n, samples[n]);
+//         ImGui::EndChild();
+//         ImGui::End();
 
         // Rendering
         ImGui::Render();
