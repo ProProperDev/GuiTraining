@@ -121,6 +121,7 @@ int main(int, char**)
 
     // Our state
     bool show_storage_window = false;
+    bool show_statistic_window = false;
     bool show_another_window = false;
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
@@ -158,7 +159,7 @@ int main(int, char**)
             }
             ImGui::Separator();
             if (ImGui::MenuItem("Statistic")) {
-
+                show_statistic_window = true;
             }
             ImGui::EndMenu();
         }
@@ -215,6 +216,13 @@ int main(int, char**)
             }
             //ImGui::Spacing();
             ImGui::CollapsingHeader("Clothes");
+            ImGui::End();
+        }
+
+        if (show_statistic_window) {
+            ImGui::Begin("Statistic", &show_statistic_window);
+            ImGui::BeginListBox("one");
+            ImGui::EndListBox();
             ImGui::End();
         }
 
