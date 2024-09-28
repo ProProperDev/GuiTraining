@@ -12,6 +12,8 @@
 #include "imgui_impl_opengl3.h"
 #include <stdio.h>
 #include <cmath>
+#include <vector>
+#include <map>
 #define GL_SILENCE_DEPRECATION
 #if defined(IMGUI_IMPL_OPENGL_ES2)
 #include <GLES2/gl2.h>
@@ -123,6 +125,7 @@ int main(int, char**)
     bool show_storage_window = false;
     bool show_statistic_window = false;
     bool show_another_window = false;
+    bool show_temp_curve_window = false;
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
     // Main loop
@@ -146,6 +149,7 @@ int main(int, char**)
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
+        
         if (ImGui::BeginMainMenuBar())
     {
         if (ImGui::BeginMenu("Select section"))
@@ -160,6 +164,10 @@ int main(int, char**)
             ImGui::Separator();
             if (ImGui::MenuItem("Statistic")) {
                 show_statistic_window = true;
+            }
+            ImGui::Separator();
+            if (ImGui::MenuItem("Curves")) {
+                show_temp_curve_window = true;
             }
             ImGui::EndMenu();
         }
@@ -264,62 +272,34 @@ int main(int, char**)
             ImGui::End();
         }
 
+
+
 //         // 4. Show custom measuring window
-//         ImGui::Begin("My First Tool", &my_tool_active, ImGuiWindowFlags_MenuBar);
-//         if (ImGui::BeginMenuBar())
-//         {
-//             if (ImGui::BeginMenu("File"))
-//             {
-//                 if (ImGui::MenuItem("Open..", "Ctrl+O")) { /* Do stuff */ }
-//                 if (ImGui::MenuItem("Save", "Ctrl+S"))   { /* Do stuff */ }
-//                 if (ImGui::MenuItem("Close", "Ctrl+W"))  { my_tool_active = false; }
-//                 if (ImGui::MenuItem("CUSTOM", "Ctrl+W"))  {  }
-//                 ImGui::EndMenu();
-//             }
-//              if (ImGui::BeginMenu("EDIT"))
-//             {
-//                 if (ImGui::MenuItem("RRR")) {}
-//                 ImGui::EndMenu();
-//             }
-//             ImGui::EndMenuBar();
-//  if (ImGui::BeginMainMenuBar())
-//     {
-//         if (ImGui::BeginMenu("File"))
-//         {
-//             // ShowExampleMenuFile();
-//             ImGui::EndMenu();
-//         }
-//         if (ImGui::BeginMenu("Edit"))
-//         {
-//             if (ImGui::MenuItem("Undo", "CTRL+Z")) {}
-//             if (ImGui::MenuItem("Redo", "CTRL+Y", false, false)) {}  // Disabled item
-//             ImGui::Separator();
-//             if (ImGui::MenuItem("Cut", "CTRL+X")) {}
-//             if (ImGui::MenuItem("Copy", "CTRL+C")) {}
-//             if (ImGui::MenuItem("Paste", "CTRL+V")) {}
-//             ImGui::EndMenu();
-//         }
-//         ImGui::EndMainMenuBar();
-//     }
-//         }
+        if (show_temp_curve_window) {
+        ImGui::Begin("My First Tool", &show_temp_curve_window);
 
-//         // Edit a color stored as 4 floats
-//         float my_color[] = {4.4f, 2.2f, 5.5f, 6.6f};
-//         ImGui::ColorEdit4("Color", my_color);
+        // Generate samples and plot them
+        std::vector<float> samples;
+        samples.resize(100);
+        samples[0] = 1.1;
+        std::fill(samples.begin(), samples.end(), 2.2);
+        float f = 1.1;
+        for(auto i =1; i < samples.size(); ++i) {
+        f = i+f;
+        samples[i] = f;
+        }
+        //for (int n = 0; n < samples.size(); n++)
+            //samples[n] = tgammaf(n * 0.2f + ImGui::GetTime() * 1.5f);
+        ImGui::PlotLines("Samples", samples.data(), samples.size(), 0, "Example Channel", 0, 5000, {0, 300});
 
-//         // Generate samples and plot them
-//         float samples[100];
-//         for (int n = 0; n < 100; n++)
-//             samples[n] = tgammaf(n * 0.2f + ImGui::GetTime() * 1.5f);
-//         ImGui::PlotLines("Samples", samples, 100);
-
-//         // Display contents in a scrolling region
-//         ImGui::TextColored(ImVec4(1,1,0,1), "Important Stuff");
-//         ImGui::BeginChild("Scrolling");
-//         for (int n = 0; n < 50; n++)
-//             ImGui::Text("Point %d = %.3f", n, samples[n]);
-//         ImGui::EndChild();
-//         ImGui::End();
+        // Display contents in a scrolling region
+        ImGui::TextColored(ImVec4(1,1,0,1), "Samples points");
+        ImGui::BeginChild("Scrolling");
+        for (int n = 0; n < 100; n++)
+            ImGui::Text("Point %d = %.3f", n, samples[n]);
+        ImGui::EndChild();
+        ImGui::End();
+        }
 
         // Rendering
         ImGui::Render();
