@@ -12,8 +12,9 @@
 #include "imgui_impl_opengl3.h"
 #include <stdio.h>
 #include <cmath>
+#include <string_view>
+#include <string>
 #include <vector>
-#include <map>
 #define GL_SILENCE_DEPRECATION
 #if defined(IMGUI_IMPL_OPENGL_ES2)
 #include <GLES2/gl2.h>
@@ -125,7 +126,10 @@ int main(int, char**)
     bool show_storage_window = false;
     bool show_statistic_window = false;
     bool show_another_window = false;
-    bool show_temp_curve_window = false;
+    bool my_tool_active = true;
+    bool show_adc_ch_1 = false;
+    bool show_adc_ch_3 = false;
+    bool show_adc_ch_4 = false;
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
     // Main loop
@@ -149,7 +153,6 @@ int main(int, char**)
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
-        
         if (ImGui::BeginMainMenuBar())
     {
         if (ImGui::BeginMenu("Select section"))
@@ -166,8 +169,8 @@ int main(int, char**)
                 show_statistic_window = true;
             }
             ImGui::Separator();
-            if (ImGui::MenuItem("Curves")) {
-                show_temp_curve_window = true;
+            if (ImGui::MenuItem("Channel curves Online")) {
+                my_tool_active = true;
             }
             ImGui::EndMenu();
         }
@@ -185,8 +188,18 @@ int main(int, char**)
     }
 
         if (show_storage_window) {
-            ImGui::Begin("Storage", &show_storage_window);
+            ImGui::Begin("Storage", &show_storage_window, ImGuiWindowFlags_MenuBar);
+            if (ImGui::BeginMenuBar())
+        {
+            if (ImGui::BeginMenu("Edit"))
+            {
+                if (ImGui::MenuItem("Add new item group", "Ctrl+O")) { /* Do stuff */ }
+                if (ImGui::MenuItem("Delete item group", "Ctrl+D"))   { /* Do stuff */ }
+                ImGui::EndMenu();
+            }
 
+            ImGui::EndMenuBar();
+        }
             if (ImGui::CollapsingHeader("Shoes")) {
                 if (ImGui::TreeNode("Sneakers")) {
                     static ImGuiTableFlags flags = ImGuiTableFlags_SizingFixedFit | ImGuiTableFlags_RowBg | ImGuiTableFlags_Borders | ImGuiTableFlags_Resizable | ImGuiTableFlags_Reorderable | ImGuiTableFlags_Hideable;
@@ -206,7 +219,7 @@ int main(int, char**)
                             {
                                 ImGui::TableSetColumnIndex(column);
                                 if (row < 100 && column == 0 ) {
-                                    ImGui::Text("Adidas");
+                                    ImGui::Text("Other item");
                                 } else if (row >= 100 && column == 0) {
                                     ImGui::Text("Bosco");
                                 }
@@ -222,9 +235,11 @@ int main(int, char**)
                     ImGui::TreePop();
                 }
             }
-            //ImGui::Spacing();
+            ImGui::SeparatorText("Last distribution 08.07.2024");
             ImGui::CollapsingHeader("Clothes");
+            ImGui::SeparatorText("Last distribution 16.06.2024");
             ImGui::End();
+            
         }
 
         if (show_statistic_window) {
@@ -272,35 +287,32 @@ int main(int, char**)
             ImGui::End();
         }
 
-
-
-//         // 4. Show custom measuring window
-        if (show_temp_curve_window) {
-        ImGui::Begin("My First Tool", &show_temp_curve_window);
-
+        // 4. Show custom measuring window
+        if (my_tool_active) {
+        ImGui::Begin("My First Tool", &my_tool_active, ImGuiWindowFlags_None);
+        ImGui::Checkbox("Show ADC_CH1", &show_adc_ch_1);
+        ImGui::SameLine();
+        ImGui::Checkbox("Show ADC_CH3", &show_adc_ch_3);
+        ImGui::SameLine();
+        ImGui::Checkbox("Show ADC_CH4", &show_adc_ch_4);
+        if (show_adc_ch_1) {
         // Generate samples and plot them
-        std::vector<float> samples;
-        samples.resize(100);
-        samples[0] = 1.1;
-        std::fill(samples.begin(), samples.end(), 2.2);
-        float f = 1.1;
-        for(auto i =1; i < samples.size(); ++i) {
-        f = i+f;
-        samples[i] = f;
+std::vector<float> samples(500);
+for (int n = 0; n < 500; n++)
+    samples[n] = sinf(n * 0.2f + ImGui::GetTime() * 1.5f);
+    // void ImGui::PlotLines(const char* label, const float* values, int values_count, int values_offset, const char* overlay_text, float scale_min, float scale_max, ImVec2 graph_size, int stride)
+ImGui::Button("Nothing to do");
+ImGui::Button("Nothing to do either");
+ImGui::PlotLines("ADC_CH1 Graph", samples.data(), 200, 0, "FFFGGG", -10, 10, {500, 200});
         }
-        //for (int n = 0; n < samples.size(); n++)
-            //samples[n] = tgammaf(n * 0.2f + ImGui::GetTime() * 1.5f);
-        ImGui::PlotLines("Samples", samples.data(), samples.size(), 0, "Example Channel", 0, 5000, {0, 300});
-
-        // Display contents in a scrolling region
-        ImGui::TextColored(ImVec4(1,1,0,1), "Samples points");
-        ImGui::BeginChild("Scrolling");
-        for (int n = 0; n < 100; n++)
-            ImGui::Text("Point %d = %.3f", n, samples[n]);
-        ImGui::EndChild();
-        ImGui::End();
-        }
-
+// Display contents in a scrolling region
+ImGui::TextColored(ImVec4(1,1,0,1), "Important Stuff");
+ImGui::BeginChild("Scrolling");
+for (int n = 0; n < 50; n++)
+    ImGui::Text("%04d: Some text", n);
+ImGui::EndChild();
+ImGui::End();
+    }
         // Rendering
         ImGui::Render();
         int display_w, display_h;
