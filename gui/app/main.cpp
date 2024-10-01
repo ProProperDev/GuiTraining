@@ -10,11 +10,14 @@
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
+#include "../implot/implot.h"
+#include "../implot/implot_internal.h"
 #include <stdio.h>
 #include <cmath>
 #include <string_view>
 #include <string>
 #include <vector>
+#include <array>
 #define GL_SILENCE_DEPRECATION
 #if defined(IMGUI_IMPL_OPENGL_ES2)
 #include <GLES2/gl2.h>
@@ -78,6 +81,7 @@ int main(int, char**)
     // Setup Dear ImGui context
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
+    ImPlot::CreateContext();
     ImGuiIO& io = ImGui::GetIO(); (void)io;
     io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
     io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      // Enable Gamepad Controls
@@ -312,6 +316,16 @@ for (int n = 0; n < 50; n++)
     ImGui::Text("%04d: Some text", n);
 ImGui::EndChild();
 ImGui::End();
+
+    ImGui::Begin("Plot Window");
+if (ImPlot::BeginPlot("My Plot")) {
+    std::array<float, 10> exm;
+    exm = {0, 1, 2.2, 3.3, 4.4, 5.5, 6, 7, 8, 9};
+    ImPlot::PlotScatter("My Bar Plot", exm.data(), 11);
+    //ImPlot::PlotLine("My Line Plot", x_data, y_data, 1000);
+    ImPlot::EndPlot();
+}
+ImGui::End();
     }
         // Rendering
         ImGui::Render();
@@ -342,6 +356,7 @@ ImGui::End();
     // Cleanup
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();
+    ImPlot::DestroyContext();
     ImGui::DestroyContext();
 
     glfwDestroyWindow(window);
