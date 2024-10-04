@@ -14,7 +14,7 @@
 #CXX = g++
 #CXX = clang++
 
-EXE = room_app
+EXE = esp_app
 IMGUI_DIR = ../imgui
 IMPLOT_DIR = ../implot
 SOURCES = main.cpp

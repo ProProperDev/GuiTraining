@@ -72,7 +72,7 @@ int main(int, char**)
 #endif
 
     // Create window with graphics context
-    GLFWwindow* window = glfwCreateWindow(1280, 720, "Room store", nullptr, nullptr);
+    GLFWwindow* window = glfwCreateWindow(1280, 720, "ESP_good_therm", nullptr, nullptr);
     if (window == nullptr)
         return 1;
     glfwMakeContextCurrent(window);
@@ -130,10 +130,17 @@ int main(int, char**)
     bool show_storage_window = false;
     bool show_statistic_window = false;
     bool show_another_window = false;
-    bool my_tool_active = true;
+    bool my_tool_active = false;
+    bool show_adc_ch_0 = false;
     bool show_adc_ch_1 = false;
+    bool show_adc_ch_2 = false;
     bool show_adc_ch_3 = false;
     bool show_adc_ch_4 = false;
+    bool show_adc_ch0_points = false;
+    bool show_adc_ch1_points = false;
+    bool show_adc_ch2_points = false;
+    bool show_adc_ch3_points = false;
+    bool show_adc_ch4_points = false;
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
     // Main loop
@@ -159,7 +166,7 @@ int main(int, char**)
         ImGui::NewFrame();
         if (ImGui::BeginMainMenuBar())
     {
-        if (ImGui::BeginMenu("Select section"))
+        if (ImGui::BeginMenu("File"))
         {
             if (ImGui::MenuItem("Storage")) {
                 show_storage_window = true;
@@ -178,14 +185,16 @@ int main(int, char**)
             }
             ImGui::EndMenu();
         }
-        if (ImGui::BeginMenu("Edit"))
+        if (ImGui::BeginMenu("Select channel"))
         {
-            if (ImGui::MenuItem("Undo", "CTRL+Z")) {}
+            if (ImGui::MenuItem("Open ADC Channel 0")) {show_adc_ch_0 = true;}
+            if (ImGui::MenuItem("Open ADC Channel 1")) {show_adc_ch_1 = true;}
+            if (ImGui::MenuItem("Open ADC Channel 2")) {show_adc_ch_2 = true;}
+            if (ImGui::MenuItem("Open ADC Channel 3")) {show_adc_ch_3 = true;}
+            if (ImGui::MenuItem("Open ADC Channel 4")) {show_adc_ch_4 = true;}
             if (ImGui::MenuItem("Redo", "CTRL+Y", false, false)) {}  // Disabled item
             ImGui::Separator();
-            if (ImGui::MenuItem("Cut", "CTRL+X")) {}
-            if (ImGui::MenuItem("Copy", "CTRL+C")) {}
-            if (ImGui::MenuItem("Paste", "CTRL+V")) {}
+            if (ImGui::MenuItem("Open all channels")) {show_adc_ch_0 = true;; show_adc_ch_1 = true; show_adc_ch_2 = true; show_adc_ch_3 = true; show_adc_ch_4 = true;}
             ImGui::EndMenu();
         }
         ImGui::EndMainMenuBar();
@@ -294,11 +303,11 @@ int main(int, char**)
         // 4. Show custom measuring window
         if (my_tool_active) {
         ImGui::Begin("My First Tool", &my_tool_active, ImGuiWindowFlags_None);
-        ImGui::Checkbox("Show ADC_CH1", &show_adc_ch_1);
-        ImGui::SameLine();
-        ImGui::Checkbox("Show ADC_CH3", &show_adc_ch_3);
-        ImGui::SameLine();
-        ImGui::Checkbox("Show ADC_CH4", &show_adc_ch_4);
+        //ImGui::Checkbox("Show ADC_CH1", &show_adc_ch_1);
+        //ImGui::SameLine();
+        //ImGui::Checkbox("Show ADC_CH3", &show_adc_ch_3);
+        //ImGui::SameLine();
+        //ImGui::Checkbox("Show ADC_CH4", &show_adc_ch_4);
         if (show_adc_ch_1) {
         // Generate samples and plot them
 std::vector<float> samples(500);
@@ -316,17 +325,76 @@ for (int n = 0; n < 50; n++)
     ImGui::Text("%04d: Some text", n);
 ImGui::EndChild();
 ImGui::End();
-
-    ImGui::Begin("Plot Window");
+        }
+    if (show_adc_ch_1) {
+    ImGui::Begin("ADC Channel 1", &show_adc_ch_1);
 if (ImPlot::BeginPlot("My Plot")) {
     std::array<float, 10> exm;
+    std::array<float, 10> exm1;
     exm = {0, 1, 2.2, 3.3, 4.4, 5.5, 6, 7, 8, 9};
+    exm1 = {0, -1, -2.2, -3.3, -4.4, -5.5, -6, -7, -8, -9};
     ImPlot::PlotScatter("My Bar Plot", exm.data(), 11);
-    //ImPlot::PlotLine("My Line Plot", x_data, y_data, 1000);
+    ImPlot::PlotLine("My Line Plot", exm.data(), exm1.data(), 9);
     ImPlot::EndPlot();
-}
+    
+    ImGui::SeparatorText("ADC_CH1 (x: time, s; y: temperature, C)");
+    ImGui::RadioButton("Show points", show_adc_ch1_points);
+    ImGui::SameLine();
+    ImGui::Button("Stop writing this channel");
+    }
 ImGui::End();
     }
+
+    if (show_adc_ch_2) {
+    ImGui::Begin("ADC Channel 2", &show_adc_ch_2);
+if (ImPlot::BeginPlot("My Plot")) {
+    std::array<float, 10> exm;
+    std::array<float, 10> exm1;
+    exm = {10, 111, 22.2, 13.3, 64.4, 85.5, 46, 87, 78, 89};
+    exm1 = {0, -14, -2.27, -3.38, -46.4, -54.5, -62, -79, -81, -93};
+    ImPlot::PlotScatter("My Bar Plot", exm.data(), 11);
+    ImPlot::PlotLine("My Line Plot", exm.data(), exm1.data(), 9);
+    ImPlot::EndPlot();
+    
+    ImGui::SeparatorText("ADC_CH2 (x: time, s; y: temperature, C)");
+    ImGui::RadioButton("Show points", show_adc_ch1_points);
+    ImGui::SameLine();
+    ImGui::Button("Stop writing this channel");
+    }
+ImGui::End();
+    }
+
+    if (show_adc_ch_3) {
+    ImGui::Begin("ADC Channel 3", &show_adc_ch_3);
+    std::array<uint, 10> exm;
+    exm[0] = 1;
+    std::array<uint, 10> exm1;
+    if (exm[0] == 0 || exm1.empty()) {
+        ImGui::TextDisabled("No data");
+    } else {
+        
+if (ImPlot::BeginPlot("My Plot")) {
+    ImPlot::PlotScatter("My Bar Plot", exm.data(), 11);
+    ImPlot::PlotLine("My Line Plot", exm.data(), exm1.data(), 9);
+    ImPlot::EndPlot();
+}
+    }
+    ImGui::SeparatorText("ADC_CH3 (x: time, s; y: temperature, C)");
+    if (ImGui::RadioButton("Show points", show_adc_ch3_points)) {show_adc_ch3_points = !show_adc_ch3_points;}; // Toogle the state
+    ImGui::SameLine();
+    ImGui::Button("Stop writing this channel");
+    if (show_adc_ch3_points) {
+        ImGui::BeginChild("Next point enumering in cycle");
+        ImGui::Text("Date: 15.04.2023 Time: 16:47:13 Temperature: 34 C");
+        ImGui::Text("Date: 15.04.2023 Time: 16:47:14 Temperature: 36 C");
+        ImGui::Text("Date: 15.04.2023 Time: 16:47:15 Temperature: 40 C");
+        ImGui::EndChild();
+    }
+    
+    
+ImGui::End();
+    }
+
         // Rendering
         ImGui::Render();
         int display_w, display_h;
