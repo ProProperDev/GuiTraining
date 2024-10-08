@@ -209,6 +209,7 @@ int main(int, char **)
         DUMMY
     };
 
+    bool show_about_app_window = true;
     bool show_storage_window = false;
     bool show_items = false;
     bool show_statistic_window = false;
@@ -279,7 +280,7 @@ int main(int, char **)
 
                 ImGui::EndMenu();
             }
-            if (ImGui::BeginMenu("Select channel"))
+            if (ImGui::BeginMenu("Online mode"))
             {
                 if (ImGui::BeginMenu("Open Channel..."))
                 {
@@ -322,21 +323,34 @@ int main(int, char **)
                 }
                 ImGui::EndMenu();
             }
+            if (ImGui::BeginMenu("About"))
+            {
+                show_about_app_window = true;
+                ImGui::EndMenu();
+            }
+
             ImGui::EndMainMenuBar();
         }
 
         if (exit_app_desire)
         {
             ImGui::Begin("Close App", &exit_app_desire);
-            ImGui::Text("Are you sure?", ImGuiInputTextFlags_AllowTabInput);
-            if (ImGui::Button("yes"))
-            {
-                glfwSetWindowShouldClose(window, GLFW_TRUE);
-            }
-            ImGui::SameLine();
-            if (ImGui::Button("No"))
+            const std::string exit_msg = "Are you sure you want to exit?";
+            auto [w, h] = ImGui::GetWindowSize();
+            ImGui::SetCursorPos({(w / 2) - exit_msg.length() / 2, h / 2 - 50});
+            ImGui::Text(exit_msg.data());
+            char buf[255];
+            ImGui::InputTextWithHint("INput goodbye", "input desires here", buf, 254);
+            ImGui::SetCursorPos({(w / 2) - 100 / 2, h / 2 + 5});
+            if (ImGui::Button("No", {50, 20}))
             {
                 exit_app_desire = false;
+            }
+            ImGui::SameLine();
+            ImGui::SetCursorPos({(w / 2) + 90 / 2, h / 2 + 5});
+            if (ImGui::Button("Yes", {50, 20}))
+            {
+                glfwSetWindowShouldClose(window, GLFW_TRUE);
             }
             ImGui::End();
         }
@@ -440,6 +454,14 @@ int main(int, char **)
         //     ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / io.Framerate, io.Framerate);
         //     ImGui::End();
         // }
+
+        if (show_about_app_window)
+        {
+            ImGui::Begin("About ESP_good_therm", &show_about_app_window);
+            ImGui::TextDisabled("Some description...");
+            ImGui::Separator();
+            ImGui::End();
+        }
 
         // 3. Show another simple window.
         if (show_another_window)
