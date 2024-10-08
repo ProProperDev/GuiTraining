@@ -36,6 +36,18 @@
 #include "../libs/emscripten/emscripten_mainloop_stub.h"
 #endif
 
+static void CustomHelpMarker(const char *desc)
+{
+    ImGui::TextDisabled(" ?");
+    if (ImGui::BeginItemTooltip())
+    {
+        ImGui::PushTextWrapPos(ImGui::GetFontSize() * 35.0f);
+        ImGui::TextUnformatted(desc);
+        ImGui::PopTextWrapPos();
+        ImGui::EndTooltip();
+    }
+}
+
 static void glfw_error_callback(int error, const char *description)
 {
     fprintf(stderr, "GLFW Error %d: %s\n", error, description);
@@ -280,6 +292,9 @@ int main(int, char **)
 
                 ImGui::EndMenu();
             }
+            ImGui::SameLine();
+            CustomHelpMarker("Load, Save, Clear and etc. actions\nthat you need to work with log files");
+
             if (ImGui::BeginMenu("Online mode"))
             {
                 if (ImGui::BeginMenu("Open Channel..."))
@@ -323,24 +338,31 @@ int main(int, char **)
                 }
                 ImGui::EndMenu();
             }
+            ImGui::SameLine();
+            CustomHelpMarker("View graph and information\nabout ADC channel(s) in real time.");
             if (ImGui::BeginMenu("About"))
             {
+
                 show_about_app_window = true;
                 ImGui::EndMenu();
             }
+            ImGui::SameLine();
+            CustomHelpMarker("There is some information about\nthis app and maybe about supported hardware");
 
             ImGui::EndMainMenuBar();
         }
 
         if (exit_app_desire)
         {
+
             ImGui::Begin("Close App", &exit_app_desire);
             const std::string exit_msg = "Are you sure you want to exit?";
             auto [w, h] = ImGui::GetWindowSize();
             ImGui::SetCursorPos({(w / 2) - exit_msg.length() / 2, h / 2 - 50});
             ImGui::Text(exit_msg.data());
             char buf[255];
-            ImGui::InputTextWithHint("INput goodbye", "input desires here", buf, 254);
+            memset(buf, 0, 255);
+            ImGui::InputTextWithHint("Input goodbye", "input desires here", buf, 254);
             ImGui::SetCursorPos({(w / 2) - 100 / 2, h / 2 + 5});
             if (ImGui::Button("No", {50, 20}))
             {
