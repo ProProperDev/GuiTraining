@@ -4,7 +4,7 @@
 #include <chrono>
 #include <list>
 #include <tuple>
-#include <map>
+#include <unordered_map>
 
 #include "timepoint.hpp"
 
@@ -18,6 +18,6 @@ namespace data
     private:
         std::string channel_name_{""};
         // thermistor_model_t thermistor_model_{};
-        std::map<TimePoint, float, std::less<>> data_list_;
+        std::unordered_map<TimePoint, float> data_list_;
     };
 } // namespace data
