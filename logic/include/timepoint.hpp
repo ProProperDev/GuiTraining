@@ -10,17 +10,20 @@ using hours_t = std::chrono::hours;
 using minutes_t = std::chrono::minutes;
 using seconds_t = std::chrono::seconds;
 
-namespace data
+namespace Data
 {
     class TimePoint
     {
+    public:
         TimePoint(std::string date_and_time_str);
+        bool operator==(const TimePoint &other) const;
 
-    private:
+        // private:
+        years_t year{};
         months_t month{};
         days_t day{};
         hours_t hours{};
         minutes_t minutes{};
         seconds_t seconds{};
     };
-} // namespace
+} // namespace Data
