@@ -38,7 +38,7 @@
 
 static void CustomHelpMarker(const char *desc)
 {
-    ImGui::TextDisabled(" ?");
+    ImGui::TextDisabled("?");
     if (ImGui::BeginItemTooltip())
     {
         ImGui::PushTextWrapPos(ImGui::GetFontSize() * 35.0f);
@@ -153,12 +153,13 @@ int main(int, char **)
     io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;  // Enable Gamepad Controls
     io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;     // Enable Docking
     io.ConfigFlags |= ImGuiConfigFlags_ViewportsEnable;   // Enable Multi-Viewport / Platform Windows
-    // io.ConfigViewportsNoAutoMerge = true;
-    // io.ConfigViewportsNoTaskBarIcon = true;
+                                                          // io.ConfigViewportsNoAutoMerge = true;
+                                                          // io.ConfigViewportsNoTaskBarIcon = true;
 
     // Setup Dear ImGui style
     // ImGui::StyleColorsDark();
     ImGui::StyleColorsLight();
+    // ImGui::StyleColorsClassic();
 
     // When viewports are enabled we tweak WindowRounding/WindowBg so platform windows can look identical to regular ones.
     ImGuiStyle &style = ImGui::GetStyle();
@@ -221,6 +222,7 @@ int main(int, char **)
         DUMMY
     };
 
+    bool show_start_window = true;
     bool show_about_app_window = true;
     bool show_storage_window = false;
     bool show_items = false;
@@ -628,6 +630,21 @@ int main(int, char **)
                 ImGui::Text("Date: 15.04.2023 Time: 16:47:14 Temperature: 36 C");
                 ImGui::Text("Date: 15.04.2023 Time: 16:47:15 Temperature: 40 C");
                 ImGui::EndChild();
+            }
+
+            ImGui::End();
+        }
+
+        if (show_start_window)
+        {
+            ImGui::Begin("Welcome!", &show_start_window);
+            char buf[255];
+            memset(buf, 0, 255);
+            ImGui::InputTextWithHint("Device name", "Input device name here", buf, 254);
+
+            if (ImGui::Button("Continue in offline mode", {150, 20}))
+            {
+                show_start_window = false;
             }
 
             ImGui::End();
