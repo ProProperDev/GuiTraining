@@ -6,6 +6,7 @@
 #include <tuple>
 #include <unordered_map>
 #include <optional>
+#include <algorithm>
 
 #include "timepoint.hpp"
 #include "thermistors.hpp"
@@ -13,21 +14,11 @@
 namespace Data
 {
 
-    template <typename T, typename N>
-    struct TimePointHasher
+    enum class ChannelMode
     {
-        size_t operator()(const T timepoint) const
-        {
-
-            return year_hasher_(timepoint.day); // year_hasher_(timepoint.year) ^ month_hasher_(timepoint.month) ^ day_hasher_(timepoint.day) ^ hour_hasher_(timepoint.hours) ^ minute_hasher_(timepoint.minutes) ^ second_hasher_(timepoint.seconds);
-        }
-
-        std::hash<N> year_hasher_;
-        // std::hash<months_t> month_hasher_;
-        // std::hash<days_t> day_hasher_;
-        // std::hash<hours_t> hour_hasher_;
-        // std::hash<minutes_t> minute_hasher_;
-        // std::hash<seconds_t> second_hasher_;
+        OFFLINE,
+        ONLINE,
+        CHANNEL_MODE_COUNT
     };
 
     class Channel
@@ -37,14 +28,19 @@ namespace Data
         Channel(std::string &channel_name);
         float GetPoint(const TimePoint timepoint) const;  // TODO: reload for index
         auto AddPoint(TimePoint &timepoint, float &temp); // TODO: end memory exception handler; reconsider auto type
-        std::optional<Hardware::ThermistorModel_t> GetThermistorModel() const;
-        void SetThermistorModel(const Hardware::ThermistorModel_t thermisor_model);
+        std::optional<Hardware::ThermistorModel> GetThermistorModel() const;
+        void SetThermistorModel(const Hardware::ThermistorModel thermisor_model);
+        std::optional<ChannelMode> GetChannelMode() const;
+        void SetChannelMode(const ChannelMode new_status);
         void UpdateAllData();
         void ClearAllData();
 
     private:
+        size_t TimePointHasher(const TimePoint timepoint);
+
         std::string channel_name_{"Untitled"};
-        Hardware::ThermistorModel_t thermistor_model_ = Hardware::ThermistorModel_t::THERMISTOR_MODELS_COUNT;
-        std::unordered_map<TimePoint, float, TimePointHasher<TimePoint, days_t>> data_;
+        ChannelMode mode_ = ChannelMode::CHANNEL_MODE_COUNT;
+        Hardware::ThermistorModel thermistor_model_ = Hardware::ThermistorModel::THERMISTOR_MODELS_COUNT;
+        std::list<std::pair<TimePoint, float>> data_;
     };
 } // namespace Data

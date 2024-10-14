@@ -4,7 +4,7 @@ namespace Data
 {
     namespace Hardware
     {
-        enum class ThermistorModel_t
+        enum class ThermistorModel
         {
             B57861S_103F_40,
             NTCLE317E4103SBA,

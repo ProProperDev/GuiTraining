@@ -12,13 +12,11 @@ using seconds_t = std::chrono::seconds;
 
 namespace Data
 {
-    class TimePoint
+    struct TimePoint
     {
-    public:
         TimePoint(std::string date_and_time_str);
         bool operator==(const TimePoint &other) const;
 
-        // private:
         years_t year{};
         months_t month{};
         days_t day{};
