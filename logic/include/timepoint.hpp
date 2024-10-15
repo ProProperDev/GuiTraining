@@ -14,6 +14,7 @@ namespace Data
 {
     struct TimePoint
     {
+        TimePoint() = default;
         TimePoint(std::string date_and_time_str);
         bool operator==(const TimePoint &other) const;
 

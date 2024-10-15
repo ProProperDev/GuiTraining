@@ -2,6 +2,13 @@
 
 namespace Data
 {
+
+    TimeTempPoint::TimeTempPoint(const TimePoint &time, const float temperature)
+    {
+        time_ = time;
+        temperature_ = temperature;
+    }
+
     Channel::Channel() = default;
 
     Channel::Channel(std::string &channel_name)
@@ -9,15 +16,13 @@ namespace Data
     float Channel::GetPoint(const TimePoint timepoint) const
     {
         auto it = std::find_if(data_.begin(), data_.end(), [&timepoint](auto &point)
-                               {auto [time, temp] = point;
-        return time == timepoint; });
-        return it->second;
+                               { return point.time_ == timepoint; });
+        return it->temperature_;
     }
 
-    auto Channel::AddPoint(TimePoint &timepoint, float &temp)
+    const TimeTempPoint &Channel::AddPoint(TimePoint &time, float &temp)
     {
-        data_.emplace_back(timepoint, temp);
-        return data_;
+        return data_.emplace_back(time, temp);
     }
 
     std::optional<Hardware::ThermistorModel> Channel::GetThermistorModel() const

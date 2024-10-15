@@ -7,12 +7,20 @@
 #include <unordered_map>
 #include <optional>
 #include <algorithm>
+#include <deque>
 
 #include "timepoint.hpp"
 #include "thermistors.hpp"
 
 namespace Data
 {
+    struct TimeTempPoint
+    {
+        TimeTempPoint(const TimePoint &time, const float temperature);
+
+        TimePoint time_;
+        float temperature_;
+    };
 
     enum class ChannelMode
     {
@@ -26,8 +34,8 @@ namespace Data
     public:
         Channel();
         Channel(std::string &channel_name);
-        float GetPoint(const TimePoint timepoint) const;  // TODO: reload for index
-        auto AddPoint(TimePoint &timepoint, float &temp); // TODO: end memory exception handler; reconsider auto type
+        float GetPoint(const TimePoint timepoint) const;             // TODO: reload for index
+        const TimeTempPoint &AddPoint(TimePoint &time, float &temp); // TODO: end memory exception handler; reconsider auto type
         std::optional<Hardware::ThermistorModel> GetThermistorModel() const;
         void SetThermistorModel(const Hardware::ThermistorModel thermisor_model);
         std::optional<ChannelMode> GetChannelMode() const;
@@ -36,11 +44,9 @@ namespace Data
         void ClearAllData();
 
     private:
-        size_t TimePointHasher(const TimePoint timepoint);
-
         std::string channel_name_{"Untitled"};
         ChannelMode mode_ = ChannelMode::CHANNEL_MODE_COUNT;
         Hardware::ThermistorModel thermistor_model_ = Hardware::ThermistorModel::THERMISTOR_MODELS_COUNT;
-        std::list<std::pair<TimePoint, float>> data_;
+        std::deque<const TimeTempPoint> data_{};
     };
 } // namespace Data
