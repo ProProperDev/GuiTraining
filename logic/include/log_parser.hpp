@@ -153,7 +153,8 @@ namespace Data
 {
     struct LogSettings
     {
-        std::string channel_reg_expr_str{"ADC_CH[0-9]"};
+        std::string channel_reg_expr_str_{"ADC_CH[0-9]"};
+        bool create_save_in_diffrent_files_ = false;
 
     private:
         std::regex channel_reg_expr_;
@@ -163,8 +164,10 @@ namespace Data
     {
     public:
         LogParser();
-        bool IsFileExist(const fs::path &path_to_file);
+        bool IsFileExist(const fs::path &path_to_file) const;
         void ParseLogFile(const fs::path &path_to_file);
+        void SetSettings(LogSettings &&new_settings);
+        const LogSettings &GetSettings() const;
 
     private:
         LogSettings settings_;
