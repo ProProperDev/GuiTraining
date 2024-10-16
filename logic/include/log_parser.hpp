@@ -6,6 +6,7 @@
 #include <filesystem>
 #include <string_view>
 #include <tuple>
+#include <regex>
 
 // /home/sproper/Desktop/origin_log30.08.24.txt
 
@@ -152,7 +153,10 @@ namespace Data
 {
     struct LogSettings
     {
-        std::string channel_name_;
+        std::string channel_reg_expr_str{"ADC_CH[0-9]"};
+
+    private:
+        std::regex channel_reg_expr_;
     };
 
     class LogParser
