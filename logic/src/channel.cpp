@@ -3,10 +3,12 @@
 namespace Data
 {
 
-    TimeTempPoint::TimeTempPoint(const TimePoint &time, const float temperature)
+    LogPoint::LogPoint(const TimePoint &time, const float &temperature, const float &voltage, const Hardware::ThermistorModel using_thermistor)
     {
         time_ = time;
         temperature_ = temperature;
+        voltage_ = voltage;
+        using_thermistor_ = using_thermistor;
     }
 
     Channel::Channel() = default;
@@ -20,21 +22,9 @@ namespace Data
         return it->temperature_;
     }
 
-    const TimeTempPoint &Channel::AddPoint(TimePoint &time, float &temp)
+    const LogPoint &Channel::AddPoint(TimePoint &time, float &temp, const float &voltage, const Hardware::ThermistorModel using_thermistor)
     {
-        return data_.emplace_back(time, temp);
-    }
-
-    std::optional<Hardware::ThermistorModel> Channel::GetThermistorModel() const
-    {
-        return thermistor_model_ == Hardware::ThermistorModel::THERMISTOR_MODELS_COUNT
-                   ? std::nullopt
-                   : std::optional<Hardware::ThermistorModel>(thermistor_model_);
-    }
-
-    void Channel::SetThermistorModel(const Hardware::ThermistorModel thermisor_model)
-    {
-        thermistor_model_ = thermisor_model;
+        return data_.emplace_back(time, temp, voltage, using_thermistor);
     }
 
     std::optional<ChannelMode> Channel::GetChannelMode() const
