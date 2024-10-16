@@ -12,20 +12,6 @@
 
 namespace fs = std::filesystem;
 
-enum class Match
-{
-    NOT_FOUND,
-    ADC_CH1,
-    ADC_CH3,
-    ADC_CH4
-};
-
-const std::string_view help_str_v{"_____________________________________"
-                                  "\nType \"exit\" to leave programm"
-                                  "\nType \"help\" to show this message"
-                                  "\n_____________________________________"
-                                  "\nFile to convert (input path to file):"};
-
 const Match SearchNameMatch(std::string &str)
 {
     if (str.find("temperature") == std::string::npos)
