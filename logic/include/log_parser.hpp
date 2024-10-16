@@ -61,24 +61,6 @@ const std::string ParseTemperature(std::string &str)
     return str.substr(temp_first_char_index, temp_last_char_index);
 }
 
-bool IsExitCmd(std::string_view str_v)
-{
-    if (str_v == "exit")
-    {
-        return true;
-    }
-    return false;
-}
-
-bool IsHelpCmd(std::string_view str_v)
-{
-    if (str_v == "help")
-    {
-        return true;
-    }
-    return false;
-}
-
 void InputFileToConvertPath()
 {
     std::string input_str{};
