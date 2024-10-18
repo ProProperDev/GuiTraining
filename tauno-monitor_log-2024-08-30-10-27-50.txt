@@ -1,0 +1,2075 @@
+Tauno-Monitor log started: 2024-08-30-10-27-53
+Opened /dev/ttyUSB0:115200
+10:27:54.443114 --> [0;32mI (152196) ADC1_CH0: raw  data: 0[0m
+10:27:54.447247 --> [0;32mI (152196) ADC1_CH0: cali data: 0 mV[0m
+10:27:54.449281 --> [0;32mI (152196) ADC1_CH1: raw  data: 1807[0m
+10:27:54.454610 --> [0;32mI (152196) ADC1_CH1: cali data: 1312 mV[0m
+10:27:54.460365 --> [0;32mI (152196) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:27:54.465447 --> [0;32mI (152206) ADC1_CH1: converted temperature: 22.9 C[0m
+10:27:54.471320 --> [0;32mI (152206) ADC1_CH2: raw  data: 4095[0m
+10:27:54.474792 --> [0;32mI (152216) ADC1_CH2: cali data: 2875 mV[0m
+10:27:54.479797 --> [0;32mI (152216) ADC1_CH3: raw  data: 1808[0m
+10:27:54.484466 --> [0;32mI (152226) ADC1_CH3: cali data: 1312 mV[0m
+10:27:54.487958 --> [0;32mI (152226) ADC1_CH3: using thermistor model: TH113H103[0m
+10:27:54.494026 --> [0;32mI (152236) ADC1_CH3: converted temperature: 22.5 C[0m
+10:27:54.499697 --> [0;32mI (152236) ADC1_CH4: raw  data: 1816[0m
+10:27:54.504659 --> [0;32mI (152246) ADC1_CH4: cali data: 1318 mV[0m
+10:27:54.507583 --> [0;32mI (152246) ADC1_CH4: using thermistor model: TH113H103[0m
+10:27:54.514858 --> [0;32mI (152256) ADC1_CH4: converted temperature: 22.2 C[0m
+10:27:54.518756 --> [0;32mI (152256) measurement: 2024-08-30T10:27:54+0300[0m
+10:27:54.524177 --> [0;32mI (152266) mqtt: sent publish successful, msg_id=57428[0m
+10:27:55.513272 --> [0;32mI (153266) ADC1_CH0: raw  data: 0[0m
+10:27:55.516721 --> [0;32mI (153266) ADC1_CH0: cali data: 0 mV[0m
+10:27:55.519313 --> [0;32mI (153266) ADC1_CH1: raw  data: 1800[0m
+10:27:55.524436 --> [0;32mI (153266) ADC1_CH1: cali data: 1306 mV[0m
+10:27:55.529951 --> [0;32mI (153266) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:27:55.535471 --> [0;32mI (153276) ADC1_CH1: converted temperature: 23.1 C[0m
+10:27:55.541005 --> [0;32mI (153276) ADC1_CH2: raw  data: 4095[0m
+10:27:55.544309 --> [0;32mI (153286) ADC1_CH2: cali data: 2875 mV[0m
+10:27:55.550108 --> [0;32mI (153286) ADC1_CH3: raw  data: 1815[0m
+10:27:55.554762 --> [0;32mI (153296) ADC1_CH3: cali data: 1317 mV[0m
+10:27:55.557861 --> [0;32mI (153296) ADC1_CH3: using thermistor model: TH113H103[0m
+10:27:55.564146 --> [0;32mI (153306) ADC1_CH3: converted temperature: 22.3 C[0m
+10:27:55.570074 --> [0;32mI (153306) ADC1_CH4: raw  data: 1818[0m
+10:27:55.574274 --> [0;32mI (153316) ADC1_CH4: cali data: 1320 mV[0m
+10:27:55.577755 --> [0;32mI (153316) ADC1_CH4: using thermistor model: TH113H103[0m
+10:27:55.585199 --> [0;32mI (153326) ADC1_CH4: converted temperature: 22.1 C[0m
+10:27:55.589078 --> [0;32mI (153326) measurement: 2024-08-30T10:27:55+0300[0m
+10:27:55.594793 --> [0;32mI (153336) mqtt: sent publish successful, msg_id=23007[0m
+10:27:56.583418 --> [0;32mI (154336) ADC1_CH0: raw  data: 0[0m
+10:27:56.592723 --> [0;32mI (154336) ADC1_CH0: cali data: 0 mV[0m
+10:27:56.598416 --> [0;32mI (154336) ADC1_CH1: raw  data: 1816[0m
+10:27:56.602075 --> [0;32mI (154336) ADC1_CH1: cali data: 1318 mV[0m
+10:27:56.608992 --> [0;32mI (154336) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:27:56.615472 --> [0;32mI (154346) ADC1_CH1: converted temperature: 22.7 C[0m
+10:27:56.624765 --> [0;32mI (154346) ADC1_CH2: raw  data: 4095[0m
+10:27:56.629623 --> [0;32mI (154356) ADC1_CH2: cali data: 2875 mV[0m
+10:27:56.634722 --> [0;32mI (154356) ADC1_CH3: raw  data: 1823[0m
+10:27:56.641325 --> [0;32mI (154366) ADC1_CH3: cali data: 1323 mV[0m
+10:27:56.645239 --> [0;32mI (154366) ADC1_CH3: using thermistor model: TH113H103[0m
+10:27:56.647046 --> [0;32mI (154376) ADC1_CH3: converted temperature: 22.0 C[0m
+10:27:56.649866 --> [0;32mI (154376) ADC1_CH4: raw  data: 1832[0m
+10:27:56.650913 --> [0;32mI (154386) ADC1_CH4: cali data: 1329 mV[0m
+10:27:56.651981 --> [0;32mI (154386) ADC1_CH4: using thermistor model: TH113H103[0m
+10:27:56.654886 --> [0;32mI (154396) ADC1_CH4: converted temperature: 21.7 C[0m
+10:27:56.659347 --> [0;32mI (154396) measurement: 2024-08-30T10:27:56+0300[0m
+10:27:56.664737 --> [0;32mI (154406) mqtt: sent publish successful, msg_id=55038[0m
+10:27:57.653419 --> [0;32mI (155406) ADC1_CH0: raw  data: 0[0m
+10:27:57.662634 --> [0;32mI (155406) ADC1_CH0: cali data: 0 mV[0m
+10:27:57.668525 --> [0;32mI (155406) ADC1_CH1: raw  data: 1832[0m
+10:27:57.673167 --> [0;32mI (155406) ADC1_CH1: cali data: 1329 mV[0m
+10:27:57.678645 --> [0;32mI (155406) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:27:57.685282 --> [0;32mI (155416) ADC1_CH1: converted temperature: 22.3 C[0m
+10:27:57.693758 --> [0;32mI (155416) ADC1_CH2: raw  data: 4095[0m
+10:27:57.698756 --> [0;32mI (155426) ADC1_CH2: cali data: 2875 mV[0m
+10:27:57.705186 --> [0;32mI (155426) ADC1_CH3: raw  data: 1820[0m
+10:27:57.710309 --> [0;32mI (155436) ADC1_CH3: cali data: 1321 mV[0m
+10:27:57.715022 --> [0;32mI (155436) ADC1_CH3: using thermistor model: TH113H103[0m
+10:27:57.716385 --> [0;32mI (155446) ADC1_CH3: converted temperature: 22.1 C[0m
+10:27:57.719507 --> [0;32mI (155446) ADC1_CH4: raw  data: 1768[0m
+10:27:57.720831 --> [0;32mI (155456) ADC1_CH4: cali data: 1284 mV[0m
+10:27:57.721921 --> [0;32mI (155456) ADC1_CH4: using thermistor model: TH113H103[0m
+10:27:57.724918 --> [0;32mI (155466) ADC1_CH4: converted temperature: 23.6 C[0m
+10:27:57.728774 --> [0;32mI (155466) measurement: 2024-08-30T10:27:57+0300[0m
+10:27:57.734730 --> [0;32mI (155476) mqtt: sent publish successful, msg_id=40196[0m
+10:27:58.723195 --> [0;32mI (156476) ADC1_CH0: raw  data: 0[0m
+10:27:58.733831 --> [0;32mI (156476) ADC1_CH0: cali data: 0 mV[0m
+10:27:58.737877 --> [0;32mI (156476) ADC1_CH1: raw  data: 1800[0m
+10:27:58.744226 --> [0;32mI (156476) ADC1_CH1: cali data: 1306 mV[0m
+10:27:58.749372 --> [0;32mI (156476) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:27:58.760649 --> [0;32mI (156486) ADC1_CH1: converted temperature: 23.1 C[0m
+10:27:58.766345 --> [0;32mI (156486) ADC1_CH2: raw  data: 4095[0m
+10:27:58.770551 --> [0;32mI (156496) ADC1_CH2: cali data: 2875 mV[0m
+10:27:58.778195 --> [0;32mI (156496) ADC1_CH3: raw  data: 1869[0m
+10:27:58.782298 --> [0;32mI (156506) ADC1_CH3: cali data: 1357 mV[0m
+10:27:58.783377 --> [0;32mI (156506) ADC1_CH3: using thermistor model: TH113H103[0m
+10:27:58.785147 --> [0;32mI (156516) ADC1_CH3: converted temperature: 20.5 C[0m
+10:27:58.787937 --> [0;32mI (156516) ADC1_CH4: raw  data: 1821[0m
+10:27:58.788989 --> [0;32mI (156526) ADC1_CH4: cali data: 1322 mV[0m
+10:27:58.790703 --> [0;32mI (156526) ADC1_CH4: using thermistor model: TH113H103[0m
+10:27:58.794989 --> [0;32mI (156536) ADC1_CH4: converted temperature: 22.0 C[0m
+10:27:58.799330 --> [0;32mI (156536) measurement: 2024-08-30T10:27:58+0300[0m
+10:27:58.804312 --> [0;32mI (156546) mqtt: sent publish successful, msg_id=42854[0m
+10:27:59.793420 --> [0;32mI (157546) ADC1_CH0: raw  data: 0[0m
+10:27:59.797885 --> [0;32mI (157546) ADC1_CH0: cali data: 0 mV[0m
+10:27:59.800472 --> [0;32mI (157546) ADC1_CH1: raw  data: 1817[0m
+10:27:59.804556 --> [0;32mI (157546) ADC1_CH1: cali data: 1319 mV[0m
+10:27:59.809855 --> [0;32mI (157546) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:27:59.815549 --> [0;32mI (157556) ADC1_CH1: converted temperature: 22.7 C[0m
+10:27:59.821168 --> [0;32mI (157556) ADC1_CH2: raw  data: 4095[0m
+10:27:59.824871 --> [0;32mI (157566) ADC1_CH2: cali data: 2875 mV[0m
+10:27:59.829733 --> [0;32mI (157566) ADC1_CH3: raw  data: 1818[0m
+10:27:59.834530 --> [0;32mI (157576) ADC1_CH3: cali data: 1320 mV[0m
+10:27:59.838011 --> [0;32mI (157576) ADC1_CH3: using thermistor model: TH113H103[0m
+10:27:59.844207 --> [0;32mI (157586) ADC1_CH3: converted temperature: 22.1 C[0m
+10:27:59.849566 --> [0;32mI (157586) ADC1_CH4: raw  data: 1837[0m
+10:27:59.854879 --> [0;32mI (157596) ADC1_CH4: cali data: 1332 mV[0m
+10:27:59.857673 --> [0;32mI (157596) ADC1_CH4: using thermistor model: TH113H103[0m
+10:27:59.864970 --> [0;32mI (157606) ADC1_CH4: converted temperature: 21.6 C[0m
+10:27:59.869195 --> [0;32mI (157606) measurement: 2024-08-30T10:28:00+0300[0m
+10:27:59.874330 --> [0;32mI (157616) mqtt: sent publish successful, msg_id=57944[0m
+10:28:00.863434 --> [0;32mI (158616) ADC1_CH0: raw  data: 0[0m
+10:28:00.869921 --> [0;32mI (158616) ADC1_CH0: cali data: 0 mV[0m
+10:28:00.872108 --> [0;32mI (158616) ADC1_CH1: raw  data: 1817[0m
+10:28:00.874557 --> [0;32mI (158616) ADC1_CH1: cali data: 1319 mV[0m
+10:28:00.879874 --> [0;32mI (158616) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:00.885559 --> [0;32mI (158626) ADC1_CH1: converted temperature: 22.7 C[0m
+10:28:00.891103 --> [0;32mI (158626) ADC1_CH2: raw  data: 4095[0m
+10:28:00.894415 --> [0;32mI (158636) ADC1_CH2: cali data: 2875 mV[0m
+10:28:00.899562 --> [0;32mI (158636) ADC1_CH3: raw  data: 1849[0m
+10:28:00.904570 --> [0;32mI (158646) ADC1_CH3: cali data: 1341 mV[0m
+10:28:00.908157 --> [0;32mI (158646) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:00.914232 --> [0;32mI (158656) ADC1_CH3: converted temperature: 21.2 C[0m
+10:28:00.919219 --> [0;32mI (158656) ADC1_CH4: raw  data: 1787[0m
+10:28:00.925459 --> [0;32mI (158666) ADC1_CH4: cali data: 1297 mV[0m
+10:28:00.927921 --> [0;32mI (158666) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:00.935002 --> [0;32mI (158676) ADC1_CH4: converted temperature: 23.1 C[0m
+10:28:00.939601 --> [0;32mI (158676) measurement: 2024-08-30T10:28:01+0300[0m
+10:28:00.944339 --> [0;32mI (158686) mqtt: sent publish successful, msg_id=1021[0m
+10:28:01.933494 --> [0;32mI (159686) ADC1_CH0: raw  data: 0[0m
+10:28:01.939891 --> [0;32mI (159686) ADC1_CH0: cali data: 0 mV[0m
+10:28:01.942188 --> [0;32mI (159686) ADC1_CH1: raw  data: 1806[0m
+10:28:01.944696 --> [0;32mI (159686) ADC1_CH1: cali data: 1311 mV[0m
+10:28:01.949834 --> [0;32mI (159686) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:01.956038 --> [0;32mI (159696) ADC1_CH1: converted temperature: 22.9 C[0m
+10:28:01.961417 --> [0;32mI (159696) ADC1_CH2: raw  data: 4095[0m
+10:28:01.964326 --> [0;32mI (159706) ADC1_CH2: cali data: 2875 mV[0m
+10:28:01.970876 --> [0;32mI (159706) ADC1_CH3: raw  data: 1815[0m
+10:28:01.974781 --> [0;32mI (159716) ADC1_CH3: cali data: 1317 mV[0m
+10:28:01.978096 --> [0;32mI (159716) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:01.984308 --> [0;32mI (159726) ADC1_CH3: converted temperature: 22.3 C[0m
+10:28:01.989727 --> [0;32mI (159726) ADC1_CH4: raw  data: 1817[0m
+10:28:01.994845 --> [0;32mI (159736) ADC1_CH4: cali data: 1319 mV[0m
+10:28:01.997667 --> [0;32mI (159736) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:02.005277 --> [0;32mI (159746) ADC1_CH4: converted temperature: 22.2 C[0m
+10:28:02.008917 --> [0;32mI (159746) measurement: 2024-08-30T10:28:02+0300[0m
+10:28:02.014299 --> [0;32mI (159756) mqtt: sent publish successful, msg_id=13456[0m
+10:28:03.003536 --> [0;32mI (160756) ADC1_CH0: raw  data: 0[0m
+10:28:03.009982 --> [0;32mI (160756) ADC1_CH0: cali data: 0 mV[0m
+10:28:03.012082 --> [0;32mI (160756) ADC1_CH1: raw  data: 1807[0m
+10:28:03.014556 --> [0;32mI (160756) ADC1_CH1: cali data: 1312 mV[0m
+10:28:03.019839 --> [0;32mI (160756) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:03.025709 --> [0;32mI (160766) ADC1_CH1: converted temperature: 22.9 C[0m
+10:28:03.031378 --> [0;32mI (160766) ADC1_CH2: raw  data: 4095[0m
+10:28:03.034366 --> [0;32mI (160776) ADC1_CH2: cali data: 2875 mV[0m
+10:28:03.039548 --> [0;32mI (160776) ADC1_CH3: raw  data: 1848[0m
+10:28:03.044631 --> [0;32mI (160786) ADC1_CH3: cali data: 1340 mV[0m
+10:28:03.048105 --> [0;32mI (160786) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:03.054352 --> [0;32mI (160796) ADC1_CH3: converted temperature: 21.3 C[0m
+10:28:03.059292 --> [0;32mI (160796) ADC1_CH4: raw  data: 1803[0m
+10:28:03.064842 --> [0;32mI (160806) ADC1_CH4: cali data: 1308 mV[0m
+10:28:03.067680 --> [0;32mI (160806) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:03.074991 --> [0;32mI (160816) ADC1_CH4: converted temperature: 22.7 C[0m
+10:28:03.079386 --> [0;32mI (160816) measurement: 2024-08-30T10:28:03+0300[0m
+10:28:03.084342 --> [0;32mI (160826) mqtt: sent publish successful, msg_id=23702[0m
+10:28:04.073491 --> [0;32mI (161826) ADC1_CH0: raw  data: 91[0m
+10:28:04.079548 --> [0;32mI (161826) ADC1_CH0: cali data: 68 mV[0m
+10:28:04.082222 --> [0;32mI (161826) ADC1_CH1: raw  data: 1823[0m
+10:28:04.084712 --> [0;32mI (161826) ADC1_CH1: cali data: 1323 mV[0m
+10:28:04.089910 --> [0;32mI (161826) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:04.096133 --> [0;32mI (161836) ADC1_CH1: converted temperature: 22.5 C[0m
+10:28:04.101415 --> [0;32mI (161836) ADC1_CH2: raw  data: 4095[0m
+10:28:04.104398 --> [0;32mI (161846) ADC1_CH2: cali data: 2875 mV[0m
+10:28:04.110377 --> [0;32mI (161846) ADC1_CH3: raw  data: 1790[0m
+10:28:04.114865 --> [0;32mI (161856) ADC1_CH3: cali data: 1298 mV[0m
+10:28:04.118152 --> [0;32mI (161856) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:04.123888 --> [0;32mI (161866) ADC1_CH3: converted temperature: 23.1 C[0m
+10:28:04.130125 --> [0;32mI (161866) ADC1_CH4: raw  data: 1806[0m
+10:28:04.135046 --> [0;32mI (161876) ADC1_CH4: cali data: 1311 mV[0m
+10:28:04.138031 --> [0;32mI (161876) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:04.145142 --> [0;32mI (161886) ADC1_CH4: converted temperature: 22.5 C[0m
+10:28:04.151144 --> [0;32mI (161886) measurement: 2024-08-30T10:28:04+0300[0m
+10:28:04.154644 --> [0;32mI (161896) mqtt: sent publish successful, msg_id=39552[0m
+10:28:05.143558 --> [0;32mI (162896) ADC1_CH0: raw  data: 92[0m
+10:28:05.149943 --> [0;32mI (162896) ADC1_CH0: cali data: 68 mV[0m
+10:28:05.152215 --> [0;32mI (162896) ADC1_CH1: raw  data: 1822[0m
+10:28:05.154715 --> [0;32mI (162896) ADC1_CH1: cali data: 1322 mV[0m
+10:28:05.160570 --> [0;32mI (162896) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:05.165661 --> [0;32mI (162906) ADC1_CH1: converted temperature: 22.5 C[0m
+10:28:05.171410 --> [0;32mI (162906) ADC1_CH2: raw  data: 4095[0m
+10:28:05.174448 --> [0;32mI (162916) ADC1_CH2: cali data: 2875 mV[0m
+10:28:05.180153 --> [0;32mI (162916) ADC1_CH3: raw  data: 1835[0m
+10:28:05.185181 --> [0;32mI (162926) ADC1_CH3: cali data: 1331 mV[0m
+10:28:05.188172 --> [0;32mI (162926) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:05.194427 --> [0;32mI (162936) ADC1_CH3: converted temperature: 21.7 C[0m
+10:28:05.200169 --> [0;32mI (162936) ADC1_CH4: raw  data: 1816[0m
+10:28:05.204958 --> [0;32mI (162946) ADC1_CH4: cali data: 1318 mV[0m
+10:28:05.207781 --> [0;32mI (162946) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:05.215225 --> [0;32mI (162956) ADC1_CH4: converted temperature: 22.2 C[0m
+10:28:05.221052 --> [0;32mI (162956) measurement: 2024-08-30T10:28:05+0300[0m
+10:28:05.224468 --> [0;32mI (162966) mqtt: sent publish successful, msg_id=778[0m
+10:28:06.213619 --> [0;32mI (163966) ADC1_CH0: raw  data: 96[0m
+10:28:06.219972 --> [0;32mI (163966) ADC1_CH0: cali data: 71 mV[0m
+10:28:06.222322 --> [0;32mI (163966) ADC1_CH1: raw  data: 1806[0m
+10:28:06.224757 --> [0;32mI (163966) ADC1_CH1: cali data: 1311 mV[0m
+10:28:06.230056 --> [0;32mI (163966) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:06.235795 --> [0;32mI (163976) ADC1_CH1: converted temperature: 22.9 C[0m
+10:28:06.241309 --> [0;32mI (163976) ADC1_CH2: raw  data: 4095[0m
+10:28:06.244656 --> [0;32mI (163986) ADC1_CH2: cali data: 2875 mV[0m
+10:28:06.249869 --> [0;32mI (163986) ADC1_CH3: raw  data: 1822[0m
+10:28:06.254960 --> [0;32mI (163996) ADC1_CH3: cali data: 1322 mV[0m
+10:28:06.259213 --> [0;32mI (163996) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:06.264439 --> [0;32mI (164006) ADC1_CH3: converted temperature: 22.0 C[0m
+10:28:06.269445 --> [0;32mI (164006) ADC1_CH4: raw  data: 1806[0m
+10:28:06.276114 --> [0;32mI (164016) ADC1_CH4: cali data: 1311 mV[0m
+10:28:06.278733 --> [0;32mI (164016) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:06.285286 --> [0;32mI (164026) ADC1_CH4: converted temperature: 22.5 C[0m
+10:28:06.290873 --> [0;32mI (164026) measurement: 2024-08-30T10:28:06+0300[0m
+10:28:06.294686 --> [0;32mI (164036) mqtt: sent publish successful, msg_id=4002[0m
+10:28:07.283650 --> [0;32mI (165036) ADC1_CH0: raw  data: 93[0m
+10:28:07.287035 --> [0;32mI (165036) ADC1_CH0: cali data: 69 mV[0m
+10:28:07.291353 --> [0;32mI (165036) ADC1_CH1: raw  data: 1807[0m
+10:28:07.294847 --> [0;32mI (165036) ADC1_CH1: cali data: 1312 mV[0m
+10:28:07.299974 --> [0;32mI (165036) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:07.306216 --> [0;32mI (165046) ADC1_CH1: converted temperature: 22.9 C[0m
+10:28:07.311464 --> [0;32mI (165046) ADC1_CH2: raw  data: 4095[0m
+10:28:07.314469 --> [0;32mI (165056) ADC1_CH2: cali data: 2875 mV[0m
+10:28:07.320406 --> [0;32mI (165056) ADC1_CH3: raw  data: 1837[0m
+10:28:07.324941 --> [0;32mI (165066) ADC1_CH3: cali data: 1332 mV[0m
+10:28:07.328268 --> [0;32mI (165066) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:07.334166 --> [0;32mI (165076) ADC1_CH3: converted temperature: 21.6 C[0m
+10:28:07.340034 --> [0;32mI (165076) ADC1_CH4: raw  data: 1808[0m
+10:28:07.344906 --> [0;32mI (165086) ADC1_CH4: cali data: 1312 mV[0m
+10:28:07.347809 --> [0;32mI (165086) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:07.355196 --> [0;32mI (165096) ADC1_CH4: converted temperature: 22.5 C[0m
+10:28:07.360790 --> [0;32mI (165096) measurement: 2024-08-30T10:28:07+0300[0m
+10:28:07.364458 --> [0;32mI (165106) mqtt: sent publish successful, msg_id=62571[0m
+10:28:08.353737 --> [0;32mI (166106) ADC1_CH0: raw  data: 91[0m
+10:28:08.359421 --> [0;32mI (166106) ADC1_CH0: cali data: 68 mV[0m
+10:28:08.362037 --> [0;32mI (166106) ADC1_CH1: raw  data: 1817[0m
+10:28:08.364836 --> [0;32mI (166106) ADC1_CH1: cali data: 1319 mV[0m
+10:28:08.370031 --> [0;32mI (166106) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:08.377106 --> [0;32mI (166116) ADC1_CH1: converted temperature: 22.7 C[0m
+10:28:08.381512 --> [0;32mI (166116) ADC1_CH2: raw  data: 4095[0m
+10:28:08.384544 --> [0;32mI (166126) ADC1_CH2: cali data: 2875 mV[0m
+10:28:08.390441 --> [0;32mI (166126) ADC1_CH3: raw  data: 1817[0m
+10:28:08.394996 --> [0;32mI (166136) ADC1_CH3: cali data: 1319 mV[0m
+10:28:08.398324 --> [0;32mI (166136) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:08.403982 --> [0;32mI (166146) ADC1_CH3: converted temperature: 22.2 C[0m
+10:28:08.409543 --> [0;32mI (166146) ADC1_CH4: raw  data: 1804[0m
+10:28:08.415000 --> [0;32mI (166156) ADC1_CH4: cali data: 1308 mV[0m
+10:28:08.417886 --> [0;32mI (166156) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:08.425803 --> [0;32mI (166166) ADC1_CH4: converted temperature: 22.7 C[0m
+10:28:08.430954 --> [0;32mI (166166) measurement: 2024-08-30T10:28:08+0300[0m
+10:28:08.435529 --> [0;32mI (166176) mqtt: sent publish successful, msg_id=18573[0m
+10:28:09.423542 --> [0;32mI (167176) ADC1_CH0: raw  data: 92[0m
+10:28:09.430253 --> [0;32mI (167176) ADC1_CH0: cali data: 68 mV[0m
+10:28:09.432258 --> [0;32mI (167176) ADC1_CH1: raw  data: 1821[0m
+10:28:09.434815 --> [0;32mI (167176) ADC1_CH1: cali data: 1322 mV[0m
+10:28:09.439979 --> [0;32mI (167176) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:09.446303 --> [0;32mI (167186) ADC1_CH1: converted temperature: 22.5 C[0m
+10:28:09.451241 --> [0;32mI (167186) ADC1_CH2: raw  data: 4095[0m
+10:28:09.454534 --> [0;32mI (167196) ADC1_CH2: cali data: 2875 mV[0m
+10:28:09.459706 --> [0;32mI (167196) ADC1_CH3: raw  data: 1801[0m
+10:28:09.464943 --> [0;32mI (167206) ADC1_CH3: cali data: 1306 mV[0m
+10:28:09.468248 --> [0;32mI (167206) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:09.473957 --> [0;32mI (167216) ADC1_CH3: converted temperature: 22.7 C[0m
+10:28:09.479394 --> [0;32mI (167216) ADC1_CH4: raw  data: 1879[0m
+10:28:09.484521 --> [0;32mI (167226) ADC1_CH4: cali data: 1363 mV[0m
+10:28:09.488367 --> [0;32mI (167226) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:09.495216 --> [0;32mI (167236) ADC1_CH4: converted temperature: 20.2 C[0m
+10:28:09.500847 --> [0;32mI (167236) measurement: 2024-08-30T10:28:09+0300[0m
+10:28:09.504953 --> [0;32mI (167246) mqtt: sent publish successful, msg_id=28452[0m
+10:28:10.493592 --> [0;32mI (168246) ADC1_CH0: raw  data: 6[0m
+10:28:10.499864 --> [0;32mI (168246) ADC1_CH0: cali data: 5 mV[0m
+10:28:10.501246 --> [0;32mI (168246) ADC1_CH1: raw  data: 1819[0m
+10:28:10.505133 --> [0;32mI (168246) ADC1_CH1: cali data: 1320 mV[0m
+10:28:10.510013 --> [0;32mI (168246) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:10.516172 --> [0;32mI (168256) ADC1_CH1: converted temperature: 22.6 C[0m
+10:28:10.521229 --> [0;32mI (168256) ADC1_CH2: raw  data: 4095[0m
+10:28:10.524482 --> [0;32mI (168266) ADC1_CH2: cali data: 2875 mV[0m
+10:28:10.530049 --> [0;32mI (168266) ADC1_CH3: raw  data: 1800[0m
+10:28:10.534801 --> [0;32mI (168276) ADC1_CH3: cali data: 1306 mV[0m
+10:28:10.538823 --> [0;32mI (168276) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:10.544393 --> [0;32mI (168286) ADC1_CH3: converted temperature: 22.7 C[0m
+10:28:10.549415 --> [0;32mI (168286) ADC1_CH4: raw  data: 1787[0m
+10:28:10.555072 --> [0;32mI (168296) ADC1_CH4: cali data: 1297 mV[0m
+10:28:10.558090 --> [0;32mI (168296) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:10.565105 --> [0;32mI (168306) ADC1_CH4: converted temperature: 23.1 C[0m
+10:28:10.569486 --> [0;32mI (168306) measurement: 2024-08-30T10:28:10+0300[0m
+10:28:10.575018 --> [0;32mI (168316) mqtt: sent publish successful, msg_id=34405[0m
+10:28:11.563614 --> [0;32mI (169316) ADC1_CH0: raw  data: 0[0m
+10:28:11.570356 --> [0;32mI (169316) ADC1_CH0: cali data: 0 mV[0m
+10:28:11.572132 --> [0;32mI (169316) ADC1_CH1: raw  data: 1821[0m
+10:28:11.574675 --> [0;32mI (169316) ADC1_CH1: cali data: 1322 mV[0m
+10:28:11.579988 --> [0;32mI (169316) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:11.585680 --> [0;32mI (169326) ADC1_CH1: converted temperature: 22.5 C[0m
+10:28:11.591231 --> [0;32mI (169326) ADC1_CH2: raw  data: 4095[0m
+10:28:11.594972 --> [0;32mI (169336) ADC1_CH2: cali data: 2875 mV[0m
+10:28:11.600252 --> [0;32mI (169336) ADC1_CH3: raw  data: 1805[0m
+10:28:11.604761 --> [0;32mI (169346) ADC1_CH3: cali data: 1309 mV[0m
+10:28:11.608300 --> [0;32mI (169346) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:11.613829 --> [0;32mI (169356) ADC1_CH3: converted temperature: 22.6 C[0m
+10:28:11.619619 --> [0;32mI (169356) ADC1_CH4: raw  data: 1833[0m
+10:28:11.624529 --> [0;32mI (169366) ADC1_CH4: cali data: 1329 mV[0m
+10:28:11.627962 --> [0;32mI (169366) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:11.635116 --> [0;32mI (169376) ADC1_CH4: converted temperature: 21.7 C[0m
+10:28:11.639717 --> [0;32mI (169376) measurement: 2024-08-30T10:28:11+0300[0m
+10:28:11.644556 --> [0;32mI (169386) mqtt: sent publish successful, msg_id=59121[0m
+10:28:12.633644 --> [0;32mI (170386) ADC1_CH0: raw  data: 0[0m
+10:28:12.639490 --> [0;32mI (170386) ADC1_CH0: cali data: 0 mV[0m
+10:28:12.640835 --> [0;32mI (170386) ADC1_CH1: raw  data: 1816[0m
+10:28:12.645081 --> [0;32mI (170386) ADC1_CH1: cali data: 1318 mV[0m
+10:28:12.649967 --> [0;32mI (170386) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:12.656145 --> [0;32mI (170396) ADC1_CH1: converted temperature: 22.7 C[0m
+10:28:12.661251 --> [0;32mI (170396) ADC1_CH2: raw  data: 4095[0m
+10:28:12.664548 --> [0;32mI (170406) ADC1_CH2: cali data: 2875 mV[0m
+10:28:12.670045 --> [0;32mI (170406) ADC1_CH3: raw  data: 1821[0m
+10:28:12.674937 --> [0;32mI (170416) ADC1_CH3: cali data: 1322 mV[0m
+10:28:12.678212 --> [0;32mI (170416) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:12.683830 --> [0;32mI (170426) ADC1_CH3: converted temperature: 22.0 C[0m
+10:28:12.689843 --> [0;32mI (170426) ADC1_CH4: raw  data: 1802[0m
+10:28:12.694736 --> [0;32mI (170436) ADC1_CH4: cali data: 1307 mV[0m
+10:28:12.697813 --> [0;32mI (170436) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:12.705116 --> [0;32mI (170446) ADC1_CH4: converted temperature: 22.7 C[0m
+10:28:12.709056 --> [0;32mI (170446) measurement: 2024-08-30T10:28:12+0300[0m
+10:28:12.715114 --> [0;32mI (170456) mqtt: sent publish successful, msg_id=6114[0m
+10:28:13.703749 --> [0;32mI (171456) ADC1_CH0: raw  data: 0[0m
+10:28:13.710453 --> [0;32mI (171456) ADC1_CH0: cali data: 0 mV[0m
+10:28:13.715085 --> [0;32mI (171456) ADC1_CH1: raw  data: 1801[0m
+10:28:13.718359 --> [0;32mI (171456) ADC1_CH1: cali data: 1306 mV[0m
+10:28:13.722143 --> [0;32mI (171456) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:13.728568 --> [0;32mI (171466) ADC1_CH1: converted temperature: 23.1 C[0m
+10:28:13.733155 --> [0;32mI (171466) ADC1_CH2: raw  data: 4095[0m
+10:28:13.737782 --> [0;32mI (171476) ADC1_CH2: cali data: 2875 mV[0m
+10:28:13.742970 --> [0;32mI (171476) ADC1_CH3: raw  data: 1817[0m
+10:28:13.745588 --> [0;32mI (171486) ADC1_CH3: cali data: 1319 mV[0m
+10:28:13.748391 --> [0;32mI (171486) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:13.753972 --> [0;32mI (171496) ADC1_CH3: converted temperature: 22.2 C[0m
+10:28:13.759504 --> [0;32mI (171496) ADC1_CH4: raw  data: 1832[0m
+10:28:13.764670 --> [0;32mI (171506) ADC1_CH4: cali data: 1329 mV[0m
+10:28:13.768443 --> [0;32mI (171506) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:13.775252 --> [0;32mI (171516) ADC1_CH4: converted temperature: 21.7 C[0m
+10:28:13.779808 --> [0;32mI (171516) measurement: 2024-08-30T10:28:13+0300[0m
+10:28:13.784584 --> [0;32mI (171526) mqtt: sent publish successful, msg_id=11379[0m
+10:28:14.773692 --> [0;32mI (172526) ADC1_CH0: raw  data: 0[0m
+10:28:14.780771 --> [0;32mI (172526) ADC1_CH0: cali data: 0 mV[0m
+10:28:14.785053 --> [0;32mI (172526) ADC1_CH1: raw  data: 1823[0m
+10:28:14.788263 --> [0;32mI (172526) ADC1_CH1: cali data: 1323 mV[0m
+10:28:14.791522 --> [0;32mI (172526) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:14.797560 --> [0;32mI (172536) ADC1_CH1: converted temperature: 22.5 C[0m
+10:28:14.803376 --> [0;32mI (172536) ADC1_CH2: raw  data: 4095[0m
+10:28:14.807445 --> [0;32mI (172546) ADC1_CH2: cali data: 2875 mV[0m
+10:28:14.811303 --> [0;32mI (172546) ADC1_CH3: raw  data: 1834[0m
+10:28:14.814829 --> [0;32mI (172556) ADC1_CH3: cali data: 1330 mV[0m
+10:28:14.818848 --> [0;32mI (172556) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:14.823993 --> [0;32mI (172566) ADC1_CH3: converted temperature: 21.7 C[0m
+10:28:14.829373 --> [0;32mI (172566) ADC1_CH4: raw  data: 1800[0m
+10:28:14.834993 --> [0;32mI (172576) ADC1_CH4: cali data: 1306 mV[0m
+10:28:14.838101 --> [0;32mI (172576) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:14.845141 --> [0;32mI (172586) ADC1_CH4: converted temperature: 22.7 C[0m
+10:28:14.849039 --> [0;32mI (172586) measurement: 2024-08-30T10:28:14+0300[0m
+10:28:14.856799 --> [0;32mI (172596) mqtt: sent publish successful, msg_id=7959[0m
+10:28:15.843451 --> [0;32mI (173596) ADC1_CH0: raw  data: 0[0m
+10:28:15.856726 --> [0;32mI (173596) ADC1_CH0: cali data: 0 mV[0m
+10:28:15.867802 --> [0;32mI (173596) ADC1_CH1: raw  data: 1818[0m
+10:28:15.880772 --> [0;32mI (173596) ADC1_CH1: cali data: 1320 mV[0m
+10:28:15.892794 --> [0;32mI (173596) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:15.911252 --> [0;32mI (173606) ADC1_CH1: converted temperature: 22.6 C[0m
+10:28:15.914224 --> [0;32mI (173606) ADC1_CH2: raw  data: 4095[0m
+10:28:15.916093 --> [0;32mI (173616) ADC1_CH2: cali data: 2875 mV[0m
+10:28:15.917283 --> [0;32mI (173616) ADC1_CH3: raw  data: 1820[0m
+10:28:15.919131 --> [0;32mI (173626) ADC1_CH3: cali data: 1321 mV[0m
+10:28:15.920352 --> [0;32mI (173626) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:15.922627 --> [0;32mI (173636) ADC1_CH3: converted temperature: 22.1 C[0m
+10:28:15.924748 --> [0;32mI (173636) ADC1_CH4: raw  data: 1816[0m
+10:28:15.925861 --> [0;32mI (173646) ADC1_CH4: cali data: 1318 mV[0m
+10:28:15.927832 --> [0;32mI (173646) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:15.930525 --> [0;32mI (173656) ADC1_CH4: converted temperature: 22.2 C[0m
+10:28:15.932747 --> [0;32mI (173656) measurement: 2024-08-30T10:28:16+0300[0m
+10:28:15.934188 --> [0;32mI (173666) mqtt: sent publish successful, msg_id=56093[0m
+10:28:16.913681 --> [0;32mI (174666) ADC1_CH0: raw  data: 0[0m
+10:28:16.930164 --> [0;32mI (174666) ADC1_CH0: cali data: 0 mV[0m
+10:28:16.940195 --> [0;32mI (174666) ADC1_CH1: raw  data: 1802[0m
+10:28:16.952434 --> [0;32mI (174666) ADC1_CH1: cali data: 1307 mV[0m
+10:28:16.965374 --> [0;32mI (174666) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:16.979018 --> [0;32mI (174676) ADC1_CH1: converted temperature: 23.1 C[0m
+10:28:16.983919 --> [0;32mI (174676) ADC1_CH2: raw  data: 4095[0m
+10:28:16.985050 --> [0;32mI (174686) ADC1_CH2: cali data: 2875 mV[0m
+10:28:16.986948 --> [0;32mI (174686) ADC1_CH3: raw  data: 1822[0m
+10:28:16.988376 --> [0;32mI (174696) ADC1_CH3: cali data: 1322 mV[0m
+10:28:16.990003 --> [0;32mI (174696) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:16.992384 --> [0;32mI (174706) ADC1_CH3: converted temperature: 22.0 C[0m
+10:28:16.994501 --> [0;32mI (174706) ADC1_CH4: raw  data: 1807[0m
+10:28:16.995617 --> [0;32mI (174716) ADC1_CH4: cali data: 1312 mV[0m
+10:28:16.997471 --> [0;32mI (174716) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:17.000048 --> [0;32mI (174726) ADC1_CH4: converted temperature: 22.5 C[0m
+10:28:17.002246 --> [0;32mI (174726) measurement: 2024-08-30T10:28:17+0300[0m
+10:28:17.003699 --> [0;32mI (174736) mqtt: sent publish successful, msg_id=38426[0m
+10:28:17.983695 --> [0;32mI (175736) ADC1_CH0: raw  data: 0[0m
+10:28:17.990753 --> [0;32mI (175736) ADC1_CH0: cali data: 0 mV[0m
+10:28:17.996565 --> [0;32mI (175736) ADC1_CH1: raw  data: 1819[0m
+10:28:18.001596 --> [0;32mI (175736) ADC1_CH1: cali data: 1320 mV[0m
+10:28:18.008031 --> [0;32mI (175736) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:18.018528 --> [0;32mI (175746) ADC1_CH1: converted temperature: 22.6 C[0m
+10:28:18.023331 --> [0;32mI (175746) ADC1_CH2: raw  data: 4095[0m
+10:28:18.027663 --> [0;32mI (175756) ADC1_CH2: cali data: 2875 mV[0m
+10:28:18.034196 --> [0;32mI (175756) ADC1_CH3: raw  data: 1837[0m
+10:28:18.037401 --> [0;32mI (175766) ADC1_CH3: cali data: 1332 mV[0m
+10:28:18.041813 --> [0;32mI (175766) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:18.043378 --> [0;32mI (175776) ADC1_CH3: converted temperature: 21.6 C[0m
+10:28:18.045754 --> [0;32mI (175776) ADC1_CH4: raw  data: 1788[0m
+10:28:18.046901 --> [0;32mI (175786) ADC1_CH4: cali data: 1297 mV[0m
+10:28:18.048485 --> [0;32mI (175786) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:18.055202 --> [0;32mI (175796) ADC1_CH4: converted temperature: 23.1 C[0m
+10:28:18.059553 --> [0;32mI (175796) measurement: 2024-08-30T10:28:18+0300[0m
+10:28:18.065083 --> [0;32mI (175806) mqtt: sent publish successful, msg_id=55245[0m
+10:28:19.053745 --> [0;32mI (176806) ADC1_CH0: raw  data: 5[0m
+10:28:19.062934 --> [0;32mI (176806) ADC1_CH0: cali data: 4 mV[0m
+10:28:19.069921 --> [0;32mI (176806) ADC1_CH1: raw  data: 1847[0m
+10:28:19.075120 --> [0;32mI (176806) ADC1_CH1: cali data: 1340 mV[0m
+10:28:19.082782 --> [0;32mI (176806) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:19.089736 --> [0;32mI (176816) ADC1_CH1: converted temperature: 21.9 C[0m
+10:28:19.099171 --> [0;32mI (176816) ADC1_CH2: raw  data: 4095[0m
+10:28:19.103438 --> [0;32mI (176826) ADC1_CH2: cali data: 2875 mV[0m
+10:28:19.108386 --> [0;32mI (176826) ADC1_CH3: raw  data: 1816[0m
+10:28:19.113006 --> [0;32mI (176836) ADC1_CH3: cali data: 1318 mV[0m
+10:28:19.120033 --> [0;32mI (176836) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:19.121569 --> [0;32mI (176846) ADC1_CH3: converted temperature: 22.2 C[0m
+10:28:19.123310 --> [0;32mI (176846) ADC1_CH4: raw  data: 1864[0m
+10:28:19.124316 --> [0;32mI (176856) ADC1_CH4: cali data: 1351 mV[0m
+10:28:19.125829 --> [0;32mI (176856) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:19.128298 --> [0;32mI (176866) ADC1_CH4: converted temperature: 20.8 C[0m
+10:28:19.130069 --> [0;32mI (176866) measurement: 2024-08-30T10:28:19+0300[0m
+10:28:19.135249 --> [0;32mI (176876) mqtt: sent publish successful, msg_id=46923[0m
+10:28:20.123713 --> [0;32mI (177876) ADC1_CH0: raw  data: 0[0m
+10:28:20.139644 --> [0;32mI (177876) ADC1_CH0: cali data: 0 mV[0m
+10:28:20.153315 --> [0;32mI (177876) ADC1_CH1: raw  data: 1807[0m
+10:28:20.165553 --> [0;32mI (177876) ADC1_CH1: cali data: 1312 mV[0m
+10:28:20.177209 --> [0;32mI (177876) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:20.183654 --> [0;32mI (177886) ADC1_CH1: converted temperature: 22.9 C[0m
+10:28:20.193250 --> [0;32mI (177886) ADC1_CH2: raw  data: 4095[0m
+10:28:20.196417 --> [0;32mI (177896) ADC1_CH2: cali data: 2875 mV[0m
+10:28:20.197515 --> [0;32mI (177896) ADC1_CH3: raw  data: 1807[0m
+10:28:20.198985 --> [0;32mI (177906) ADC1_CH3: cali data: 1312 mV[0m
+10:28:20.200084 --> [0;32mI (177906) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:20.201872 --> [0;32mI (177916) ADC1_CH3: converted temperature: 22.5 C[0m
+10:28:20.203167 --> [0;32mI (177916) ADC1_CH4: raw  data: 1803[0m
+10:28:20.204596 --> [0;32mI (177926) ADC1_CH4: cali data: 1308 mV[0m
+10:28:20.205676 --> [0;32mI (177926) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:20.208329 --> [0;32mI (177936) ADC1_CH4: converted temperature: 22.7 C[0m
+10:28:20.209681 --> [0;32mI (177936) measurement: 2024-08-30T10:28:20+0300[0m
+10:28:20.211049 --> [0;32mI (177946) mqtt: sent publish successful, msg_id=14704[0m
+10:28:21.193729 --> [0;32mI (178946) ADC1_CH0: raw  data: 0[0m
+10:28:21.202901 --> [0;32mI (178946) ADC1_CH0: cali data: 0 mV[0m
+10:28:21.206887 --> [0;32mI (178946) ADC1_CH1: raw  data: 1805[0m
+10:28:21.212103 --> [0;32mI (178946) ADC1_CH1: cali data: 1309 mV[0m
+10:28:21.219527 --> [0;32mI (178946) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:21.226219 --> [0;32mI (178956) ADC1_CH1: converted temperature: 23.0 C[0m
+10:28:21.233890 --> [0;32mI (178956) ADC1_CH2: raw  data: 4095[0m
+10:28:21.238988 --> [0;32mI (178966) ADC1_CH2: cali data: 2875 mV[0m
+10:28:21.243718 --> [0;32mI (178966) ADC1_CH3: raw  data: 1800[0m
+10:28:21.247791 --> [0;32mI (178976) ADC1_CH3: cali data: 1306 mV[0m
+10:28:21.252085 --> [0;32mI (178976) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:21.253582 --> [0;32mI (178986) ADC1_CH3: converted temperature: 22.7 C[0m
+10:28:21.256361 --> [0;32mI (178986) ADC1_CH4: raw  data: 1801[0m
+10:28:21.257861 --> [0;32mI (178996) ADC1_CH4: cali data: 1306 mV[0m
+10:28:21.259188 --> [0;32mI (178996) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:21.265218 --> [0;32mI (179006) ADC1_CH4: converted temperature: 22.7 C[0m
+10:28:21.269082 --> [0;32mI (179006) measurement: 2024-08-30T10:28:21+0300[0m
+10:28:21.274650 --> [0;32mI (179016) mqtt: sent publish successful, msg_id=3167[0m
+10:28:22.263740 --> [0;32mI (180016) ADC1_CH0: raw  data: 0[0m
+10:28:22.272781 --> [0;32mI (180016) ADC1_CH0: cali data: 0 mV[0m
+10:28:22.276898 --> [0;32mI (180016) ADC1_CH1: raw  data: 1838[0m
+10:28:22.281892 --> [0;32mI (180016) ADC1_CH1: cali data: 1333 mV[0m
+10:28:22.289545 --> [0;32mI (180016) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:22.296135 --> [0;32mI (180026) ADC1_CH1: converted temperature: 22.1 C[0m
+10:28:22.303593 --> [0;32mI (180026) ADC1_CH2: raw  data: 4095[0m
+10:28:22.308048 --> [0;32mI (180036) ADC1_CH2: cali data: 2875 mV[0m
+10:28:22.312827 --> [0;32mI (180036) ADC1_CH3: raw  data: 1805[0m
+10:28:22.318440 --> [0;32mI (180046) ADC1_CH3: cali data: 1309 mV[0m
+10:28:22.322610 --> [0;32mI (180046) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:22.324001 --> [0;32mI (180056) ADC1_CH3: converted temperature: 22.6 C[0m
+10:28:22.326746 --> [0;32mI (180056) ADC1_CH4: raw  data: 1805[0m
+10:28:22.328195 --> [0;32mI (180066) ADC1_CH4: cali data: 1309 mV[0m
+10:28:22.329449 --> [0;32mI (180066) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:22.335243 --> [0;32mI (180076) ADC1_CH4: converted temperature: 22.6 C[0m
+10:28:22.339103 --> [0;32mI (180076) measurement: 2024-08-30T10:28:22+0300[0m
+10:28:22.344562 --> [0;32mI (180086) mqtt: sent publish successful, msg_id=14578[0m
+10:28:23.333762 --> [0;32mI (181086) ADC1_CH0: raw  data: 3[0m
+10:28:23.343366 --> [0;32mI (181086) ADC1_CH0: cali data: 3 mV[0m
+10:28:23.348675 --> [0;32mI (181086) ADC1_CH1: raw  data: 1818[0m
+10:28:23.351237 --> [0;32mI (181086) ADC1_CH1: cali data: 1320 mV[0m
+10:28:23.356488 --> [0;32mI (181086) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:23.363131 --> [0;32mI (181096) ADC1_CH1: converted temperature: 22.6 C[0m
+10:28:23.370898 --> [0;32mI (181096) ADC1_CH2: raw  data: 4095[0m
+10:28:23.375976 --> [0;32mI (181106) ADC1_CH2: cali data: 2875 mV[0m
+10:28:23.382005 --> [0;32mI (181106) ADC1_CH3: raw  data: 1836[0m
+10:28:23.384914 --> [0;32mI (181116) ADC1_CH3: cali data: 1332 mV[0m
+10:28:23.389959 --> [0;32mI (181116) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:23.392468 --> [0;32mI (181126) ADC1_CH3: converted temperature: 21.6 C[0m
+10:28:23.393765 --> [0;32mI (181126) ADC1_CH4: raw  data: 1804[0m
+10:28:23.395426 --> [0;32mI (181136) ADC1_CH4: cali data: 1308 mV[0m
+10:28:23.398011 --> [0;32mI (181136) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:23.405257 --> [0;32mI (181146) ADC1_CH4: converted temperature: 22.7 C[0m
+10:28:23.409266 --> [0;32mI (181146) measurement: 2024-08-30T10:28:23+0300[0m
+10:28:23.414662 --> [0;32mI (181156) mqtt: sent publish successful, msg_id=5485[0m
+10:28:24.403812 --> [0;32mI (182156) ADC1_CH0: raw  data: 0[0m
+10:28:24.412937 --> [0;32mI (182156) ADC1_CH0: cali data: 0 mV[0m
+10:28:24.418778 --> [0;32mI (182156) ADC1_CH1: raw  data: 1822[0m
+10:28:24.423782 --> [0;32mI (182156) ADC1_CH1: cali data: 1322 mV[0m
+10:28:24.429351 --> [0;32mI (182156) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:24.435151 --> [0;32mI (182166) ADC1_CH1: converted temperature: 22.5 C[0m
+10:28:24.440894 --> [0;32mI (182166) ADC1_CH2: raw  data: 4095[0m
+10:28:24.445603 --> [0;32mI (182176) ADC1_CH2: cali data: 2875 mV[0m
+10:28:24.452293 --> [0;32mI (182176) ADC1_CH3: raw  data: 1837[0m
+10:28:24.455693 --> [0;32mI (182186) ADC1_CH3: cali data: 1332 mV[0m
+10:28:24.458076 --> [0;32mI (182186) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:24.460567 --> [0;32mI (182196) ADC1_CH3: converted temperature: 21.6 C[0m
+10:28:24.462377 --> [0;32mI (182196) ADC1_CH4: raw  data: 1801[0m
+10:28:24.464657 --> [0;32mI (182206) ADC1_CH4: cali data: 1306 mV[0m
+10:28:24.468048 --> [0;32mI (182206) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:24.475260 --> [0;32mI (182216) ADC1_CH4: converted temperature: 22.7 C[0m
+10:28:24.479173 --> [0;32mI (182216) measurement: 2024-08-30T10:28:24+0300[0m
+10:28:24.484590 --> [0;32mI (182226) mqtt: sent publish successful, msg_id=46698[0m
+10:28:25.473742 --> [0;32mI (183226) ADC1_CH0: raw  data: 0[0m
+10:28:25.482962 --> [0;32mI (183226) ADC1_CH0: cali data: 0 mV[0m
+10:28:25.488810 --> [0;32mI (183226) ADC1_CH1: raw  data: 1816[0m
+10:28:25.493922 --> [0;32mI (183226) ADC1_CH1: cali data: 1318 mV[0m
+10:28:25.499873 --> [0;32mI (183226) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:25.506443 --> [0;32mI (183236) ADC1_CH1: converted temperature: 22.7 C[0m
+10:28:25.514169 --> [0;32mI (183236) ADC1_CH2: raw  data: 4095[0m
+10:28:25.517197 --> [0;32mI (183246) ADC1_CH2: cali data: 2875 mV[0m
+10:28:25.522215 --> [0;32mI (183246) ADC1_CH3: raw  data: 1820[0m
+10:28:25.528183 --> [0;32mI (183256) ADC1_CH3: cali data: 1321 mV[0m
+10:28:25.531171 --> [0;32mI (183256) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:25.532924 --> [0;32mI (183266) ADC1_CH3: converted temperature: 22.1 C[0m
+10:28:25.534847 --> [0;32mI (183266) ADC1_CH4: raw  data: 1802[0m
+10:28:25.536023 --> [0;32mI (183276) ADC1_CH4: cali data: 1307 mV[0m
+10:28:25.538030 --> [0;32mI (183276) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:25.545264 --> [0;32mI (183286) ADC1_CH4: converted temperature: 22.7 C[0m
+10:28:25.549124 --> [0;32mI (183286) measurement: 2024-08-30T10:28:25+0300[0m
+10:28:25.555211 --> [0;32mI (183296) mqtt: sent publish successful, msg_id=17113[0m
+10:28:26.543772 --> [0;32mI (184296) ADC1_CH0: raw  data: 0[0m
+10:28:26.552070 --> [0;32mI (184296) ADC1_CH0: cali data: 0 mV[0m
+10:28:26.558272 --> [0;32mI (184296) ADC1_CH1: raw  data: 1822[0m
+10:28:26.562691 --> [0;32mI (184296) ADC1_CH1: cali data: 1322 mV[0m
+10:28:26.570237 --> [0;32mI (184296) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:26.577975 --> [0;32mI (184306) ADC1_CH1: converted temperature: 22.5 C[0m
+10:28:26.584506 --> [0;32mI (184306) ADC1_CH2: raw  data: 4095[0m
+10:28:26.589495 --> [0;32mI (184316) ADC1_CH2: cali data: 2875 mV[0m
+10:28:26.594717 --> [0;32mI (184316) ADC1_CH3: raw  data: 1823[0m
+10:28:26.600259 --> [0;32mI (184326) ADC1_CH3: cali data: 1323 mV[0m
+10:28:26.602713 --> [0;32mI (184326) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:26.604108 --> [0;32mI (184336) ADC1_CH3: converted temperature: 22.0 C[0m
+10:28:26.605846 --> [0;32mI (184336) ADC1_CH4: raw  data: 1815[0m
+10:28:26.608192 --> [0;32mI (184346) ADC1_CH4: cali data: 1317 mV[0m
+10:28:26.609440 --> [0;32mI (184346) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:26.615285 --> [0;32mI (184356) ADC1_CH4: converted temperature: 22.3 C[0m
+10:28:26.619673 --> [0;32mI (184356) measurement: 2024-08-30T10:28:26+0300[0m
+10:28:26.624983 --> [0;32mI (184366) mqtt: sent publish successful, msg_id=29009[0m
+10:28:27.613817 --> [0;32mI (185366) ADC1_CH0: raw  data: 0[0m
+10:28:27.622928 --> [0;32mI (185366) ADC1_CH0: cali data: 0 mV[0m
+10:28:27.627499 --> [0;32mI (185366) ADC1_CH1: raw  data: 1807[0m
+10:28:27.632048 --> [0;32mI (185366) ADC1_CH1: cali data: 1312 mV[0m
+10:28:27.639583 --> [0;32mI (185366) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:27.646154 --> [0;32mI (185376) ADC1_CH1: converted temperature: 22.9 C[0m
+10:28:27.653593 --> [0;32mI (185376) ADC1_CH2: raw  data: 4095[0m
+10:28:27.658663 --> [0;32mI (185386) ADC1_CH2: cali data: 2875 mV[0m
+10:28:27.662942 --> [0;32mI (185386) ADC1_CH3: raw  data: 1806[0m
+10:28:27.668540 --> [0;32mI (185396) ADC1_CH3: cali data: 1311 mV[0m
+10:28:27.673635 --> [0;32mI (185396) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:27.676362 --> [0;32mI (185406) ADC1_CH3: converted temperature: 22.5 C[0m
+10:28:27.679098 --> [0;32mI (185406) ADC1_CH4: raw  data: 1790[0m
+10:28:27.680569 --> [0;32mI (185416) ADC1_CH4: cali data: 1298 mV[0m
+10:28:27.681645 --> [0;32mI (185416) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:27.685289 --> [0;32mI (185426) ADC1_CH4: converted temperature: 23.1 C[0m
+10:28:27.689729 --> [0;32mI (185426) measurement: 2024-08-30T10:28:27+0300[0m
+10:28:27.695256 --> [0;32mI (185436) mqtt: sent publish successful, msg_id=49559[0m
+10:28:28.683791 --> [0;32mI (186436) ADC1_CH0: raw  data: 0[0m
+10:28:28.690923 --> [0;32mI (186436) ADC1_CH0: cali data: 0 mV[0m
+10:28:28.695743 --> [0;32mI (186436) ADC1_CH1: raw  data: 1837[0m
+10:28:28.699714 --> [0;32mI (186436) ADC1_CH1: cali data: 1332 mV[0m
+10:28:28.703060 --> [0;32mI (186436) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:28.709970 --> [0;32mI (186446) ADC1_CH1: converted temperature: 22.2 C[0m
+10:28:28.713674 --> [0;32mI (186446) ADC1_CH2: raw  data: 4095[0m
+10:28:28.716685 --> [0;32mI (186456) ADC1_CH2: cali data: 2875 mV[0m
+10:28:28.721729 --> [0;32mI (186456) ADC1_CH3: raw  data: 1816[0m
+10:28:28.724942 --> [0;32mI (186466) ADC1_CH3: cali data: 1318 mV[0m
+10:28:28.728443 --> [0;32mI (186466) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:28.734616 --> [0;32mI (186476) ADC1_CH3: converted temperature: 22.2 C[0m
+10:28:28.740032 --> [0;32mI (186476) ADC1_CH4: raw  data: 1754[0m
+10:28:28.744728 --> [0;32mI (186486) ADC1_CH4: cali data: 1274 mV[0m
+10:28:28.748526 --> [0;32mI (186486) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:28.755331 --> [0;32mI (186496) ADC1_CH4: converted temperature: 24.1 C[0m
+10:28:28.759709 --> [0;32mI (186496) measurement: 2024-08-30T10:28:28+0300[0m
+10:28:28.765196 --> [0;32mI (186506) mqtt: sent publish successful, msg_id=56286[0m
+10:28:29.753831 --> [0;32mI (187506) ADC1_CH0: raw  data: 0[0m
+10:28:29.760880 --> [0;32mI (187506) ADC1_CH0: cali data: 0 mV[0m
+10:28:29.765344 --> [0;32mI (187506) ADC1_CH1: raw  data: 1819[0m
+10:28:29.768375 --> [0;32mI (187506) ADC1_CH1: cali data: 1320 mV[0m
+10:28:29.771872 --> [0;32mI (187506) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:29.779333 --> [0;32mI (187516) ADC1_CH1: converted temperature: 22.6 C[0m
+10:28:29.783219 --> [0;32mI (187516) ADC1_CH2: raw  data: 4095[0m
+10:28:29.786004 --> [0;32mI (187526) ADC1_CH2: cali data: 2875 mV[0m
+10:28:29.790787 --> [0;32mI (187526) ADC1_CH3: raw  data: 1836[0m
+10:28:29.795101 --> [0;32mI (187536) ADC1_CH3: cali data: 1332 mV[0m
+10:28:29.798578 --> [0;32mI (187536) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:29.805373 --> [0;32mI (187546) ADC1_CH3: converted temperature: 21.6 C[0m
+10:28:29.810002 --> [0;32mI (187546) ADC1_CH4: raw  data: 1805[0m
+10:28:29.814760 --> [0;32mI (187556) ADC1_CH4: cali data: 1309 mV[0m
+10:28:29.818556 --> [0;32mI (187556) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:29.825331 --> [0;32mI (187566) ADC1_CH4: converted temperature: 22.6 C[0m
+10:28:29.829717 --> [0;32mI (187566) measurement: 2024-08-30T10:28:29+0300[0m
+10:28:29.834683 --> [0;32mI (187576) mqtt: sent publish successful, msg_id=23525[0m
+10:28:30.823820 --> [0;32mI (188576) ADC1_CH0: raw  data: 0[0m
+10:28:30.831176 --> [0;32mI (188576) ADC1_CH0: cali data: 0 mV[0m
+10:28:30.836456 --> [0;32mI (188576) ADC1_CH1: raw  data: 1736[0m
+10:28:30.839859 --> [0;32mI (188576) ADC1_CH1: cali data: 1261 mV[0m
+10:28:30.844075 --> [0;32mI (188576) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:30.848022 --> [0;32mI (188586) ADC1_CH1: converted temperature: 24.6 C[0m
+10:28:30.855469 --> [0;32mI (188586) ADC1_CH2: raw  data: 4095[0m
+10:28:30.859877 --> [0;32mI (188596) ADC1_CH2: cali data: 2875 mV[0m
+10:28:30.863478 --> [0;32mI (188596) ADC1_CH3: raw  data: 1848[0m
+10:28:30.866271 --> [0;32mI (188606) ADC1_CH3: cali data: 1340 mV[0m
+10:28:30.868443 --> [0;32mI (188606) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:30.876597 --> [0;32mI (188616) ADC1_CH3: converted temperature: 21.3 C[0m
+10:28:30.880050 --> [0;32mI (188616) ADC1_CH4: raw  data: 1804[0m
+10:28:30.884756 --> [0;32mI (188626) ADC1_CH4: cali data: 1308 mV[0m
+10:28:30.888492 --> [0;32mI (188626) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:30.895366 --> [0;32mI (188636) ADC1_CH4: converted temperature: 22.7 C[0m
+10:28:30.899209 --> [0;32mI (188636) measurement: 2024-08-30T10:28:31+0300[0m
+10:28:30.905627 --> [0;32mI (188646) mqtt: sent publish successful, msg_id=30292[0m
+10:28:31.893870 --> [0;32mI (189646) ADC1_CH0: raw  data: 0[0m
+10:28:31.901231 --> [0;32mI (189646) ADC1_CH0: cali data: 0 mV[0m
+10:28:31.906217 --> [0;32mI (189646) ADC1_CH1: raw  data: 1807[0m
+10:28:31.910945 --> [0;32mI (189646) ADC1_CH1: cali data: 1312 mV[0m
+10:28:31.914077 --> [0;32mI (189646) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:31.919463 --> [0;32mI (189656) ADC1_CH1: converted temperature: 22.9 C[0m
+10:28:31.923425 --> [0;32mI (189656) ADC1_CH2: raw  data: 4095[0m
+10:28:31.927874 --> [0;32mI (189666) ADC1_CH2: cali data: 2875 mV[0m
+10:28:31.931326 --> [0;32mI (189666) ADC1_CH3: raw  data: 1818[0m
+10:28:31.935477 --> [0;32mI (189676) ADC1_CH3: cali data: 1320 mV[0m
+10:28:31.938737 --> [0;32mI (189676) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:31.944090 --> [0;32mI (189686) ADC1_CH3: converted temperature: 22.1 C[0m
+10:28:31.949640 --> [0;32mI (189686) ADC1_CH4: raw  data: 1821[0m
+10:28:31.955270 --> [0;32mI (189696) ADC1_CH4: cali data: 1322 mV[0m
+10:28:31.958186 --> [0;32mI (189696) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:31.965344 --> [0;32mI (189706) ADC1_CH4: converted temperature: 22.0 C[0m
+10:28:31.969710 --> [0;32mI (189706) measurement: 2024-08-30T10:28:32+0300[0m
+10:28:31.974748 --> [0;32mI (189716) mqtt: sent publish successful, msg_id=38755[0m
+10:28:32.963895 --> [0;32mI (190716) ADC1_CH0: raw  data: 107[0m
+10:28:32.970933 --> [0;32mI (190716) ADC1_CH0: cali data: 79 mV[0m
+10:28:32.976456 --> [0;32mI (190716) ADC1_CH1: raw  data: 1817[0m
+10:28:32.981866 --> [0;32mI (190716) ADC1_CH1: cali data: 1319 mV[0m
+10:28:32.984148 --> [0;32mI (190716) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:32.988032 --> [0;32mI (190726) ADC1_CH1: converted temperature: 22.7 C[0m
+10:28:32.994839 --> [0;32mI (190726) ADC1_CH2: raw  data: 4095[0m
+10:28:32.997835 --> [0;32mI (190736) ADC1_CH2: cali data: 2875 mV[0m
+10:28:33.001499 --> [0;32mI (190736) ADC1_CH3: raw  data: 1805[0m
+10:28:33.005624 --> [0;32mI (190746) ADC1_CH3: cali data: 1309 mV[0m
+10:28:33.008569 --> [0;32mI (190746) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:33.014778 --> [0;32mI (190756) ADC1_CH3: converted temperature: 22.6 C[0m
+10:28:33.019699 --> [0;32mI (190756) ADC1_CH4: raw  data: 1831[0m
+10:28:33.024933 --> [0;32mI (190766) ADC1_CH4: cali data: 1328 mV[0m
+10:28:33.029840 --> [0;32mI (190766) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:33.035853 --> [0;32mI (190776) ADC1_CH4: converted temperature: 21.8 C[0m
+10:28:33.041133 --> [0;32mI (190776) measurement: 2024-08-30T10:28:33+0300[0m
+10:28:33.044813 --> [0;32mI (190786) mqtt: sent publish successful, msg_id=5742[0m
+10:28:34.033885 --> [0;32mI (191786) ADC1_CH0: raw  data: 94[0m
+10:28:34.038510 --> [0;32mI (191786) ADC1_CH0: cali data: 70 mV[0m
+10:28:34.043732 --> [0;32mI (191786) ADC1_CH1: raw  data: 1800[0m
+10:28:34.047357 --> [0;32mI (191786) ADC1_CH1: cali data: 1306 mV[0m
+10:28:34.050900 --> [0;32mI (191786) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:34.057575 --> [0;32mI (191796) ADC1_CH1: converted temperature: 23.1 C[0m
+10:28:34.062253 --> [0;32mI (191796) ADC1_CH2: raw  data: 4095[0m
+10:28:34.066479 --> [0;32mI (191806) ADC1_CH2: cali data: 2875 mV[0m
+10:28:34.070273 --> [0;32mI (191806) ADC1_CH3: raw  data: 1817[0m
+10:28:34.075243 --> [0;32mI (191816) ADC1_CH3: cali data: 1319 mV[0m
+10:28:34.078548 --> [0;32mI (191816) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:34.084169 --> [0;32mI (191826) ADC1_CH3: converted temperature: 22.2 C[0m
+10:28:34.089802 --> [0;32mI (191826) ADC1_CH4: raw  data: 1789[0m
+10:28:34.095311 --> [0;32mI (191836) ADC1_CH4: cali data: 1297 mV[0m
+10:28:34.098132 --> [0;32mI (191836) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:34.105703 --> [0;32mI (191846) ADC1_CH4: converted temperature: 23.1 C[0m
+10:28:34.111130 --> [0;32mI (191846) measurement: 2024-08-30T10:28:34+0300[0m
+10:28:34.114804 --> [0;32mI (191856) mqtt: sent publish successful, msg_id=27404[0m
+10:28:35.103944 --> [0;32mI (192856) ADC1_CH0: raw  data: 0[0m
+10:28:35.111034 --> [0;32mI (192856) ADC1_CH0: cali data: 0 mV[0m
+10:28:35.115684 --> [0;32mI (192856) ADC1_CH1: raw  data: 1801[0m
+10:28:35.118999 --> [0;32mI (192856) ADC1_CH1: cali data: 1306 mV[0m
+10:28:35.122134 --> [0;32mI (192856) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:35.127309 --> [0;32mI (192866) ADC1_CH1: converted temperature: 23.1 C[0m
+10:28:35.133140 --> [0;32mI (192866) ADC1_CH2: raw  data: 4095[0m
+10:28:35.138633 --> [0;32mI (192876) ADC1_CH2: cali data: 2875 mV[0m
+10:28:35.142991 --> [0;32mI (192876) ADC1_CH3: raw  data: 1807[0m
+10:28:35.145782 --> [0;32mI (192886) ADC1_CH3: cali data: 1312 mV[0m
+10:28:35.148541 --> [0;32mI (192886) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:35.155467 --> [0;32mI (192896) ADC1_CH3: converted temperature: 22.5 C[0m
+10:28:35.159682 --> [0;32mI (192896) ADC1_CH4: raw  data: 1759[0m
+10:28:35.165208 --> [0;32mI (192906) ADC1_CH4: cali data: 1277 mV[0m
+10:28:35.168131 --> [0;32mI (192906) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:35.175408 --> [0;32mI (192916) ADC1_CH4: converted temperature: 23.9 C[0m
+10:28:35.179834 --> [0;32mI (192916) measurement: 2024-08-30T10:28:35+0300[0m
+10:28:35.184764 --> [0;32mI (192926) mqtt: sent publish successful, msg_id=60726[0m
+10:28:36.173955 --> [0;32mI (193926) ADC1_CH0: raw  data: 0[0m
+10:28:36.180871 --> [0;32mI (193926) ADC1_CH0: cali data: 0 mV[0m
+10:28:36.185592 --> [0;32mI (193926) ADC1_CH1: raw  data: 1820[0m
+10:28:36.188451 --> [0;32mI (193926) ADC1_CH1: cali data: 1321 mV[0m
+10:28:36.193778 --> [0;32mI (193926) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:36.196797 --> [0;32mI (193936) ADC1_CH1: converted temperature: 22.6 C[0m
+10:28:36.203262 --> [0;32mI (193936) ADC1_CH2: raw  data: 4079[0m
+10:28:36.208244 --> [0;32mI (193946) ADC1_CH2: cali data: 2865 mV[0m
+10:28:36.211425 --> [0;32mI (193946) ADC1_CH3: raw  data: 1834[0m
+10:28:36.215195 --> [0;32mI (193956) ADC1_CH3: cali data: 1330 mV[0m
+10:28:36.218590 --> [0;32mI (193956) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:36.224783 --> [0;32mI (193966) ADC1_CH3: converted temperature: 21.7 C[0m
+10:28:36.229707 --> [0;32mI (193966) ADC1_CH4: raw  data: 1832[0m
+10:28:36.236139 --> [0;32mI (193976) ADC1_CH4: cali data: 1329 mV[0m
+10:28:36.238117 --> [0;32mI (193976) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:36.245417 --> [0;32mI (193986) ADC1_CH4: converted temperature: 21.7 C[0m
+10:28:36.249297 --> [0;32mI (193986) measurement: 2024-08-30T10:28:36+0300[0m
+10:28:36.255780 --> [0;32mI (193996) mqtt: sent publish successful, msg_id=62641[0m
+10:28:37.244054 --> [0;32mI (194996) ADC1_CH0: raw  data: 9[0m
+10:28:37.251422 --> [0;32mI (194996) ADC1_CH0: cali data: 7 mV[0m
+10:28:37.256226 --> [0;32mI (194996) ADC1_CH1: raw  data: 1818[0m
+10:28:37.260830 --> [0;32mI (194996) ADC1_CH1: cali data: 1320 mV[0m
+10:28:37.264197 --> [0;32mI (194996) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:37.268243 --> [0;32mI (195006) ADC1_CH1: converted temperature: 22.6 C[0m
+10:28:37.275863 --> [0;32mI (195006) ADC1_CH2: raw  data: 4095[0m
+10:28:37.278655 --> [0;32mI (195016) ADC1_CH2: cali data: 2875 mV[0m
+10:28:37.281876 --> [0;32mI (195016) ADC1_CH3: raw  data: 1806[0m
+10:28:37.285993 --> [0;32mI (195026) ADC1_CH3: cali data: 1311 mV[0m
+10:28:37.288575 --> [0;32mI (195026) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:37.294757 --> [0;32mI (195036) ADC1_CH3: converted temperature: 22.5 C[0m
+10:28:37.299697 --> [0;32mI (195036) ADC1_CH4: raw  data: 1818[0m
+10:28:37.304808 --> [0;32mI (195046) ADC1_CH4: cali data: 1320 mV[0m
+10:28:37.308737 --> [0;32mI (195046) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:37.315433 --> [0;32mI (195056) ADC1_CH4: converted temperature: 22.1 C[0m
+10:28:37.319602 --> [0;32mI (195056) measurement: 2024-08-30T10:28:37+0300[0m
+10:28:37.324968 --> [0;32mI (195066) mqtt: sent publish successful, msg_id=46613[0m
+10:28:38.314054 --> [0;32mI (196066) ADC1_CH0: raw  data: 0[0m
+10:28:38.320968 --> [0;32mI (196066) ADC1_CH0: cali data: 0 mV[0m
+10:28:38.325048 --> [0;32mI (196066) ADC1_CH1: raw  data: 1833[0m
+10:28:38.328638 --> [0;32mI (196066) ADC1_CH1: cali data: 1329 mV[0m
+10:28:38.332113 --> [0;32mI (196066) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:38.337120 --> [0;32mI (196076) ADC1_CH1: converted temperature: 22.3 C[0m
+10:28:38.342443 --> [0;32mI (196076) ADC1_CH2: raw  data: 4095[0m
+10:28:38.346098 --> [0;32mI (196086) ADC1_CH2: cali data: 2875 mV[0m
+10:28:38.351176 --> [0;32mI (196086) ADC1_CH3: raw  data: 1835[0m
+10:28:38.355031 --> [0;32mI (196096) ADC1_CH3: cali data: 1331 mV[0m
+10:28:38.358569 --> [0;32mI (196096) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:38.364243 --> [0;32mI (196106) ADC1_CH3: converted temperature: 21.7 C[0m
+10:28:38.369699 --> [0;32mI (196106) ADC1_CH4: raw  data: 1851[0m
+10:28:38.374911 --> [0;32mI (196116) ADC1_CH4: cali data: 1342 mV[0m
+10:28:38.378685 --> [0;32mI (196116) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:38.385679 --> [0;32mI (196126) ADC1_CH4: converted temperature: 21.2 C[0m
+10:28:38.389400 --> [0;32mI (196126) measurement: 2024-08-30T10:28:38+0300[0m
+10:28:38.394916 --> [0;32mI (196136) mqtt: sent publish successful, msg_id=41307[0m
+10:28:39.383942 --> [0;32mI (197136) ADC1_CH0: raw  data: 0[0m
+10:28:39.391336 --> [0;32mI (197136) ADC1_CH0: cali data: 0 mV[0m
+10:28:39.395818 --> [0;32mI (197136) ADC1_CH1: raw  data: 1831[0m
+10:28:39.399097 --> [0;32mI (197136) ADC1_CH1: cali data: 1328 mV[0m
+10:28:39.402253 --> [0;32mI (197136) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:39.409436 --> [0;32mI (197146) ADC1_CH1: converted temperature: 22.3 C[0m
+10:28:39.413317 --> [0;32mI (197146) ADC1_CH2: raw  data: 4095[0m
+10:28:39.417908 --> [0;32mI (197156) ADC1_CH2: cali data: 2875 mV[0m
+10:28:39.423480 --> [0;32mI (197156) ADC1_CH3: raw  data: 1824[0m
+10:28:39.425670 --> [0;32mI (197166) ADC1_CH3: cali data: 1324 mV[0m
+10:28:39.428590 --> [0;32mI (197166) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:39.434187 --> [0;32mI (197176) ADC1_CH3: converted temperature: 22.0 C[0m
+10:28:39.439738 --> [0;32mI (197176) ADC1_CH4: raw  data: 1816[0m
+10:28:39.445174 --> [0;32mI (197186) ADC1_CH4: cali data: 1318 mV[0m
+10:28:39.448191 --> [0;32mI (197186) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:39.456240 --> [0;32mI (197196) ADC1_CH4: converted temperature: 22.2 C[0m
+10:28:39.459998 --> [0;32mI (197196) measurement: 2024-08-30T10:28:39+0300[0m
+10:28:39.465292 --> [0;32mI (197206) mqtt: sent publish successful, msg_id=64891[0m
+10:28:40.453846 --> [0;32mI (198206) ADC1_CH0: raw  data: 104[0m
+10:28:40.461177 --> [0;32mI (198206) ADC1_CH0: cali data: 77 mV[0m
+10:28:40.465895 --> [0;32mI (198206) ADC1_CH1: raw  data: 1815[0m
+10:28:40.468682 --> [0;32mI (198206) ADC1_CH1: cali data: 1317 mV[0m
+10:28:40.471871 --> [0;32mI (198206) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:40.477923 --> [0;32mI (198216) ADC1_CH1: converted temperature: 22.7 C[0m
+10:28:40.484981 --> [0;32mI (198216) ADC1_CH2: raw  data: 4095[0m
+10:28:40.488474 --> [0;32mI (198226) ADC1_CH2: cali data: 2875 mV[0m
+10:28:40.492888 --> [0;32mI (198226) ADC1_CH3: raw  data: 1768[0m
+10:28:40.495768 --> [0;32mI (198236) ADC1_CH3: cali data: 1284 mV[0m
+10:28:40.498717 --> [0;32mI (198236) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:40.505105 --> [0;32mI (198246) ADC1_CH3: converted temperature: 23.6 C[0m
+10:28:40.509785 --> [0;32mI (198246) ADC1_CH4: raw  data: 1801[0m
+10:28:40.514986 --> [0;32mI (198256) ADC1_CH4: cali data: 1306 mV[0m
+10:28:40.520081 --> [0;32mI (198256) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:40.525962 --> [0;32mI (198266) ADC1_CH4: converted temperature: 22.7 C[0m
+10:28:40.531175 --> [0;32mI (198266) measurement: 2024-08-30T10:28:40+0300[0m
+10:28:40.534913 --> [0;32mI (198276) mqtt: sent publish successful, msg_id=19712[0m
+10:28:41.523936 --> [0;32mI (199276) ADC1_CH0: raw  data: 0[0m
+10:28:41.533319 --> [0;32mI (199276) ADC1_CH0: cali data: 0 mV[0m
+10:28:41.539954 --> [0;32mI (199276) ADC1_CH1: raw  data: 1819[0m
+10:28:41.545164 --> [0;32mI (199276) ADC1_CH1: cali data: 1320 mV[0m
+10:28:41.553432 --> [0;32mI (199276) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:41.561014 --> [0;32mI (199286) ADC1_CH1: converted temperature: 22.6 C[0m
+10:28:41.568505 --> [0;32mI (199286) ADC1_CH2: raw  data: 4095[0m
+10:28:41.572431 --> [0;32mI (199296) ADC1_CH2: cali data: 2875 mV[0m
+10:28:41.577440 --> [0;32mI (199296) ADC1_CH3: raw  data: 1804[0m
+10:28:41.581016 --> [0;32mI (199306) ADC1_CH3: cali data: 1308 mV[0m
+10:28:41.583596 --> [0;32mI (199306) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:41.586176 --> [0;32mI (199316) ADC1_CH3: converted temperature: 22.7 C[0m
+10:28:41.587918 --> [0;32mI (199316) ADC1_CH4: raw  data: 1815[0m
+10:28:41.588931 --> [0;32mI (199326) ADC1_CH4: cali data: 1317 mV[0m
+10:28:41.590924 --> [0;32mI (199326) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:41.595487 --> [0;32mI (199336) ADC1_CH4: converted temperature: 22.3 C[0m
+10:28:41.599328 --> [0;32mI (199336) measurement: 2024-08-30T10:28:41+0300[0m
+10:28:41.605601 --> [0;32mI (199346) mqtt: sent publish successful, msg_id=61081[0m
+10:28:42.593983 --> [0;32mI (200346) ADC1_CH0: raw  data: 70[0m
+10:28:42.603260 --> [0;32mI (200346) ADC1_CH0: cali data: 52 mV[0m
+10:28:42.608210 --> [0;32mI (200346) ADC1_CH1: raw  data: 1800[0m
+10:28:42.612599 --> [0;32mI (200346) ADC1_CH1: cali data: 1306 mV[0m
+10:28:42.620210 --> [0;32mI (200346) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:42.627090 --> [0;32mI (200356) ADC1_CH1: converted temperature: 23.1 C[0m
+10:28:42.634122 --> [0;32mI (200356) ADC1_CH2: raw  data: 4095[0m
+10:28:42.639178 --> [0;32mI (200366) ADC1_CH2: cali data: 2875 mV[0m
+10:28:42.643234 --> [0;32mI (200366) ADC1_CH3: raw  data: 1818[0m
+10:28:42.648749 --> [0;32mI (200376) ADC1_CH3: cali data: 1320 mV[0m
+10:28:42.653157 --> [0;32mI (200376) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:42.655044 --> [0;32mI (200386) ADC1_CH3: converted temperature: 22.1 C[0m
+10:28:42.657832 --> [0;32mI (200386) ADC1_CH4: raw  data: 1815[0m
+10:28:42.658890 --> [0;32mI (200396) ADC1_CH4: cali data: 1317 mV[0m
+10:28:42.660589 --> [0;32mI (200396) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:42.665643 --> [0;32mI (200406) ADC1_CH4: converted temperature: 22.3 C[0m
+10:28:42.671242 --> [0;32mI (200406) measurement: 2024-08-30T10:28:42+0300[0m
+10:28:42.675286 --> [0;32mI (200416) mqtt: sent publish successful, msg_id=14735[0m
+10:28:43.664041 --> [0;32mI (201416) ADC1_CH0: raw  data: 0[0m
+10:28:43.671454 --> [0;32mI (201416) ADC1_CH0: cali data: 0 mV[0m
+10:28:43.677717 --> [0;32mI (201416) ADC1_CH1: raw  data: 1801[0m
+10:28:43.684322 --> [0;32mI (201416) ADC1_CH1: cali data: 1306 mV[0m
+10:28:43.687579 --> [0;32mI (201416) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:43.696346 --> [0;32mI (201426) ADC1_CH1: converted temperature: 23.1 C[0m
+10:28:43.701661 --> [0;32mI (201426) ADC1_CH2: raw  data: 4095[0m
+10:28:43.706682 --> [0;32mI (201436) ADC1_CH2: cali data: 2875 mV[0m
+10:28:43.712437 --> [0;32mI (201436) ADC1_CH3: raw  data: 1821[0m
+10:28:43.716350 --> [0;32mI (201446) ADC1_CH3: cali data: 1322 mV[0m
+10:28:43.719943 --> [0;32mI (201446) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:43.722169 --> [0;32mI (201456) ADC1_CH3: converted temperature: 22.0 C[0m
+10:28:43.723530 --> [0;32mI (201456) ADC1_CH4: raw  data: 1834[0m
+10:28:43.725782 --> [0;32mI (201466) ADC1_CH4: cali data: 1330 mV[0m
+10:28:43.728225 --> [0;32mI (201466) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:43.735528 --> [0;32mI (201476) ADC1_CH4: converted temperature: 21.7 C[0m
+10:28:43.739515 --> [0;32mI (201476) measurement: 2024-08-30T10:28:43+0300[0m
+10:28:43.745417 --> [0;32mI (201486) mqtt: sent publish successful, msg_id=7808[0m
+10:28:44.734008 --> [0;32mI (202486) ADC1_CH0: raw  data: 0[0m
+10:28:44.740057 --> [0;32mI (202486) ADC1_CH0: cali data: 0 mV[0m
+10:28:44.744816 --> [0;32mI (202486) ADC1_CH1: raw  data: 1821[0m
+10:28:44.751428 --> [0;32mI (202486) ADC1_CH1: cali data: 1322 mV[0m
+10:28:44.756527 --> [0;32mI (202486) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:44.763155 --> [0;32mI (202496) ADC1_CH1: converted temperature: 22.5 C[0m
+10:28:44.768567 --> [0;32mI (202496) ADC1_CH2: raw  data: 4095[0m
+10:28:44.772897 --> [0;32mI (202506) ADC1_CH2: cali data: 2875 mV[0m
+10:28:44.778129 --> [0;32mI (202506) ADC1_CH3: raw  data: 1831[0m
+10:28:44.784697 --> [0;32mI (202516) ADC1_CH3: cali data: 1328 mV[0m
+10:28:44.787559 --> [0;32mI (202516) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:44.789445 --> [0;32mI (202526) ADC1_CH3: converted temperature: 21.8 C[0m
+10:28:44.792184 --> [0;32mI (202526) ADC1_CH4: raw  data: 1806[0m
+10:28:44.794938 --> [0;32mI (202536) ADC1_CH4: cali data: 1311 mV[0m
+10:28:44.798262 --> [0;32mI (202536) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:44.805805 --> [0;32mI (202546) ADC1_CH4: converted temperature: 22.5 C[0m
+10:28:44.809525 --> [0;32mI (202546) measurement: 2024-08-30T10:28:44+0300[0m
+10:28:44.815047 --> [0;32mI (202556) mqtt: sent publish successful, msg_id=23578[0m
+10:28:45.804171 --> [0;32mI (203556) ADC1_CH0: raw  data: 0[0m
+10:28:45.813378 --> [0;32mI (203556) ADC1_CH0: cali data: 0 mV[0m
+10:28:45.819464 --> [0;32mI (203556) ADC1_CH1: raw  data: 1801[0m
+10:28:45.824273 --> [0;32mI (203556) ADC1_CH1: cali data: 1306 mV[0m
+10:28:45.830648 --> [0;32mI (203556) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:45.835670 --> [0;32mI (203566) ADC1_CH1: converted temperature: 23.1 C[0m
+10:28:45.843337 --> [0;32mI (203566) ADC1_CH2: raw  data: 4095[0m
+10:28:45.846837 --> [0;32mI (203576) ADC1_CH2: cali data: 2875 mV[0m
+10:28:45.851881 --> [0;32mI (203576) ADC1_CH3: raw  data: 1821[0m
+10:28:45.857338 --> [0;32mI (203586) ADC1_CH3: cali data: 1322 mV[0m
+10:28:45.859704 --> [0;32mI (203586) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:45.861111 --> [0;32mI (203596) ADC1_CH3: converted temperature: 22.0 C[0m
+10:28:45.863066 --> [0;32mI (203596) ADC1_CH4: raw  data: 1803[0m
+10:28:45.864966 --> [0;32mI (203606) ADC1_CH4: cali data: 1308 mV[0m
+10:28:45.868286 --> [0;32mI (203606) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:45.875549 --> [0;32mI (203616) ADC1_CH4: converted temperature: 22.7 C[0m
+10:28:45.879449 --> [0;32mI (203616) measurement: 2024-08-30T10:28:46+0300[0m
+10:28:45.886228 --> [0;32mI (203626) mqtt: sent publish successful, msg_id=28787[0m
+10:28:46.874034 --> [0;32mI (204626) ADC1_CH0: raw  data: 0[0m
+10:28:46.882500 --> [0;32mI (204626) ADC1_CH0: cali data: 0 mV[0m
+10:28:46.888654 --> [0;32mI (204626) ADC1_CH1: raw  data: 1803[0m
+10:28:46.893360 --> [0;32mI (204626) ADC1_CH1: cali data: 1308 mV[0m
+10:28:46.899604 --> [0;32mI (204626) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:46.905959 --> [0;32mI (204636) ADC1_CH1: converted temperature: 23.0 C[0m
+10:28:46.913718 --> [0;32mI (204636) ADC1_CH2: raw  data: 4095[0m
+10:28:46.917637 --> [0;32mI (204646) ADC1_CH2: cali data: 2875 mV[0m
+10:28:46.922828 --> [0;32mI (204646) ADC1_CH3: raw  data: 1817[0m
+10:28:46.928739 --> [0;32mI (204656) ADC1_CH3: cali data: 1319 mV[0m
+10:28:46.931062 --> [0;32mI (204656) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:46.932868 --> [0;32mI (204666) ADC1_CH3: converted temperature: 22.2 C[0m
+10:28:46.935037 --> [0;32mI (204666) ADC1_CH4: raw  data: 1803[0m
+10:28:46.936227 --> [0;32mI (204676) ADC1_CH4: cali data: 1308 mV[0m
+10:28:46.938394 --> [0;32mI (204676) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:46.945562 --> [0;32mI (204686) ADC1_CH4: converted temperature: 22.7 C[0m
+10:28:46.949411 --> [0;32mI (204686) measurement: 2024-08-30T10:28:47+0300[0m
+10:28:46.955550 --> [0;32mI (204696) mqtt: sent publish successful, msg_id=64474[0m
+10:28:47.943533 --> [0;32mI (205696) ADC1_CH0: raw  data: 0[0m
+10:28:47.947132 --> [0;32mI (205696) ADC1_CH0: cali data: 0 mV[0m
+10:28:47.950204 --> [0;32mI (205696) ADC1_CH1: raw  data: 1817[0m
+10:28:47.955297 --> [0;32mI (205696) ADC1_CH1: cali data: 1319 mV[0m
+10:28:47.961096 --> [0;32mI (205696) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:47.967242 --> [0;32mI (205706) ADC1_CH1: converted temperature: 22.7 C[0m
+10:28:47.978149 --> [0;32mI (205706) ADC1_CH2: raw  data: 4095[0m
+10:28:47.981283 --> [0;32mI (205716) ADC1_CH2: cali data: 2875 mV[0m
+10:28:47.987204 --> [0;32mI (205716) ADC1_CH3: raw  data: 1752[0m
+10:28:47.989612 --> [0;32mI (205726) ADC1_CH3: cali data: 1273 mV[0m
+10:28:47.991391 --> [0;32mI (205726) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:47.994363 --> [0;32mI (205736) ADC1_CH3: converted temperature: 24.1 C[0m
+10:28:48.000440 --> [0;32mI (205736) ADC1_CH4: raw  data: 1807[0m
+10:28:48.005063 --> [0;32mI (205746) ADC1_CH4: cali data: 1312 mV[0m
+10:28:48.008300 --> [0;32mI (205746) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:48.015575 --> [0;32mI (205756) ADC1_CH4: converted temperature: 22.5 C[0m
+10:28:48.020357 --> [0;32mI (205756) measurement: 2024-08-30T10:28:48+0300[0m
+10:28:48.025040 --> [0;32mI (205766) mqtt: sent publish successful, msg_id=26747[0m
+10:28:49.014086 --> [0;32mI (206766) ADC1_CH0: raw  data: 0[0m
+10:28:49.024202 --> [0;32mI (206766) ADC1_CH0: cali data: 0 mV[0m
+10:28:49.031244 --> [0;32mI (206766) ADC1_CH1: raw  data: 1800[0m
+10:28:49.035348 --> [0;32mI (206766) ADC1_CH1: cali data: 1306 mV[0m
+10:28:49.045232 --> [0;32mI (206766) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:49.050913 --> [0;32mI (206776) ADC1_CH1: converted temperature: 23.1 C[0m
+10:28:49.057560 --> [0;32mI (206776) ADC1_CH2: raw  data: 4095[0m
+10:28:49.062669 --> [0;32mI (206786) ADC1_CH2: cali data: 2875 mV[0m
+10:28:49.068680 --> [0;32mI (206786) ADC1_CH3: raw  data: 1804[0m
+10:28:49.073212 --> [0;32mI (206796) ADC1_CH3: cali data: 1308 mV[0m
+10:28:49.074310 --> [0;32mI (206796) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:49.076106 --> [0;32mI (206806) ADC1_CH3: converted temperature: 22.7 C[0m
+10:28:49.078743 --> [0;32mI (206806) ADC1_CH4: raw  data: 1819[0m
+10:28:49.079812 --> [0;32mI (206816) ADC1_CH4: cali data: 1320 mV[0m
+10:28:49.081499 --> [0;32mI (206816) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:49.085610 --> [0;32mI (206826) ADC1_CH4: converted temperature: 22.1 C[0m
+10:28:49.089701 --> [0;32mI (206826) measurement: 2024-08-30T10:28:49+0300[0m
+10:28:49.095536 --> [0;32mI (206836) mqtt: sent publish successful, msg_id=31881[0m
+10:28:50.083891 --> [0;32mI (207836) ADC1_CH0: raw  data: 8[0m
+10:28:50.094629 --> [0;32mI (207836) ADC1_CH0: cali data: 6 mV[0m
+10:28:50.099832 --> [0;32mI (207836) ADC1_CH1: raw  data: 1819[0m
+10:28:50.105460 --> [0;32mI (207836) ADC1_CH1: cali data: 1320 mV[0m
+10:28:50.113687 --> [0;32mI (207836) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:50.118705 --> [0;32mI (207846) ADC1_CH1: converted temperature: 22.6 C[0m
+10:28:50.126683 --> [0;32mI (207846) ADC1_CH2: raw  data: 4095[0m
+10:28:50.133121 --> [0;32mI (207856) ADC1_CH2: cali data: 2875 mV[0m
+10:28:50.138702 --> [0;32mI (207856) ADC1_CH3: raw  data: 1817[0m
+10:28:50.141066 --> [0;32mI (207866) ADC1_CH3: cali data: 1319 mV[0m
+10:28:50.142592 --> [0;32mI (207866) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:50.145650 --> [0;32mI (207876) ADC1_CH3: converted temperature: 22.2 C[0m
+10:28:50.147010 --> [0;32mI (207876) ADC1_CH4: raw  data: 1804[0m
+10:28:50.148682 --> [0;32mI (207886) ADC1_CH4: cali data: 1308 mV[0m
+10:28:50.149807 --> [0;32mI (207886) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:50.155618 --> [0;32mI (207896) ADC1_CH4: converted temperature: 22.7 C[0m
+10:28:50.159509 --> [0;32mI (207896) measurement: 2024-08-30T10:28:50+0300[0m
+10:28:50.165508 --> [0;32mI (207906) mqtt: sent publish successful, msg_id=4314[0m
+10:28:51.154088 --> [0;32mI (208906) ADC1_CH0: raw  data: 0[0m
+10:28:51.163184 --> [0;32mI (208906) ADC1_CH0: cali data: 0 mV[0m
+10:28:51.169850 --> [0;32mI (208906) ADC1_CH1: raw  data: 1807[0m
+10:28:51.176811 --> [0;32mI (208906) ADC1_CH1: cali data: 1312 mV[0m
+10:28:51.183211 --> [0;32mI (208906) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:51.191909 --> [0;32mI (208916) ADC1_CH1: converted temperature: 22.9 C[0m
+10:28:51.197707 --> [0;32mI (208916) ADC1_CH2: raw  data: 4095[0m
+10:28:51.204280 --> [0;32mI (208926) ADC1_CH2: cali data: 2875 mV[0m
+10:28:51.208294 --> [0;32mI (208926) ADC1_CH3: raw  data: 1787[0m
+10:28:51.210922 --> [0;32mI (208936) ADC1_CH3: cali data: 1297 mV[0m
+10:28:51.212386 --> [0;32mI (208936) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:51.215285 --> [0;32mI (208946) ADC1_CH3: converted temperature: 23.1 C[0m
+10:28:51.216620 --> [0;32mI (208946) ADC1_CH4: raw  data: 1771[0m
+10:28:51.218049 --> [0;32mI (208956) ADC1_CH4: cali data: 1285 mV[0m
+10:28:51.219440 --> [0;32mI (208956) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:51.225597 --> [0;32mI (208966) ADC1_CH4: converted temperature: 23.6 C[0m
+10:28:51.229446 --> [0;32mI (208966) measurement: 2024-08-30T10:28:51+0300[0m
+10:28:51.235068 --> [0;32mI (208976) mqtt: sent publish successful, msg_id=16143[0m
+10:28:52.224107 --> [0;32mI (209976) ADC1_CH0: raw  data: 0[0m
+10:28:52.233502 --> [0;32mI (209976) ADC1_CH0: cali data: 0 mV[0m
+10:28:52.238940 --> [0;32mI (209976) ADC1_CH1: raw  data: 1816[0m
+10:28:52.244998 --> [0;32mI (209976) ADC1_CH1: cali data: 1318 mV[0m
+10:28:52.251074 --> [0;32mI (209976) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:52.260774 --> [0;32mI (209986) ADC1_CH1: converted temperature: 22.7 C[0m
+10:28:52.269575 --> [0;32mI (209986) ADC1_CH2: raw  data: 4095[0m
+10:28:52.274508 --> [0;32mI (209996) ADC1_CH2: cali data: 2875 mV[0m
+10:28:52.278823 --> [0;32mI (209996) ADC1_CH3: raw  data: 1821[0m
+10:28:52.282730 --> [0;32mI (210006) ADC1_CH3: cali data: 1322 mV[0m
+10:28:52.283842 --> [0;32mI (210006) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:52.286597 --> [0;32mI (210016) ADC1_CH3: converted temperature: 22.0 C[0m
+10:28:52.288323 --> [0;32mI (210016) ADC1_CH4: raw  data: 1824[0m
+10:28:52.289367 --> [0;32mI (210026) ADC1_CH4: cali data: 1324 mV[0m
+10:28:52.291059 --> [0;32mI (210026) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:52.295628 --> [0;32mI (210036) ADC1_CH4: converted temperature: 22.0 C[0m
+10:28:52.299509 --> [0;32mI (210036) measurement: 2024-08-30T10:28:52+0300[0m
+10:28:52.304995 --> [0;32mI (210046) mqtt: sent publish successful, msg_id=6361[0m
+10:28:53.294107 --> [0;32mI (211046) ADC1_CH0: raw  data: 0[0m
+10:28:53.301359 --> [0;32mI (211046) ADC1_CH0: cali data: 0 mV[0m
+10:28:53.309816 --> [0;32mI (211046) ADC1_CH1: raw  data: 1831[0m
+10:28:53.314852 --> [0;32mI (211046) ADC1_CH1: cali data: 1328 mV[0m
+10:28:53.321022 --> [0;32mI (211046) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:53.329221 --> [0;32mI (211056) ADC1_CH1: converted temperature: 22.3 C[0m
+10:28:53.336460 --> [0;32mI (211056) ADC1_CH2: raw  data: 4095[0m
+10:28:53.342184 --> [0;32mI (211066) ADC1_CH2: cali data: 2875 mV[0m
+10:28:53.345983 --> [0;32mI (211066) ADC1_CH3: raw  data: 1807[0m
+10:28:53.351066 --> [0;32mI (211076) ADC1_CH3: cali data: 1312 mV[0m
+10:28:53.352806 --> [0;32mI (211076) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:53.354378 --> [0;32mI (211086) ADC1_CH3: converted temperature: 22.5 C[0m
+10:28:53.356163 --> [0;32mI (211086) ADC1_CH4: raw  data: 1806[0m
+10:28:53.358786 --> [0;32mI (211096) ADC1_CH4: cali data: 1311 mV[0m
+10:28:53.359887 --> [0;32mI (211096) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:53.365632 --> [0;32mI (211106) ADC1_CH4: converted temperature: 22.5 C[0m
+10:28:53.369517 --> [0;32mI (211106) measurement: 2024-08-30T10:28:53+0300[0m
+10:28:53.375082 --> [0;32mI (211116) mqtt: sent publish successful, msg_id=40890[0m
+10:28:54.364163 --> [0;32mI (212116) ADC1_CH0: raw  data: 0[0m
+10:28:54.373808 --> [0;32mI (212116) ADC1_CH0: cali data: 0 mV[0m
+10:28:54.379346 --> [0;32mI (212116) ADC1_CH1: raw  data: 1821[0m
+10:28:54.384301 --> [0;32mI (212116) ADC1_CH1: cali data: 1322 mV[0m
+10:28:54.389618 --> [0;32mI (212116) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:54.396112 --> [0;32mI (212126) ADC1_CH1: converted temperature: 22.5 C[0m
+10:28:54.405780 --> [0;32mI (212126) ADC1_CH2: raw  data: 4095[0m
+10:28:54.409505 --> [0;32mI (212136) ADC1_CH2: cali data: 2875 mV[0m
+10:28:54.414719 --> [0;32mI (212136) ADC1_CH3: raw  data: 1784[0m
+10:28:54.420949 --> [0;32mI (212146) ADC1_CH3: cali data: 1296 mV[0m
+10:28:54.423981 --> [0;32mI (212146) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:54.426688 --> [0;32mI (212156) ADC1_CH3: converted temperature: 23.2 C[0m
+10:28:54.428374 --> [0;32mI (212156) ADC1_CH4: raw  data: 1758[0m
+10:28:54.430780 --> [0;32mI (212166) ADC1_CH4: cali data: 1276 mV[0m
+10:28:54.431887 --> [0;32mI (212166) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:54.435639 --> [0;32mI (212176) ADC1_CH4: converted temperature: 24.0 C[0m
+10:28:54.439572 --> [0;32mI (212176) measurement: 2024-08-30T10:28:54+0300[0m
+10:28:54.445044 --> [0;32mI (212186) mqtt: sent publish successful, msg_id=40247[0m
+10:28:55.434159 --> [0;32mI (213186) ADC1_CH0: raw  data: 0[0m
+10:28:55.441380 --> [0;32mI (213186) ADC1_CH0: cali data: 0 mV[0m
+10:28:55.446942 --> [0;32mI (213186) ADC1_CH1: raw  data: 1805[0m
+10:28:55.452042 --> [0;32mI (213186) ADC1_CH1: cali data: 1309 mV[0m
+10:28:55.458296 --> [0;32mI (213186) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:55.467922 --> [0;32mI (213196) ADC1_CH1: converted temperature: 23.0 C[0m
+10:28:55.473742 --> [0;32mI (213196) ADC1_CH2: raw  data: 4095[0m
+10:28:55.477835 --> [0;32mI (213206) ADC1_CH2: cali data: 2875 mV[0m
+10:28:55.483447 --> [0;32mI (213206) ADC1_CH3: raw  data: 1799[0m
+10:28:55.488169 --> [0;32mI (213216) ADC1_CH3: cali data: 1306 mV[0m
+10:28:55.492685 --> [0;32mI (213216) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:55.495584 --> [0;32mI (213226) ADC1_CH3: converted temperature: 22.7 C[0m
+10:28:55.496892 --> [0;32mI (213226) ADC1_CH4: raw  data: 1801[0m
+10:28:55.498529 --> [0;32mI (213236) ADC1_CH4: cali data: 1306 mV[0m
+10:28:55.499656 --> [0;32mI (213236) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:55.505855 --> [0;32mI (213246) ADC1_CH4: converted temperature: 22.7 C[0m
+10:28:55.509540 --> [0;32mI (213246) measurement: 2024-08-30T10:28:55+0300[0m
+10:28:55.515091 --> [0;32mI (213256) mqtt: sent publish successful, msg_id=22312[0m
+10:28:56.504053 --> [0;32mI (214256) ADC1_CH0: raw  data: 0[0m
+10:28:56.508323 --> [0;32mI (214256) ADC1_CH0: cali data: 0 mV[0m
+10:28:56.513616 --> [0;32mI (214256) ADC1_CH1: raw  data: 1818[0m
+10:28:56.519817 --> [0;32mI (214256) ADC1_CH1: cali data: 1320 mV[0m
+10:28:56.524571 --> [0;32mI (214256) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:56.531063 --> [0;32mI (214266) ADC1_CH1: converted temperature: 22.6 C[0m
+10:28:56.536812 --> [0;32mI (214266) ADC1_CH2: raw  data: 4095[0m
+10:28:56.542037 --> [0;32mI (214276) ADC1_CH2: cali data: 2875 mV[0m
+10:28:56.547108 --> [0;32mI (214276) ADC1_CH3: raw  data: 1832[0m
+10:28:56.549602 --> [0;32mI (214286) ADC1_CH3: cali data: 1329 mV[0m
+10:28:56.551145 --> [0;32mI (214286) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:56.554624 --> [0;32mI (214296) ADC1_CH3: converted temperature: 21.7 C[0m
+10:28:56.560526 --> [0;32mI (214296) ADC1_CH4: raw  data: 1799[0m
+10:28:56.565095 --> [0;32mI (214306) ADC1_CH4: cali data: 1306 mV[0m
+10:28:56.568911 --> [0;32mI (214306) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:56.575705 --> [0;32mI (214316) ADC1_CH4: converted temperature: 22.7 C[0m
+10:28:56.579636 --> [0;32mI (214316) measurement: 2024-08-30T10:28:56+0300[0m
+10:28:56.585599 --> [0;32mI (214326) mqtt: sent publish successful, msg_id=41074[0m
+10:28:57.573962 --> [0;32mI (215326) ADC1_CH0: raw  data: 0[0m
+10:28:57.578812 --> [0;32mI (215326) ADC1_CH0: cali data: 0 mV[0m
+10:28:57.584616 --> [0;32mI (215326) ADC1_CH1: raw  data: 1770[0m
+10:28:57.587712 --> [0;32mI (215326) ADC1_CH1: cali data: 1285 mV[0m
+10:28:57.593754 --> [0;32mI (215326) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:57.599871 --> [0;32mI (215336) ADC1_CH1: converted temperature: 23.8 C[0m
+10:28:57.605844 --> [0;32mI (215336) ADC1_CH2: raw  data: 4095[0m
+10:28:57.610254 --> [0;32mI (215346) ADC1_CH2: cali data: 2875 mV[0m
+10:28:57.613580 --> [0;32mI (215346) ADC1_CH3: raw  data: 1819[0m
+10:28:57.617780 --> [0;32mI (215356) ADC1_CH3: cali data: 1320 mV[0m
+10:28:57.619960 --> [0;32mI (215356) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:57.624607 --> [0;32mI (215366) ADC1_CH3: converted temperature: 22.1 C[0m
+10:28:57.630574 --> [0;32mI (215366) ADC1_CH4: raw  data: 1815[0m
+10:28:57.635507 --> [0;32mI (215376) ADC1_CH4: cali data: 1317 mV[0m
+10:28:57.638501 --> [0;32mI (215376) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:57.645708 --> [0;32mI (215386) ADC1_CH4: converted temperature: 22.3 C[0m
+10:28:57.650542 --> [0;32mI (215386) measurement: 2024-08-30T10:28:57+0300[0m
+10:28:57.655461 --> [0;32mI (215396) mqtt: sent publish successful, msg_id=27481[0m
+10:28:58.643894 --> [0;32mI (216396) ADC1_CH0: raw  data: 0[0m
+10:28:58.651159 --> [0;32mI (216396) ADC1_CH0: cali data: 0 mV[0m
+10:28:58.657254 --> [0;32mI (216396) ADC1_CH1: raw  data: 1836[0m
+10:28:58.664236 --> [0;32mI (216396) ADC1_CH1: cali data: 1332 mV[0m
+10:28:58.668312 --> [0;32mI (216396) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:58.676915 --> [0;32mI (216406) ADC1_CH1: converted temperature: 22.2 C[0m
+10:28:58.684519 --> [0;32mI (216406) ADC1_CH2: raw  data: 4095[0m
+10:28:58.687677 --> [0;32mI (216416) ADC1_CH2: cali data: 2875 mV[0m
+10:28:58.692573 --> [0;32mI (216416) ADC1_CH3: raw  data: 1837[0m
+10:28:58.697843 --> [0;32mI (216426) ADC1_CH3: cali data: 1332 mV[0m
+10:28:58.699010 --> [0;32mI (216426) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:58.700821 --> [0;32mI (216436) ADC1_CH3: converted temperature: 21.6 C[0m
+10:28:58.702780 --> [0;32mI (216436) ADC1_CH4: raw  data: 1821[0m
+10:28:58.705264 --> [0;32mI (216446) ADC1_CH4: cali data: 1322 mV[0m
+10:28:58.709021 --> [0;32mI (216446) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:58.715724 --> [0;32mI (216456) ADC1_CH4: converted temperature: 22.0 C[0m
+10:28:58.720552 --> [0;32mI (216456) measurement: 2024-08-30T10:28:58+0300[0m
+10:28:58.725820 --> [0;32mI (216466) mqtt: sent publish successful, msg_id=28916[0m
+10:28:59.714288 --> [0;32mI (217466) ADC1_CH0: raw  data: 62[0m
+10:28:59.720335 --> [0;32mI (217466) ADC1_CH0: cali data: 47 mV[0m
+10:28:59.725622 --> [0;32mI (217466) ADC1_CH1: raw  data: 1805[0m
+10:28:59.732057 --> [0;32mI (217466) ADC1_CH1: cali data: 1309 mV[0m
+10:28:59.737772 --> [0;32mI (217466) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:28:59.745987 --> [0;32mI (217476) ADC1_CH1: converted temperature: 23.0 C[0m
+10:28:59.752917 --> [0;32mI (217476) ADC1_CH2: raw  data: 4095[0m
+10:28:59.758781 --> [0;32mI (217486) ADC1_CH2: cali data: 2875 mV[0m
+10:28:59.763218 --> [0;32mI (217486) ADC1_CH3: raw  data: 1821[0m
+10:28:59.768040 --> [0;32mI (217496) ADC1_CH3: cali data: 1322 mV[0m
+10:28:59.770807 --> [0;32mI (217496) ADC1_CH3: using thermistor model: TH113H103[0m
+10:28:59.772660 --> [0;32mI (217506) ADC1_CH3: converted temperature: 22.0 C[0m
+10:28:59.775442 --> [0;32mI (217506) ADC1_CH4: raw  data: 1848[0m
+10:28:59.776629 --> [0;32mI (217516) ADC1_CH4: cali data: 1340 mV[0m
+10:28:59.778567 --> [0;32mI (217516) ADC1_CH4: using thermistor model: TH113H103[0m
+10:28:59.786050 --> [0;32mI (217526) ADC1_CH4: converted temperature: 21.3 C[0m
+10:28:59.792174 --> [0;32mI (217526) measurement: 2024-08-30T10:28:59+0300[0m
+10:28:59.795759 --> [0;32mI (217536) mqtt: sent publish successful, msg_id=30529[0m
+10:29:00.784011 --> [0;32mI (218536) ADC1_CH0: raw  data: 0[0m
+10:29:00.788974 --> [0;32mI (218536) ADC1_CH0: cali data: 0 mV[0m
+10:29:00.793602 --> [0;32mI (218536) ADC1_CH1: raw  data: 1815[0m
+10:29:00.799008 --> [0;32mI (218536) ADC1_CH1: cali data: 1317 mV[0m
+10:29:00.803785 --> [0;32mI (218536) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:00.809057 --> [0;32mI (218546) ADC1_CH1: converted temperature: 22.7 C[0m
+10:29:00.813817 --> [0;32mI (218546) ADC1_CH2: raw  data: 4095[0m
+10:29:00.819259 --> [0;32mI (218556) ADC1_CH2: cali data: 2875 mV[0m
+10:29:00.821213 --> [0;32mI (218556) ADC1_CH3: raw  data: 1804[0m
+10:29:00.825343 --> [0;32mI (218566) ADC1_CH3: cali data: 1308 mV[0m
+10:29:00.828881 --> [0;32mI (218566) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:00.834551 --> [0;32mI (218576) ADC1_CH3: converted temperature: 22.7 C[0m
+10:29:00.840664 --> [0;32mI (218576) ADC1_CH4: raw  data: 1785[0m
+10:29:00.845179 --> [0;32mI (218586) ADC1_CH4: cali data: 1296 mV[0m
+10:29:00.848472 --> [0;32mI (218586) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:00.855745 --> [0;32mI (218596) ADC1_CH4: converted temperature: 23.2 C[0m
+10:29:00.860153 --> [0;32mI (218596) measurement: 2024-08-30T10:29:00+0300[0m
+10:29:00.865108 --> [0;32mI (218606) mqtt: sent publish successful, msg_id=34478[0m
+10:29:01.854009 --> [0;32mI (219606) ADC1_CH0: raw  data: 0[0m
+10:29:01.858698 --> [0;32mI (219606) ADC1_CH0: cali data: 0 mV[0m
+10:29:01.864153 --> [0;32mI (219606) ADC1_CH1: raw  data: 1805[0m
+10:29:01.869628 --> [0;32mI (219606) ADC1_CH1: cali data: 1309 mV[0m
+10:29:01.872290 --> [0;32mI (219606) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:01.877995 --> [0;32mI (219616) ADC1_CH1: converted temperature: 23.0 C[0m
+10:29:01.883560 --> [0;32mI (219616) ADC1_CH2: raw  data: 4095[0m
+10:29:01.886865 --> [0;32mI (219626) ADC1_CH2: cali data: 2875 mV[0m
+10:29:01.891668 --> [0;32mI (219626) ADC1_CH3: raw  data: 1824[0m
+10:29:01.895429 --> [0;32mI (219636) ADC1_CH3: cali data: 1324 mV[0m
+10:29:01.898913 --> [0;32mI (219636) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:01.904644 --> [0;32mI (219646) ADC1_CH3: converted temperature: 22.0 C[0m
+10:29:01.910069 --> [0;32mI (219646) ADC1_CH4: raw  data: 1786[0m
+10:29:01.915194 --> [0;32mI (219656) ADC1_CH4: cali data: 1296 mV[0m
+10:29:01.919135 --> [0;32mI (219656) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:01.925773 --> [0;32mI (219666) ADC1_CH4: converted temperature: 23.2 C[0m
+10:29:01.929696 --> [0;32mI (219666) measurement: 2024-08-30T10:29:02+0300[0m
+10:29:01.935149 --> [0;32mI (219676) mqtt: sent publish successful, msg_id=36822[0m
+10:29:02.924235 --> [0;32mI (220676) ADC1_CH0: raw  data: 0[0m
+10:29:02.933481 --> [0;32mI (220676) ADC1_CH0: cali data: 0 mV[0m
+10:29:02.939276 --> [0;32mI (220676) ADC1_CH1: raw  data: 1835[0m
+10:29:02.944452 --> [0;32mI (220676) ADC1_CH1: cali data: 1331 mV[0m
+10:29:02.951104 --> [0;32mI (220676) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:02.958753 --> [0;32mI (220686) ADC1_CH1: converted temperature: 22.2 C[0m
+10:29:02.969411 --> [0;32mI (220686) ADC1_CH2: raw  data: 4095[0m
+10:29:02.973522 --> [0;32mI (220696) ADC1_CH2: cali data: 2875 mV[0m
+10:29:02.978517 --> [0;32mI (220696) ADC1_CH3: raw  data: 1849[0m
+10:29:02.984968 --> [0;32mI (220706) ADC1_CH3: cali data: 1341 mV[0m
+10:29:02.988469 --> [0;32mI (220706) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:02.989928 --> [0;32mI (220716) ADC1_CH3: converted temperature: 21.2 C[0m
+10:29:02.991665 --> [0;32mI (220716) ADC1_CH4: raw  data: 1801[0m
+10:29:02.993771 --> [0;32mI (220726) ADC1_CH4: cali data: 1306 mV[0m
+10:29:02.994904 --> [0;32mI (220726) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:02.996954 --> [0;32mI (220736) ADC1_CH4: converted temperature: 22.7 C[0m
+10:29:02.999666 --> [0;32mI (220736) measurement: 2024-08-30T10:29:03+0300[0m
+10:29:03.005131 --> [0;32mI (220746) mqtt: sent publish successful, msg_id=27787[0m
+10:29:03.994274 --> [0;32mI (221746) ADC1_CH0: raw  data: 0[0m
+10:29:03.998905 --> [0;32mI (221746) ADC1_CH0: cali data: 0 mV[0m
+10:29:04.003691 --> [0;32mI (221746) ADC1_CH1: raw  data: 1823[0m
+10:29:04.008994 --> [0;32mI (221746) ADC1_CH1: cali data: 1323 mV[0m
+10:29:04.013553 --> [0;32mI (221746) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:04.019767 --> [0;32mI (221756) ADC1_CH1: converted temperature: 22.5 C[0m
+10:29:04.025827 --> [0;32mI (221756) ADC1_CH2: raw  data: 4095[0m
+10:29:04.027876 --> [0;32mI (221766) ADC1_CH2: cali data: 2875 mV[0m
+10:29:04.032256 --> [0;32mI (221766) ADC1_CH3: raw  data: 1816[0m
+10:29:04.035486 --> [0;32mI (221776) ADC1_CH3: cali data: 1318 mV[0m
+10:29:04.039026 --> [0;32mI (221776) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:04.045024 --> [0;32mI (221786) ADC1_CH3: converted temperature: 22.2 C[0m
+10:29:04.050033 --> [0;32mI (221786) ADC1_CH4: raw  data: 1838[0m
+10:29:04.055299 --> [0;32mI (221796) ADC1_CH4: cali data: 1333 mV[0m
+10:29:04.059042 --> [0;32mI (221796) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:04.065759 --> [0;32mI (221806) ADC1_CH4: converted temperature: 21.6 C[0m
+10:29:04.070939 --> [0;32mI (221806) measurement: 2024-08-30T10:29:04+0300[0m
+10:29:04.075213 --> [0;32mI (221816) mqtt: sent publish successful, msg_id=7991[0m
+10:29:05.064266 --> [0;32mI (222816) ADC1_CH0: raw  data: 0[0m
+10:29:05.073718 --> [0;32mI (222816) ADC1_CH0: cali data: 0 mV[0m
+10:29:05.079583 --> [0;32mI (222816) ADC1_CH1: raw  data: 1821[0m
+10:29:05.084526 --> [0;32mI (222816) ADC1_CH1: cali data: 1322 mV[0m
+10:29:05.090813 --> [0;32mI (222816) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:05.097902 --> [0;32mI (222826) ADC1_CH1: converted temperature: 22.5 C[0m
+10:29:05.107115 --> [0;32mI (222826) ADC1_CH2: raw  data: 4095[0m
+10:29:05.111974 --> [0;32mI (222836) ADC1_CH2: cali data: 2875 mV[0m
+10:29:05.116017 --> [0;32mI (222836) ADC1_CH3: raw  data: 1821[0m
+10:29:05.122737 --> [0;32mI (222846) ADC1_CH3: cali data: 1322 mV[0m
+10:29:05.126982 --> [0;32mI (222846) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:05.129363 --> [0;32mI (222856) ADC1_CH3: converted temperature: 22.0 C[0m
+10:29:05.131089 --> [0;32mI (222856) ADC1_CH4: raw  data: 1760[0m
+10:29:05.133730 --> [0;32mI (222866) ADC1_CH4: cali data: 1277 mV[0m
+10:29:05.134864 --> [0;32mI (222866) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:05.136784 --> [0;32mI (222876) ADC1_CH4: converted temperature: 23.9 C[0m
+10:29:05.140338 --> [0;32mI (222876) measurement: 2024-08-30T10:29:05+0300[0m
+10:29:05.145147 --> [0;32mI (222886) mqtt: sent publish successful, msg_id=37348[0m
+10:29:06.133945 --> [0;32mI (223886) ADC1_CH0: raw  data: 94[0m
+10:29:06.141036 --> [0;32mI (223886) ADC1_CH0: cali data: 70 mV[0m
+10:29:06.145500 --> [0;32mI (223886) ADC1_CH1: raw  data: 1807[0m
+10:29:06.148087 --> [0;32mI (223886) ADC1_CH1: cali data: 1312 mV[0m
+10:29:06.152245 --> [0;32mI (223886) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:06.156950 --> [0;32mI (223896) ADC1_CH1: converted temperature: 22.9 C[0m
+10:29:06.161955 --> [0;32mI (223896) ADC1_CH2: raw  data: 4095[0m
+10:29:06.166720 --> [0;32mI (223906) ADC1_CH2: cali data: 2875 mV[0m
+10:29:06.171231 --> [0;32mI (223906) ADC1_CH3: raw  data: 1805[0m
+10:29:06.175696 --> [0;32mI (223916) ADC1_CH3: cali data: 1309 mV[0m
+10:29:06.178977 --> [0;32mI (223916) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:06.184677 --> [0;32mI (223926) ADC1_CH3: converted temperature: 22.6 C[0m
+10:29:06.190099 --> [0;32mI (223926) ADC1_CH4: raw  data: 1804[0m
+10:29:06.195605 --> [0;32mI (223936) ADC1_CH4: cali data: 1308 mV[0m
+10:29:06.198638 --> [0;32mI (223936) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:06.205933 --> [0;32mI (223946) ADC1_CH4: converted temperature: 22.7 C[0m
+10:29:06.211528 --> [0;32mI (223946) measurement: 2024-08-30T10:29:06+0300[0m
+10:29:06.215176 --> [0;32mI (223956) mqtt: sent publish successful, msg_id=2839[0m
+10:29:07.204046 --> [0;32mI (224956) ADC1_CH0: raw  data: 93[0m
+10:29:07.211350 --> [0;32mI (224956) ADC1_CH0: cali data: 69 mV[0m
+10:29:07.219272 --> [0;32mI (224956) ADC1_CH1: raw  data: 1771[0m
+10:29:07.224407 --> [0;32mI (224956) ADC1_CH1: cali data: 1285 mV[0m
+10:29:07.232744 --> [0;32mI (224956) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:07.239230 --> [0;32mI (224966) ADC1_CH1: converted temperature: 23.8 C[0m
+10:29:07.247067 --> [0;32mI (224966) ADC1_CH2: raw  data: 4095[0m
+10:29:07.251702 --> [0;32mI (224976) ADC1_CH2: cali data: 2875 mV[0m
+10:29:07.256121 --> [0;32mI (224976) ADC1_CH3: raw  data: 1815[0m
+10:29:07.263262 --> [0;32mI (224986) ADC1_CH3: cali data: 1317 mV[0m
+10:29:07.266442 --> [0;32mI (224986) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:07.268236 --> [0;32mI (224996) ADC1_CH3: converted temperature: 22.3 C[0m
+10:29:07.269531 --> [0;32mI (224996) ADC1_CH4: raw  data: 1788[0m
+10:29:07.271235 --> [0;32mI (225006) ADC1_CH4: cali data: 1297 mV[0m
+10:29:07.272357 --> [0;32mI (225006) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:07.276005 --> [0;32mI (225016) ADC1_CH4: converted temperature: 23.1 C[0m
+10:29:07.281568 --> [0;32mI (225016) measurement: 2024-08-30T10:29:07+0300[0m
+10:29:07.285235 --> [0;32mI (225026) mqtt: sent publish successful, msg_id=17441[0m
+10:29:08.274085 --> [0;32mI (226026) ADC1_CH0: raw  data: 76[0m
+10:29:08.281240 --> [0;32mI (226026) ADC1_CH0: cali data: 57 mV[0m
+10:29:08.286759 --> [0;32mI (226026) ADC1_CH1: raw  data: 1819[0m
+10:29:08.292686 --> [0;32mI (226026) ADC1_CH1: cali data: 1320 mV[0m
+10:29:08.295572 --> [0;32mI (226026) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:08.303382 --> [0;32mI (226036) ADC1_CH1: converted temperature: 22.6 C[0m
+10:29:08.310794 --> [0;32mI (226036) ADC1_CH2: raw  data: 4094[0m
+10:29:08.312409 --> [0;32mI (226046) ADC1_CH2: cali data: 2875 mV[0m
+10:29:08.317560 --> [0;32mI (226046) ADC1_CH3: raw  data: 1819[0m
+10:29:08.322887 --> [0;32mI (226056) ADC1_CH3: cali data: 1320 mV[0m
+10:29:08.325399 --> [0;32mI (226056) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:08.327933 --> [0;32mI (226066) ADC1_CH3: converted temperature: 22.1 C[0m
+10:29:08.330128 --> [0;32mI (226066) ADC1_CH4: raw  data: 1767[0m
+10:29:08.335710 --> [0;32mI (226076) ADC1_CH4: cali data: 1283 mV[0m
+10:29:08.338651 --> [0;32mI (226076) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:08.346071 --> [0;32mI (226086) ADC1_CH4: converted temperature: 23.7 C[0m
+10:29:08.351576 --> [0;32mI (226086) measurement: 2024-08-30T10:29:08+0300[0m
+10:29:08.355295 --> [0;32mI (226096) mqtt: sent publish successful, msg_id=37083[0m
+10:29:09.344088 --> [0;32mI (227096) ADC1_CH0: raw  data: 0[0m
+10:29:09.348962 --> [0;32mI (227096) ADC1_CH0: cali data: 0 mV[0m
+10:29:09.354524 --> [0;32mI (227096) ADC1_CH1: raw  data: 1834[0m
+10:29:09.359505 --> [0;32mI (227096) ADC1_CH1: cali data: 1330 mV[0m
+10:29:09.362518 --> [0;32mI (227096) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:09.369196 --> [0;32mI (227106) ADC1_CH1: converted temperature: 22.3 C[0m
+10:29:09.375542 --> [0;32mI (227106) ADC1_CH2: raw  data: 4095[0m
+10:29:09.377931 --> [0;32mI (227116) ADC1_CH2: cali data: 2875 mV[0m
+10:29:09.382035 --> [0;32mI (227116) ADC1_CH3: raw  data: 1785[0m
+10:29:09.385523 --> [0;32mI (227126) ADC1_CH3: cali data: 1296 mV[0m
+10:29:09.389438 --> [0;32mI (227126) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:09.395167 --> [0;32mI (227136) ADC1_CH3: converted temperature: 23.2 C[0m
+10:29:09.400111 --> [0;32mI (227136) ADC1_CH4: raw  data: 1802[0m
+10:29:09.405635 --> [0;32mI (227146) ADC1_CH4: cali data: 1307 mV[0m
+10:29:09.408619 --> [0;32mI (227146) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:09.415842 --> [0;32mI (227156) ADC1_CH4: converted temperature: 22.7 C[0m
+10:29:09.420060 --> [0;32mI (227156) measurement: 2024-08-30T10:29:09+0300[0m
+10:29:09.425200 --> [0;32mI (227166) mqtt: sent publish successful, msg_id=19953[0m
+10:29:10.413778 --> [0;32mI (228166) ADC1_CH0: raw  data: 92[0m
+10:29:10.417042 --> [0;32mI (228166) ADC1_CH0: cali data: 68 mV[0m
+10:29:10.422412 --> [0;32mI (228166) ADC1_CH1: raw  data: 1815[0m
+10:29:10.426984 --> [0;32mI (228166) ADC1_CH1: cali data: 1317 mV[0m
+10:29:10.430766 --> [0;32mI (228166) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:10.437110 --> [0;32mI (228176) ADC1_CH1: converted temperature: 22.7 C[0m
+10:29:10.443012 --> [0;32mI (228176) ADC1_CH2: raw  data: 4095[0m
+10:29:10.445273 --> [0;32mI (228186) ADC1_CH2: cali data: 2875 mV[0m
+10:29:10.451116 --> [0;32mI (228186) ADC1_CH3: raw  data: 1802[0m
+10:29:10.458392 --> [0;32mI (228196) ADC1_CH3: cali data: 1307 mV[0m
+10:29:10.460110 --> [0;32mI (228196) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:10.465172 --> [0;32mI (228206) ADC1_CH3: converted temperature: 22.7 C[0m
+10:29:10.470173 --> [0;32mI (228206) ADC1_CH4: raw  data: 1853[0m
+10:29:10.475701 --> [0;32mI (228216) ADC1_CH4: cali data: 1344 mV[0m
+10:29:10.479149 --> [0;32mI (228216) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:10.486152 --> [0;32mI (228226) ADC1_CH4: converted temperature: 21.1 C[0m
+10:29:10.492156 --> [0;32mI (228226) measurement: 2024-08-30T10:29:10+0300[0m
+10:29:10.495525 --> [0;32mI (228236) mqtt: sent publish successful, msg_id=31847[0m
+10:29:11.483800 --> [0;32mI (229236) ADC1_CH0: raw  data: 0[0m
+10:29:11.487087 --> [0;32mI (229236) ADC1_CH0: cali data: 0 mV[0m
+10:29:11.490434 --> [0;32mI (229236) ADC1_CH1: raw  data: 1790[0m
+10:29:11.496075 --> [0;32mI (229236) ADC1_CH1: cali data: 1298 mV[0m
+10:29:11.500738 --> [0;32mI (229236) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:11.506518 --> [0;32mI (229246) ADC1_CH1: converted temperature: 23.4 C[0m
+10:29:11.512000 --> [0;32mI (229246) ADC1_CH2: raw  data: 4095[0m
+10:29:11.515204 --> [0;32mI (229256) ADC1_CH2: cali data: 2875 mV[0m
+10:29:11.521081 --> [0;32mI (229256) ADC1_CH3: raw  data: 1807[0m
+10:29:11.525454 --> [0;32mI (229266) ADC1_CH3: cali data: 1312 mV[0m
+10:29:11.528952 --> [0;32mI (229266) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:11.535024 --> [0;32mI (229276) ADC1_CH3: converted temperature: 22.5 C[0m
+10:29:11.540149 --> [0;32mI (229276) ADC1_CH4: raw  data: 1839[0m
+10:29:11.545344 --> [0;32mI (229286) ADC1_CH4: cali data: 1335 mV[0m
+10:29:11.549070 --> [0;32mI (229286) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:11.555895 --> [0;32mI (229296) ADC1_CH4: converted temperature: 21.5 C[0m
+10:29:11.559990 --> [0;32mI (229296) measurement: 2024-08-30T10:29:11+0300[0m
+10:29:11.565295 --> [0;32mI (229306) mqtt: sent publish successful, msg_id=62228[0m
+10:29:12.553938 --> [0;32mI (230306) ADC1_CH0: raw  data: 0[0m
+10:29:12.557110 --> [0;32mI (230306) ADC1_CH0: cali data: 0 mV[0m
+10:29:12.560454 --> [0;32mI (230306) ADC1_CH1: raw  data: 1806[0m
+10:29:12.565889 --> [0;32mI (230306) ADC1_CH1: cali data: 1311 mV[0m
+10:29:12.570734 --> [0;32mI (230306) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:12.577352 --> [0;32mI (230316) ADC1_CH1: converted temperature: 22.9 C[0m
+10:29:12.581993 --> [0;32mI (230316) ADC1_CH2: raw  data: 4095[0m
+10:29:12.585292 --> [0;32mI (230326) ADC1_CH2: cali data: 2875 mV[0m
+10:29:12.590492 --> [0;32mI (230326) ADC1_CH3: raw  data: 1816[0m
+10:29:12.595455 --> [0;32mI (230336) ADC1_CH3: cali data: 1318 mV[0m
+10:29:12.599073 --> [0;32mI (230336) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:12.604501 --> [0;32mI (230346) ADC1_CH3: converted temperature: 22.2 C[0m
+10:29:12.610192 --> [0;32mI (230346) ADC1_CH4: raw  data: 1846[0m
+10:29:12.615583 --> [0;32mI (230356) ADC1_CH4: cali data: 1339 mV[0m
+10:29:12.618676 --> [0;32mI (230356) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:12.625902 --> [0;32mI (230366) ADC1_CH4: converted temperature: 21.3 C[0m
+10:29:12.629801 --> [0;32mI (230366) measurement: 2024-08-30T10:29:12+0300[0m
+10:29:12.635301 --> [0;32mI (230376) mqtt: sent publish successful, msg_id=60810[0m
+10:29:13.624231 --> [0;32mI (231376) ADC1_CH0: raw  data: 0[0m
+10:29:13.628275 --> [0;32mI (231376) ADC1_CH0: cali data: 0 mV[0m
+10:29:13.630335 --> [0;32mI (231376) ADC1_CH1: raw  data: 1824[0m
+10:29:13.636682 --> [0;32mI (231376) ADC1_CH1: cali data: 1324 mV[0m
+10:29:13.641316 --> [0;32mI (231376) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:13.646591 --> [0;32mI (231386) ADC1_CH1: converted temperature: 22.5 C[0m
+10:29:13.653149 --> [0;32mI (231386) ADC1_CH2: raw  data: 4095[0m
+10:29:13.656706 --> [0;32mI (231396) ADC1_CH2: cali data: 2875 mV[0m
+10:29:13.660701 --> [0;32mI (231396) ADC1_CH3: raw  data: 1806[0m
+10:29:13.665925 --> [0;32mI (231406) ADC1_CH3: cali data: 1311 mV[0m
+10:29:13.669016 --> [0;32mI (231406) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:13.674656 --> [0;32mI (231416) ADC1_CH3: converted temperature: 22.5 C[0m
+10:29:13.680439 --> [0;32mI (231416) ADC1_CH4: raw  data: 1823[0m
+10:29:13.685277 --> [0;32mI (231426) ADC1_CH4: cali data: 1323 mV[0m
+10:29:13.689092 --> [0;32mI (231426) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:13.695926 --> [0;32mI (231436) ADC1_CH4: converted temperature: 22.0 C[0m
+10:29:13.699770 --> [0;32mI (231436) measurement: 2024-08-30T10:29:13+0300[0m
+10:29:13.705768 --> [0;32mI (231446) mqtt: sent publish successful, msg_id=28792[0m
+10:29:14.694044 --> [0;32mI (232446) ADC1_CH0: raw  data: 0[0m
+10:29:14.697921 --> [0;32mI (232446) ADC1_CH0: cali data: 0 mV[0m
+10:29:14.703028 --> [0;32mI (232446) ADC1_CH1: raw  data: 1801[0m
+10:29:14.705626 --> [0;32mI (232446) ADC1_CH1: cali data: 1306 mV[0m
+10:29:14.710806 --> [0;32mI (232446) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:14.717401 --> [0;32mI (232456) ADC1_CH1: converted temperature: 23.1 C[0m
+10:29:14.722491 --> [0;32mI (232456) ADC1_CH2: raw  data: 4095[0m
+10:29:14.725407 --> [0;32mI (232466) ADC1_CH2: cali data: 2875 mV[0m
+10:29:14.731386 --> [0;32mI (232466) ADC1_CH3: raw  data: 1821[0m
+10:29:14.735537 --> [0;32mI (232476) ADC1_CH3: cali data: 1322 mV[0m
+10:29:14.739247 --> [0;32mI (232476) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:14.745338 --> [0;32mI (232486) ADC1_CH3: converted temperature: 22.0 C[0m
+10:29:14.750254 --> [0;32mI (232486) ADC1_CH4: raw  data: 1806[0m
+10:29:14.755634 --> [0;32mI (232496) ADC1_CH4: cali data: 1311 mV[0m
+10:29:14.758787 --> [0;32mI (232496) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:14.765917 --> [0;32mI (232506) ADC1_CH4: converted temperature: 22.5 C[0m
+10:29:14.770316 --> [0;32mI (232506) measurement: 2024-08-30T10:29:14+0300[0m
+10:29:14.775851 --> [0;32mI (232516) mqtt: sent publish successful, msg_id=50832[0m
+10:29:15.764003 --> [0;32mI (233516) ADC1_CH0: raw  data: 0[0m
+10:29:15.768701 --> [0;32mI (233516) ADC1_CH0: cali data: 0 mV[0m
+10:29:15.770306 --> [0;32mI (233516) ADC1_CH1: raw  data: 1803[0m
+10:29:15.775564 --> [0;32mI (233516) ADC1_CH1: cali data: 1308 mV[0m
+10:29:15.780866 --> [0;32mI (233516) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:15.787203 --> [0;32mI (233526) ADC1_CH1: converted temperature: 23.0 C[0m
+10:29:15.792108 --> [0;32mI (233526) ADC1_CH2: raw  data: 4095[0m
+10:29:15.795444 --> [0;32mI (233536) ADC1_CH2: cali data: 2875 mV[0m
+10:29:15.800854 --> [0;32mI (233536) ADC1_CH3: raw  data: 1820[0m
+10:29:15.805527 --> [0;32mI (233546) ADC1_CH3: cali data: 1321 mV[0m
+10:29:15.809689 --> [0;32mI (233546) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:15.815197 --> [0;32mI (233556) ADC1_CH3: converted temperature: 22.1 C[0m
+10:29:15.820191 --> [0;32mI (233556) ADC1_CH4: raw  data: 1807[0m
+10:29:15.825506 --> [0;32mI (233566) ADC1_CH4: cali data: 1312 mV[0m
+10:29:15.828661 --> [0;32mI (233566) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:15.835939 --> [0;32mI (233576) ADC1_CH4: converted temperature: 22.5 C[0m
+10:29:15.839823 --> [0;32mI (233576) measurement: 2024-08-30T10:29:15+0300[0m
+10:29:15.845285 --> [0;32mI (233586) mqtt: sent publish successful, msg_id=43297[0m
+10:29:16.834054 --> [0;32mI (234586) ADC1_CH0: raw  data: 0[0m
+10:29:16.838833 --> [0;32mI (234586) ADC1_CH0: cali data: 0 mV[0m
+10:29:16.843798 --> [0;32mI (234586) ADC1_CH1: raw  data: 1831[0m
+10:29:16.845661 --> [0;32mI (234586) ADC1_CH1: cali data: 1328 mV[0m
+10:29:16.850787 --> [0;32mI (234586) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:16.856635 --> [0;32mI (234596) ADC1_CH1: converted temperature: 22.3 C[0m
+10:29:16.862069 --> [0;32mI (234596) ADC1_CH2: raw  data: 4095[0m
+10:29:16.865843 --> [0;32mI (234606) ADC1_CH2: cali data: 2875 mV[0m
+10:29:16.870836 --> [0;32mI (234606) ADC1_CH3: raw  data: 1820[0m
+10:29:16.875548 --> [0;32mI (234616) ADC1_CH3: cali data: 1321 mV[0m
+10:29:16.879650 --> [0;32mI (234616) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:16.885161 --> [0;32mI (234626) ADC1_CH3: converted temperature: 22.1 C[0m
+10:29:16.890388 --> [0;32mI (234626) ADC1_CH4: raw  data: 1817[0m
+10:29:16.895362 --> [0;32mI (234636) ADC1_CH4: cali data: 1319 mV[0m
+10:29:16.898672 --> [0;32mI (234636) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:16.905949 --> [0;32mI (234646) ADC1_CH4: converted temperature: 22.2 C[0m
+10:29:16.909827 --> [0;32mI (234646) measurement: 2024-08-30T10:29:17+0300[0m
+10:29:16.916065 --> [0;32mI (234656) mqtt: sent publish successful, msg_id=48830[0m
+10:29:17.903885 --> [0;32mI (235656) ADC1_CH0: raw  data: 0[0m
+10:29:17.908706 --> [0;32mI (235656) ADC1_CH0: cali data: 0 mV[0m
+10:29:17.910451 --> [0;32mI (235656) ADC1_CH1: raw  data: 1824[0m
+10:29:17.915829 --> [0;32mI (235656) ADC1_CH1: cali data: 1324 mV[0m
+10:29:17.920820 --> [0;32mI (235656) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:17.926663 --> [0;32mI (235666) ADC1_CH1: converted temperature: 22.5 C[0m
+10:29:17.932102 --> [0;32mI (235666) ADC1_CH2: raw  data: 4095[0m
+10:29:17.935388 --> [0;32mI (235676) ADC1_CH2: cali data: 2875 mV[0m
+10:29:17.940540 --> [0;32mI (235676) ADC1_CH3: raw  data: 1807[0m
+10:29:17.945526 --> [0;32mI (235686) ADC1_CH3: cali data: 1312 mV[0m
+10:29:17.949070 --> [0;32mI (235686) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:17.954715 --> [0;32mI (235696) ADC1_CH3: converted temperature: 22.5 C[0m
+10:29:17.960232 --> [0;32mI (235696) ADC1_CH4: raw  data: 1817[0m
+10:29:17.965444 --> [0;32mI (235706) ADC1_CH4: cali data: 1319 mV[0m
+10:29:17.968709 --> [0;32mI (235706) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:17.975953 --> [0;32mI (235716) ADC1_CH4: converted temperature: 22.2 C[0m
+10:29:17.979894 --> [0;32mI (235716) measurement: 2024-08-30T10:29:18+0300[0m
+10:29:17.985926 --> [0;32mI (235726) mqtt: sent publish successful, msg_id=35115[0m
+10:29:18.974124 --> [0;32mI (236726) ADC1_CH0: raw  data: 0[0m
+10:29:18.979179 --> [0;32mI (236726) ADC1_CH0: cali data: 0 mV[0m
+10:29:18.984397 --> [0;32mI (236726) ADC1_CH1: raw  data: 1821[0m
+10:29:18.989765 --> [0;32mI (236726) ADC1_CH1: cali data: 1322 mV[0m
+10:29:18.993363 --> [0;32mI (236726) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:18.998572 --> [0;32mI (236736) ADC1_CH1: converted temperature: 22.5 C[0m
+10:29:19.005119 --> [0;32mI (236736) ADC1_CH2: raw  data: 4095[0m
+10:29:19.007501 --> [0;32mI (236746) ADC1_CH2: cali data: 2875 mV[0m
+10:29:19.010721 --> [0;32mI (236746) ADC1_CH3: raw  data: 1852[0m
+10:29:19.015595 --> [0;32mI (236756) ADC1_CH3: cali data: 1343 mV[0m
+10:29:19.019629 --> [0;32mI (236756) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:19.024765 --> [0;32mI (236766) ADC1_CH3: converted temperature: 21.1 C[0m
+10:29:19.030763 --> [0;32mI (236766) ADC1_CH4: raw  data: 1854[0m
+10:29:19.035612 --> [0;32mI (236776) ADC1_CH4: cali data: 1346 mV[0m
+10:29:19.039225 --> [0;32mI (236776) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:19.045986 --> [0;32mI (236786) ADC1_CH4: converted temperature: 21.0 C[0m
+10:29:19.049822 --> [0;32mI (236786) measurement: 2024-08-30T10:29:19+0300[0m
+10:29:19.056903 --> [0;32mI (236796) mqtt: sent publish successful, msg_id=39026[0m
+10:29:20.044280 --> [0;32mI (237796) ADC1_CH0: raw  data: 90[0m
+10:29:20.049818 --> [0;32mI (237796) ADC1_CH0: cali data: 67 mV[0m
+10:29:20.054660 --> [0;32mI (237796) ADC1_CH1: raw  data: 1807[0m
+10:29:20.060039 --> [0;32mI (237796) ADC1_CH1: cali data: 1312 mV[0m
+10:29:20.065534 --> [0;32mI (237796) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:20.073534 --> [0;32mI (237806) ADC1_CH1: converted temperature: 22.9 C[0m
+10:29:20.078277 --> [0;32mI (237806) ADC1_CH2: raw  data: 4095[0m
+10:29:20.081272 --> [0;32mI (237816) ADC1_CH2: cali data: 2875 mV[0m
+10:29:20.086961 --> [0;32mI (237816) ADC1_CH3: raw  data: 1806[0m
+10:29:20.089989 --> [0;32mI (237826) ADC1_CH3: cali data: 1311 mV[0m
+10:29:20.092458 --> [0;32mI (237826) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:20.094761 --> [0;32mI (237836) ADC1_CH3: converted temperature: 22.5 C[0m
+10:29:20.100828 --> [0;32mI (237836) ADC1_CH4: raw  data: 1785[0m
+10:29:20.105546 --> [0;32mI (237846) ADC1_CH4: cali data: 1296 mV[0m
+10:29:20.108731 --> [0;32mI (237846) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:20.116129 --> [0;32mI (237856) ADC1_CH4: converted temperature: 23.2 C[0m
+10:29:20.121974 --> [0;32mI (237856) measurement: 2024-08-30T10:29:20+0300[0m
+10:29:20.125975 --> [0;32mI (237866) mqtt: sent publish successful, msg_id=11811[0m
+10:29:21.113975 --> [0;32mI (238866) ADC1_CH0: raw  data: 0[0m
+10:29:21.117342 --> [0;32mI (238866) ADC1_CH0: cali data: 0 mV[0m
+10:29:21.121865 --> [0;32mI (238866) ADC1_CH1: raw  data: 1816[0m
+10:29:21.127687 --> [0;32mI (238866) ADC1_CH1: cali data: 1318 mV[0m
+10:29:21.132246 --> [0;32mI (238866) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:21.138291 --> [0;32mI (238876) ADC1_CH1: converted temperature: 22.7 C[0m
+10:29:21.144785 --> [0;32mI (238876) ADC1_CH2: raw  data: 4095[0m
+10:29:21.146343 --> [0;32mI (238886) ADC1_CH2: cali data: 2875 mV[0m
+10:29:21.150944 --> [0;32mI (238886) ADC1_CH3: raw  data: 1722[0m
+10:29:21.157702 --> [0;32mI (238896) ADC1_CH3: cali data: 1251 mV[0m
+10:29:21.159589 --> [0;32mI (238896) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:21.164798 --> [0;32mI (238906) ADC1_CH3: converted temperature: 25.0 C[0m
+10:29:21.170799 --> [0;32mI (238906) ADC1_CH4: raw  data: 1755[0m
+10:29:21.175744 --> [0;32mI (238916) ADC1_CH4: cali data: 1274 mV[0m
+10:29:21.178819 --> [0;32mI (238916) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:21.186020 --> [0;32mI (238926) ADC1_CH4: converted temperature: 24.1 C[0m
+10:29:21.191154 --> [0;32mI (238926) measurement: 2024-08-30T10:29:21+0300[0m
+10:29:21.195887 --> [0;32mI (238936) mqtt: sent publish successful, msg_id=38792[0m
+10:29:22.184163 --> [0;32mI (239936) ADC1_CH0: raw  data: 0[0m
+10:29:22.188818 --> [0;32mI (239936) ADC1_CH0: cali data: 0 mV[0m
+10:29:22.194636 --> [0;32mI (239936) ADC1_CH1: raw  data: 1822[0m
+10:29:22.196436 --> [0;32mI (239936) ADC1_CH1: cali data: 1322 mV[0m
+10:29:22.201830 --> [0;32mI (239936) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:22.208506 --> [0;32mI (239946) ADC1_CH1: converted temperature: 22.5 C[0m
+10:29:22.213065 --> [0;32mI (239946) ADC1_CH2: raw  data: 4095[0m
+10:29:22.216543 --> [0;32mI (239956) ADC1_CH2: cali data: 2875 mV[0m
+10:29:22.222126 --> [0;32mI (239956) ADC1_CH3: raw  data: 1835[0m
+10:29:22.228028 --> [0;32mI (239966) ADC1_CH3: cali data: 1331 mV[0m
+10:29:22.231978 --> [0;32mI (239966) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:22.234730 --> [0;32mI (239976) ADC1_CH3: converted temperature: 21.7 C[0m
+10:29:22.240659 --> [0;32mI (239976) ADC1_CH4: raw  data: 1819[0m
+10:29:22.245395 --> [0;32mI (239986) ADC1_CH4: cali data: 1320 mV[0m
+10:29:22.248692 --> [0;32mI (239986) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:22.255992 --> [0;32mI (239996) ADC1_CH4: converted temperature: 22.1 C[0m
+10:29:22.259845 --> [0;32mI (239996) measurement: 2024-08-30T10:29:22+0300[0m
+10:29:22.265864 --> [0;32mI (240006) mqtt: sent publish successful, msg_id=4223[0m
+10:29:23.254066 --> [0;32mI (241006) ADC1_CH0: raw  data: 0[0m
+10:29:23.259592 --> [0;32mI (241006) ADC1_CH0: cali data: 0 mV[0m
+10:29:23.263746 --> [0;32mI (241006) ADC1_CH1: raw  data: 1816[0m
+10:29:23.267538 --> [0;32mI (241006) ADC1_CH1: cali data: 1318 mV[0m
+10:29:23.274246 --> [0;32mI (241006) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:23.279981 --> [0;32mI (241016) ADC1_CH1: converted temperature: 22.7 C[0m
+10:29:23.283173 --> [0;32mI (241016) ADC1_CH2: raw  data: 4095[0m
+10:29:23.287621 --> [0;32mI (241026) ADC1_CH2: cali data: 2875 mV[0m
+10:29:23.293540 --> [0;32mI (241026) ADC1_CH3: raw  data: 1824[0m
+10:29:23.295870 --> [0;32mI (241036) ADC1_CH3: cali data: 1324 mV[0m
+10:29:23.299698 --> [0;32mI (241036) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:23.305117 --> [0;32mI (241046) ADC1_CH3: converted temperature: 22.0 C[0m
+10:29:23.310318 --> [0;32mI (241046) ADC1_CH4: raw  data: 1791[0m
+10:29:23.315416 --> [0;32mI (241056) ADC1_CH4: cali data: 1299 mV[0m
+10:29:23.318739 --> [0;32mI (241056) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:23.327051 --> [0;32mI (241066) ADC1_CH4: converted temperature: 23.0 C[0m
+10:29:23.329872 --> [0;32mI (241066) measurement: 2024-08-30T10:29:23+0300[0m
+10:29:23.336115 --> [0;32mI (241076) mqtt: sent publish successful, msg_id=15358[0m
+10:29:24.326297 --> [0;32mI (242076) ADC1_CH0: raw  data: 0[0m
+10:29:24.330261 --> [0;32mI (242076) ADC1_CH0: cali data: 0 mV[0m
+10:29:24.332034 --> [0;32mI (242076) ADC1_CH1: raw  data: 1803[0m
+10:29:24.336648 --> [0;32mI (242076) ADC1_CH1: cali data: 1308 mV[0m
+10:29:24.342511 --> [0;32mI (242076) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:24.347284 --> [0;32mI (242086) ADC1_CH1: converted temperature: 23.0 C[0m
+10:29:24.352153 --> [0;32mI (242086) ADC1_CH2: raw  data: 4095[0m
+10:29:24.357991 --> [0;32mI (242096) ADC1_CH2: cali data: 2875 mV[0m
+10:29:24.360607 --> [0;32mI (242096) ADC1_CH3: raw  data: 1849[0m
+10:29:24.365706 --> [0;32mI (242106) ADC1_CH3: cali data: 1341 mV[0m
+10:29:24.368999 --> [0;32mI (242106) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:24.375007 --> [0;32mI (242116) ADC1_CH3: converted temperature: 21.2 C[0m
+10:29:24.380829 --> [0;32mI (242116) ADC1_CH4: raw  data: 1769[0m
+10:29:24.385403 --> [0;32mI (242126) ADC1_CH4: cali data: 1285 mV[0m
+10:29:24.391365 --> [0;32mI (242126) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:24.396016 --> [0;32mI (242136) ADC1_CH4: converted temperature: 23.6 C[0m
+10:29:24.399895 --> [0;32mI (242136) measurement: 2024-08-30T10:29:24+0300[0m
+10:29:24.405238 --> [0;32mI (242146) mqtt: sent publish successful, msg_id=55820[0m
+10:29:25.393968 --> [0;32mI (243146) ADC1_CH0: raw  data: 0[0m
+10:29:25.401033 --> [0;32mI (243146) ADC1_CH0: cali data: 0 mV[0m
+10:29:25.404688 --> [0;32mI (243146) ADC1_CH1: raw  data: 1817[0m
+10:29:25.409307 --> [0;32mI (243146) ADC1_CH1: cali data: 1319 mV[0m
+10:29:25.414494 --> [0;32mI (243146) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:25.421144 --> [0;32mI (243156) ADC1_CH1: converted temperature: 22.7 C[0m
+10:29:25.428849 --> [0;32mI (243156) ADC1_CH2: raw  data: 4095[0m
+10:29:25.431836 --> [0;32mI (243166) ADC1_CH2: cali data: 2875 mV[0m
+10:29:25.436997 --> [0;32mI (243166) ADC1_CH3: raw  data: 1822[0m
+10:29:25.439925 --> [0;32mI (243176) ADC1_CH3: cali data: 1322 mV[0m
+10:29:25.441227 --> [0;32mI (243176) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:25.444824 --> [0;32mI (243186) ADC1_CH3: converted temperature: 22.0 C[0m
+10:29:25.450468 --> [0;32mI (243186) ADC1_CH4: raw  data: 1831[0m
+10:29:25.455504 --> [0;32mI (243196) ADC1_CH4: cali data: 1328 mV[0m
+10:29:25.458803 --> [0;32mI (243196) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:25.466058 --> [0;32mI (243206) ADC1_CH4: converted temperature: 21.8 C[0m
+10:29:25.469996 --> [0;32mI (243206) measurement: 2024-08-30T10:29:25+0300[0m
+10:29:25.475995 --> [0;32mI (243216) mqtt: sent publish successful, msg_id=50274[0m
+10:29:26.464097 --> [0;32mI (244216) ADC1_CH0: raw  data: 0[0m
+10:29:26.468284 --> [0;32mI (244216) ADC1_CH0: cali data: 0 mV[0m
+10:29:26.473089 --> [0;32mI (244216) ADC1_CH1: raw  data: 1824[0m
+10:29:26.479023 --> [0;32mI (244216) ADC1_CH1: cali data: 1324 mV[0m
+10:29:26.481998 --> [0;32mI (244216) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:26.486775 --> [0;32mI (244226) ADC1_CH1: converted temperature: 22.5 C[0m
+10:29:26.492395 --> [0;32mI (244226) ADC1_CH2: raw  data: 4095[0m
+10:29:26.496009 --> [0;32mI (244236) ADC1_CH2: cali data: 2875 mV[0m
+10:29:26.500685 --> [0;32mI (244236) ADC1_CH3: raw  data: 1787[0m
+10:29:26.507505 --> [0;32mI (244246) ADC1_CH3: cali data: 1297 mV[0m
+10:29:26.509069 --> [0;32mI (244246) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:26.514872 --> [0;32mI (244256) ADC1_CH3: converted temperature: 23.1 C[0m
+10:29:26.521340 --> [0;32mI (244256) ADC1_CH4: raw  data: 1816[0m
+10:29:26.525562 --> [0;32mI (244266) ADC1_CH4: cali data: 1318 mV[0m
+10:29:26.528829 --> [0;32mI (244266) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:26.536123 --> [0;32mI (244276) ADC1_CH4: converted temperature: 22.2 C[0m
+10:29:26.541577 --> [0;32mI (244276) measurement: 2024-08-30T10:29:26+0300[0m
+10:29:26.546015 --> [0;32mI (244286) mqtt: sent publish successful, msg_id=28812[0m
+10:29:27.534150 --> [0;32mI (245286) ADC1_CH0: raw  data: 0[0m
+10:29:27.537661 --> [0;32mI (245286) ADC1_CH0: cali data: 0 mV[0m
+10:29:27.543373 --> [0;32mI (245286) ADC1_CH1: raw  data: 1821[0m
+10:29:27.547440 --> [0;32mI (245286) ADC1_CH1: cali data: 1322 mV[0m
+10:29:27.550937 --> [0;32mI (245286) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:27.560619 --> [0;32mI (245296) ADC1_CH1: converted temperature: 22.5 C[0m
+10:29:27.565078 --> [0;32mI (245296) ADC1_CH2: raw  data: 4095[0m
+10:29:27.567033 --> [0;32mI (245306) ADC1_CH2: cali data: 2875 mV[0m
+10:29:27.570669 --> [0;32mI (245306) ADC1_CH3: raw  data: 1837[0m
+10:29:27.575792 --> [0;32mI (245316) ADC1_CH3: cali data: 1332 mV[0m
+10:29:27.579711 --> [0;32mI (245316) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:27.585390 --> [0;32mI (245326) ADC1_CH3: converted temperature: 21.6 C[0m
+10:29:27.591158 --> [0;32mI (245326) ADC1_CH4: raw  data: 1817[0m
+10:29:27.595459 --> [0;32mI (245336) ADC1_CH4: cali data: 1319 mV[0m
+10:29:27.598840 --> [0;32mI (245336) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:27.608013 --> [0;32mI (245346) ADC1_CH4: converted temperature: 22.2 C[0m
+10:29:27.609930 --> [0;32mI (245346) measurement: 2024-08-30T10:29:27+0300[0m
+10:29:27.615432 --> [0;32mI (245356) mqtt: sent publish successful, msg_id=6200[0m
+10:29:28.604269 --> [0;32mI (246356) ADC1_CH0: raw  data: 0[0m
+10:29:28.613335 --> [0;32mI (246356) ADC1_CH0: cali data: 0 mV[0m
+10:29:28.615790 --> [0;32mI (246356) ADC1_CH1: raw  data: 1822[0m
+10:29:28.619488 --> [0;32mI (246356) ADC1_CH1: cali data: 1322 mV[0m
+10:29:28.622107 --> [0;32mI (246356) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:28.630067 --> [0;32mI (246366) ADC1_CH1: converted temperature: 22.5 C[0m
+10:29:28.635410 --> [0;32mI (246366) ADC1_CH2: raw  data: 4095[0m
+10:29:28.637007 --> [0;32mI (246376) ADC1_CH2: cali data: 2875 mV[0m
+10:29:28.643371 --> [0;32mI (246376) ADC1_CH3: raw  data: 1802[0m
+10:29:28.645754 --> [0;32mI (246386) ADC1_CH3: cali data: 1307 mV[0m
+10:29:28.649424 --> [0;32mI (246386) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:28.655085 --> [0;32mI (246396) ADC1_CH3: converted temperature: 22.7 C[0m
+10:29:28.661035 --> [0;32mI (246396) ADC1_CH4: raw  data: 1833[0m
+10:29:28.665561 --> [0;32mI (246406) ADC1_CH4: cali data: 1329 mV[0m
+10:29:28.668979 --> [0;32mI (246406) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:28.676155 --> [0;32mI (246416) ADC1_CH4: converted temperature: 21.7 C[0m
+10:29:28.680026 --> [0;32mI (246416) measurement: 2024-08-30T10:29:28+0300[0m
+10:29:28.685489 --> [0;32mI (246426) mqtt: sent publish successful, msg_id=1550[0m
+10:29:29.674021 --> [0;32mI (247426) ADC1_CH0: raw  data: 0[0m
+10:29:29.678324 --> [0;32mI (247426) ADC1_CH0: cali data: 0 mV[0m
+10:29:29.681992 --> [0;32mI (247426) ADC1_CH1: raw  data: 1805[0m
+10:29:29.686083 --> [0;32mI (247426) ADC1_CH1: cali data: 1309 mV[0m
+10:29:29.694443 --> [0;32mI (247426) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:29.699591 --> [0;32mI (247436) ADC1_CH1: converted temperature: 23.0 C[0m
+10:29:29.704040 --> [0;32mI (247436) ADC1_CH2: raw  data: 4095[0m
+10:29:29.708258 --> [0;32mI (247446) ADC1_CH2: cali data: 2875 mV[0m
+10:29:29.710668 --> [0;32mI (247446) ADC1_CH3: raw  data: 1819[0m
+10:29:29.715677 --> [0;32mI (247456) ADC1_CH3: cali data: 1320 mV[0m
+10:29:29.719357 --> [0;32mI (247456) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:29.725343 --> [0;32mI (247466) ADC1_CH3: converted temperature: 22.1 C[0m
+10:29:29.730916 --> [0;32mI (247466) ADC1_CH4: raw  data: 1807[0m
+10:29:29.735966 --> [0;32mI (247476) ADC1_CH4: cali data: 1312 mV[0m
+10:29:29.738666 --> [0;32mI (247476) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:29.746108 --> [0;32mI (247486) ADC1_CH4: converted temperature: 22.5 C[0m
+10:29:29.750505 --> [0;32mI (247486) measurement: 2024-08-30T10:29:29+0300[0m
+10:29:29.755497 --> [0;32mI (247496) mqtt: sent publish successful, msg_id=25828[0m
+10:29:30.744245 --> [0;32mI (248496) ADC1_CH0: raw  data: 0[0m
+10:29:30.750430 --> [0;32mI (248496) ADC1_CH0: cali data: 0 mV[0m
+10:29:30.754942 --> [0;32mI (248496) ADC1_CH1: raw  data: 1773[0m
+10:29:30.757219 --> [0;32mI (248496) ADC1_CH1: cali data: 1287 mV[0m
+10:29:30.761767 --> [0;32mI (248496) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:30.767819 --> [0;32mI (248506) ADC1_CH1: converted temperature: 23.8 C[0m
+10:29:30.772590 --> [0;32mI (248506) ADC1_CH2: raw  data: 4094[0m
+10:29:30.776894 --> [0;32mI (248516) ADC1_CH2: cali data: 2875 mV[0m
+10:29:30.781711 --> [0;32mI (248516) ADC1_CH3: raw  data: 1815[0m
+10:29:30.785959 --> [0;32mI (248526) ADC1_CH3: cali data: 1317 mV[0m
+10:29:30.789251 --> [0;32mI (248526) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:30.794923 --> [0;32mI (248536) ADC1_CH3: converted temperature: 22.3 C[0m
+10:29:30.800389 --> [0;32mI (248536) ADC1_CH4: raw  data: 1821[0m
+10:29:30.805541 --> [0;32mI (248546) ADC1_CH4: cali data: 1322 mV[0m
+10:29:30.809330 --> [0;32mI (248546) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:30.816106 --> [0;32mI (248556) ADC1_CH4: converted temperature: 22.0 C[0m
+10:29:30.820130 --> [0;32mI (248556) measurement: 2024-08-30T10:29:30+0300[0m
+10:29:30.825562 --> [0;32mI (248566) mqtt: sent publish successful, msg_id=36422[0m
+10:29:31.813995 --> [0;32mI (249566) ADC1_CH0: raw  data: 73[0m
+10:29:31.818248 --> [0;32mI (249566) ADC1_CH0: cali data: 55 mV[0m
+10:29:31.825004 --> [0;32mI (249566) ADC1_CH1: raw  data: 1820[0m
+10:29:31.829263 --> [0;32mI (249566) ADC1_CH1: cali data: 1321 mV[0m
+10:29:31.833748 --> [0;32mI (249566) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:31.839450 --> [0;32mI (249576) ADC1_CH1: converted temperature: 22.6 C[0m
+10:29:31.844421 --> [0;32mI (249576) ADC1_CH2: raw  data: 4095[0m
+10:29:31.847965 --> [0;32mI (249586) ADC1_CH2: cali data: 2875 mV[0m
+10:29:31.850768 --> [0;32mI (249586) ADC1_CH3: raw  data: 1786[0m
+10:29:31.858162 --> [0;32mI (249596) ADC1_CH3: cali data: 1296 mV[0m
+10:29:31.860118 --> [0;32mI (249596) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:31.864979 --> [0;32mI (249606) ADC1_CH3: converted temperature: 23.2 C[0m
+10:29:31.871016 --> [0;32mI (249606) ADC1_CH4: raw  data: 1834[0m
+10:29:31.875629 --> [0;32mI (249616) ADC1_CH4: cali data: 1330 mV[0m
+10:29:31.879463 --> [0;32mI (249616) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:31.886264 --> [0;32mI (249626) ADC1_CH4: converted temperature: 21.7 C[0m
+10:29:31.892032 --> [0;32mI (249626) measurement: 2024-08-30T10:29:32+0300[0m
+10:29:31.896126 --> [0;32mI (249636) mqtt: sent publish successful, msg_id=15270[0m
+10:29:32.884089 --> [0;32mI (250636) ADC1_CH0: raw  data: 60[0m
+10:29:32.888572 --> [0;32mI (250636) ADC1_CH0: cali data: 44 mV[0m
+10:29:32.894949 --> [0;32mI (250636) ADC1_CH1: raw  data: 1800[0m
+10:29:32.898810 --> [0;32mI (250636) ADC1_CH1: cali data: 1306 mV[0m
+10:29:32.902891 --> [0;32mI (250636) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:32.911719 --> [0;32mI (250646) ADC1_CH1: converted temperature: 23.1 C[0m
+10:29:32.916344 --> [0;32mI (250646) ADC1_CH2: raw  data: 4095[0m
+10:29:32.918955 --> [0;32mI (250656) ADC1_CH2: cali data: 2875 mV[0m
+10:29:32.923253 --> [0;32mI (250656) ADC1_CH3: raw  data: 1816[0m
+10:29:32.925989 --> [0;32mI (250666) ADC1_CH3: cali data: 1318 mV[0m
+10:29:32.929346 --> [0;32mI (250666) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:32.935459 --> [0;32mI (250676) ADC1_CH3: converted temperature: 22.2 C[0m
+10:29:32.941343 --> [0;32mI (250676) ADC1_CH4: raw  data: 1802[0m
+10:29:32.945667 --> [0;32mI (250686) ADC1_CH4: cali data: 1307 mV[0m
+10:29:32.949434 --> [0;32mI (250686) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:32.956953 --> [0;32mI (250696) ADC1_CH4: converted temperature: 22.7 C[0m
+10:29:32.961943 --> [0;32mI (250696) measurement: 2024-08-30T10:29:33+0300[0m
+10:29:32.965546 --> [0;32mI (250706) mqtt: sent publish successful, msg_id=20650[0m
+10:29:33.954430 --> [0;32mI (251706) ADC1_CH0: raw  data: 76[0m
+10:29:33.961636 --> [0;32mI (251706) ADC1_CH0: cali data: 57 mV[0m
+10:29:33.964221 --> [0;32mI (251706) ADC1_CH1: raw  data: 1832[0m
+10:29:33.969449 --> [0;32mI (251706) ADC1_CH1: cali data: 1329 mV[0m
+10:29:33.974582 --> [0;32mI (251706) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:33.980296 --> [0;32mI (251716) ADC1_CH1: converted temperature: 22.3 C[0m
+10:29:33.984471 --> [0;32mI (251716) ADC1_CH2: raw  data: 4095[0m
+10:29:33.989628 --> [0;32mI (251726) ADC1_CH2: cali data: 2875 mV[0m
+10:29:33.992285 --> [0;32mI (251726) ADC1_CH3: raw  data: 1818[0m
+10:29:33.996078 --> [0;32mI (251736) ADC1_CH3: cali data: 1320 mV[0m
+10:29:33.999337 --> [0;32mI (251736) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:34.005121 --> [0;32mI (251746) ADC1_CH3: converted temperature: 22.1 C[0m
+10:29:34.010530 --> [0;32mI (251746) ADC1_CH4: raw  data: 1820[0m
+10:29:34.016079 --> [0;32mI (251756) ADC1_CH4: cali data: 1321 mV[0m
+10:29:34.018999 --> [0;32mI (251756) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:34.026287 --> [0;32mI (251766) ADC1_CH4: converted temperature: 22.1 C[0m
+10:29:34.031881 --> [0;32mI (251766) measurement: 2024-08-30T10:29:34+0300[0m
+10:29:34.035536 --> [0;32mI (251776) mqtt: sent publish successful, msg_id=41589[0m
+10:29:35.024510 --> [0;32mI (252776) ADC1_CH0: raw  data: 0[0m
+10:29:35.028163 --> [0;32mI (252776) ADC1_CH0: cali data: 0 mV[0m
+10:29:35.033449 --> [0;32mI (252776) ADC1_CH1: raw  data: 1832[0m
+10:29:35.037240 --> [0;32mI (252776) ADC1_CH1: cali data: 1329 mV[0m
+10:29:35.044146 --> [0;32mI (252776) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:35.049933 --> [0;32mI (252786) ADC1_CH1: converted temperature: 22.3 C[0m
+10:29:35.054779 --> [0;32mI (252786) ADC1_CH2: raw  data: 4095[0m
+10:29:35.059388 --> [0;32mI (252796) ADC1_CH2: cali data: 2875 mV[0m
+10:29:35.061930 --> [0;32mI (252796) ADC1_CH3: raw  data: 1835[0m
+10:29:35.065799 --> [0;32mI (252806) ADC1_CH3: cali data: 1331 mV[0m
+10:29:35.069440 --> [0;32mI (252806) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:35.075069 --> [0;32mI (252816) ADC1_CH3: converted temperature: 21.7 C[0m
+10:29:35.080506 --> [0;32mI (252816) ADC1_CH4: raw  data: 1803[0m
+10:29:35.086110 --> [0;32mI (252826) ADC1_CH4: cali data: 1308 mV[0m
+10:29:35.089056 --> [0;32mI (252826) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:35.096180 --> [0;32mI (252836) ADC1_CH4: converted temperature: 22.7 C[0m
+10:29:35.100587 --> [0;32mI (252836) measurement: 2024-08-30T10:29:35+0300[0m
+10:29:35.105526 --> [0;32mI (252846) mqtt: sent publish successful, msg_id=7779[0m
+10:29:36.094292 --> [0;32mI (253846) ADC1_CH0: raw  data: 92[0m
+10:29:36.100047 --> [0;32mI (253846) ADC1_CH0: cali data: 68 mV[0m
+10:29:36.104140 --> [0;32mI (253846) ADC1_CH1: raw  data: 1817[0m
+10:29:36.108171 --> [0;32mI (253846) ADC1_CH1: cali data: 1319 mV[0m
+10:29:36.112002 --> [0;32mI (253846) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:36.118026 --> [0;32mI (253856) ADC1_CH1: converted temperature: 22.7 C[0m
+10:29:36.125051 --> [0;32mI (253856) ADC1_CH2: raw  data: 4095[0m
+10:29:36.128239 --> [0;32mI (253866) ADC1_CH2: cali data: 2875 mV[0m
+10:29:36.132672 --> [0;32mI (253866) ADC1_CH3: raw  data: 1804[0m
+10:29:36.136791 --> [0;32mI (253876) ADC1_CH3: cali data: 1308 mV[0m
+10:29:36.139387 --> [0;32mI (253876) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:36.145617 --> [0;32mI (253886) ADC1_CH3: converted temperature: 22.7 C[0m
+10:29:36.150568 --> [0;32mI (253886) ADC1_CH4: raw  data: 1787[0m
+10:29:36.155819 --> [0;32mI (253896) ADC1_CH4: cali data: 1297 mV[0m
+10:29:36.159646 --> [0;32mI (253896) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:36.166511 --> [0;32mI (253906) ADC1_CH4: converted temperature: 23.1 C[0m
+10:29:36.172100 --> [0;32mI (253906) measurement: 2024-08-30T10:29:36+0300[0m
+10:29:36.175668 --> [0;32mI (253916) mqtt: sent publish successful, msg_id=35446[0m
+10:29:37.164781 --> [0;32mI (254916) ADC1_CH0: raw  data: 104[0m
+10:29:37.173061 --> [0;32mI (254916) ADC1_CH0: cali data: 77 mV[0m
+10:29:37.179929 --> [0;32mI (254916) ADC1_CH1: raw  data: 1822[0m
+10:29:37.185088 --> [0;32mI (254916) ADC1_CH1: cali data: 1322 mV[0m
+10:29:37.188822 --> [0;32mI (254916) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:37.195535 --> [0;32mI (254926) ADC1_CH1: converted temperature: 22.5 C[0m
+10:29:37.201960 --> [0;32mI (254926) ADC1_CH2: raw  data: 4095[0m
+10:29:37.205916 --> [0;32mI (254936) ADC1_CH2: cali data: 2875 mV[0m
+10:29:37.211210 --> [0;32mI (254936) ADC1_CH3: raw  data: 1805[0m
+10:29:37.215232 --> [0;32mI (254946) ADC1_CH3: cali data: 1309 mV[0m
+10:29:37.217869 --> [0;32mI (254946) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:37.220088 --> [0;32mI (254956) ADC1_CH3: converted temperature: 22.6 C[0m
+10:29:37.222255 --> [0;32mI (254956) ADC1_CH4: raw  data: 1820[0m
+10:29:37.225673 --> [0;32mI (254966) ADC1_CH4: cali data: 1321 mV[0m
+10:29:37.230642 --> [0;32mI (254966) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:37.236555 --> [0;32mI (254976) ADC1_CH4: converted temperature: 22.1 C[0m
+10:29:37.242069 --> [0;32mI (254976) measurement: 2024-08-30T10:29:37+0300[0m
+10:29:37.245597 --> [0;32mI (254986) mqtt: sent publish successful, msg_id=61558[0m
+10:29:38.234807 --> [0;32mI (255986) ADC1_CH0: raw  data: 5[0m
+10:29:38.242978 --> [0;32mI (255986) ADC1_CH0: cali data: 4 mV[0m
+10:29:38.247722 --> [0;32mI (255986) ADC1_CH1: raw  data: 1784[0m
+10:29:38.251817 --> [0;32mI (255986) ADC1_CH1: cali data: 1296 mV[0m
+10:29:38.255829 --> [0;32mI (255986) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:38.262793 --> [0;32mI (255996) ADC1_CH1: converted temperature: 23.5 C[0m
+10:29:38.267223 --> [0;32mI (255996) ADC1_CH2: raw  data: 4095[0m
+10:29:38.271493 --> [0;32mI (256006) ADC1_CH2: cali data: 2875 mV[0m
+10:29:38.276108 --> [0;32mI (256006) ADC1_CH3: raw  data: 1823[0m
+10:29:38.279810 --> [0;32mI (256016) ADC1_CH3: cali data: 1323 mV[0m
+10:29:38.280920 --> [0;32mI (256016) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:38.285471 --> [0;32mI (256026) ADC1_CH3: converted temperature: 22.0 C[0m
+10:29:38.290564 --> [0;32mI (256026) ADC1_CH4: raw  data: 1788[0m
+10:29:38.295602 --> [0;32mI (256036) ADC1_CH4: cali data: 1297 mV[0m
+10:29:38.299423 --> [0;32mI (256036) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:38.306209 --> [0;32mI (256046) ADC1_CH4: converted temperature: 23.1 C[0m
+10:29:38.310122 --> [0;32mI (256046) measurement: 2024-08-30T10:29:38+0300[0m
+10:29:38.315559 --> [0;32mI (256056) mqtt: sent publish successful, msg_id=18127[0m
+10:29:39.304820 --> [0;32mI (257056) ADC1_CH0: raw  data: 96[0m
+10:29:39.314289 --> [0;32mI (257056) ADC1_CH0: cali data: 71 mV[0m
+10:29:39.320994 --> [0;32mI (257056) ADC1_CH1: raw  data: 1832[0m
+10:29:39.325974 --> [0;32mI (257056) ADC1_CH1: cali data: 1329 mV[0m
+10:29:39.333314 --> [0;32mI (257056) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:39.340732 --> [0;32mI (257066) ADC1_CH1: converted temperature: 22.3 C[0m
+10:29:39.350513 --> [0;32mI (257066) ADC1_CH2: raw  data: 4095[0m
+10:29:39.355571 --> [0;32mI (257076) ADC1_CH2: cali data: 2875 mV[0m
+10:29:39.358779 --> [0;32mI (257076) ADC1_CH3: raw  data: 1804[0m
+10:29:39.362726 --> [0;32mI (257086) ADC1_CH3: cali data: 1308 mV[0m
+10:29:39.367239 --> [0;32mI (257086) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:39.369056 --> [0;32mI (257096) ADC1_CH3: converted temperature: 22.7 C[0m
+10:29:39.370449 --> [0;32mI (257096) ADC1_CH4: raw  data: 1784[0m
+10:29:39.371905 --> [0;32mI (257106) ADC1_CH4: cali data: 1296 mV[0m
+10:29:39.374167 --> [0;32mI (257106) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:39.376435 --> [0;32mI (257116) ADC1_CH4: converted temperature: 23.2 C[0m
+10:29:39.381953 --> [0;32mI (257116) measurement: 2024-08-30T10:29:39+0300[0m
+10:29:39.385640 --> [0;32mI (257126) mqtt: sent publish successful, msg_id=8488[0m
+10:29:40.374882 --> [0;32mI (258126) ADC1_CH0: raw  data: 103[0m
+10:29:40.384293 --> [0;32mI (258126) ADC1_CH0: cali data: 76 mV[0m
+10:29:40.390109 --> [0;32mI (258126) ADC1_CH1: raw  data: 1823[0m
+10:29:40.394963 --> [0;32mI (258126) ADC1_CH1: cali data: 1323 mV[0m
+10:29:40.402160 --> [0;32mI (258126) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:40.409643 --> [0;32mI (258136) ADC1_CH1: converted temperature: 22.5 C[0m
+10:29:40.418366 --> [0;32mI (258136) ADC1_CH2: raw  data: 4095[0m
+10:29:40.423584 --> [0;32mI (258146) ADC1_CH2: cali data: 2875 mV[0m
+10:29:40.428627 --> [0;32mI (258146) ADC1_CH3: raw  data: 1816[0m
+10:29:40.434109 --> [0;32mI (258156) ADC1_CH3: cali data: 1318 mV[0m
+10:29:40.438783 --> [0;32mI (258156) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:40.440206 --> [0;32mI (258166) ADC1_CH3: converted temperature: 22.2 C[0m
+10:29:40.441861 --> [0;32mI (258166) ADC1_CH4: raw  data: 1821[0m
+10:29:40.444088 --> [0;32mI (258176) ADC1_CH4: cali data: 1322 mV[0m
+10:29:40.445214 --> [0;32mI (258176) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:40.447014 --> [0;32mI (258186) ADC1_CH4: converted temperature: 22.0 C[0m
+10:29:40.451965 --> [0;32mI (258186) measurement: 2024-08-30T10:29:40+0300[0m
+10:29:40.455728 --> [0;32mI (258196) mqtt: sent publish successful, msg_id=50261[0m
+10:29:41.444891 --> [0;32mI (259196) ADC1_CH0: raw  data: 0[0m
+10:29:41.453127 --> [0;32mI (259196) ADC1_CH0: cali data: 0 mV[0m
+10:29:41.460103 --> [0;32mI (259196) ADC1_CH1: raw  data: 1818[0m
+10:29:41.464701 --> [0;32mI (259196) ADC1_CH1: cali data: 1320 mV[0m
+10:29:41.470484 --> [0;32mI (259196) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:41.479829 --> [0;32mI (259206) ADC1_CH1: converted temperature: 22.6 C[0m
+10:29:41.486029 --> [0;32mI (259206) ADC1_CH2: raw  data: 4091[0m
+10:29:41.490996 --> [0;32mI (259216) ADC1_CH2: cali data: 2872 mV[0m
+10:29:41.498191 --> [0;32mI (259216) ADC1_CH3: raw  data: 1789[0m
+10:29:41.501984 --> [0;32mI (259226) ADC1_CH3: cali data: 1297 mV[0m
+10:29:41.506042 --> [0;32mI (259226) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:41.507467 --> [0;32mI (259236) ADC1_CH3: converted temperature: 23.1 C[0m
+10:29:41.509778 --> [0;32mI (259236) ADC1_CH4: raw  data: 1819[0m
+10:29:41.511298 --> [0;32mI (259246) ADC1_CH4: cali data: 1320 mV[0m
+10:29:41.512409 --> [0;32mI (259246) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:41.516254 --> [0;32mI (259256) ADC1_CH4: converted temperature: 22.1 C[0m
+10:29:41.520169 --> [0;32mI (259256) measurement: 2024-08-30T10:29:41+0300[0m
+10:29:41.525639 --> [0;32mI (259266) mqtt: sent publish successful, msg_id=39022[0m
+10:29:42.514799 --> [0;32mI (260266) ADC1_CH0: raw  data: 74[0m
+10:29:42.524520 --> [0;32mI (260266) ADC1_CH0: cali data: 55 mV[0m
+10:29:42.531890 --> [0;32mI (260266) ADC1_CH1: raw  data: 1816[0m
+10:29:42.536233 --> [0;32mI (260266) ADC1_CH1: cali data: 1318 mV[0m
+10:29:42.544437 --> [0;32mI (260266) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:42.550122 --> [0;32mI (260276) ADC1_CH1: converted temperature: 22.7 C[0m
+10:29:42.556377 --> [0;32mI (260276) ADC1_CH2: raw  data: 4095[0m
+10:29:42.561150 --> [0;32mI (260286) ADC1_CH2: cali data: 2875 mV[0m
+10:29:42.565908 --> [0;32mI (260286) ADC1_CH3: raw  data: 1802[0m
+10:29:42.570581 --> [0;32mI (260296) ADC1_CH3: cali data: 1307 mV[0m
+10:29:42.571728 --> [0;32mI (260296) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:42.574067 --> [0;32mI (260306) ADC1_CH3: converted temperature: 22.7 C[0m
+10:29:42.575823 --> [0;32mI (260306) ADC1_CH4: raw  data: 1824[0m
+10:29:42.577046 --> [0;32mI (260316) ADC1_CH4: cali data: 1324 mV[0m
+10:29:42.579039 --> [0;32mI (260316) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:42.586410 --> [0;32mI (260326) ADC1_CH4: converted temperature: 22.0 C[0m
+10:29:42.592112 --> [0;32mI (260326) measurement: 2024-08-30T10:29:42+0300[0m
+10:29:42.596325 --> [0;32mI (260336) mqtt: sent publish successful, msg_id=63498[0m
+10:29:43.584764 --> [0;32mI (261336) ADC1_CH0: raw  data: 74[0m
+10:29:43.593397 --> [0;32mI (261336) ADC1_CH0: cali data: 55 mV[0m
+10:29:43.600196 --> [0;32mI (261336) ADC1_CH1: raw  data: 1836[0m
+10:29:43.605085 --> [0;32mI (261336) ADC1_CH1: cali data: 1332 mV[0m
+10:29:43.611601 --> [0;32mI (261336) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:43.618728 --> [0;32mI (261346) ADC1_CH1: converted temperature: 22.2 C[0m
+10:29:43.624686 --> [0;32mI (261346) ADC1_CH2: raw  data: 4095[0m
+10:29:43.629437 --> [0;32mI (261356) ADC1_CH2: cali data: 2875 mV[0m
+10:29:43.636450 --> [0;32mI (261356) ADC1_CH3: raw  data: 1833[0m
+10:29:43.639509 --> [0;32mI (261366) ADC1_CH3: cali data: 1329 mV[0m
+10:29:43.643961 --> [0;32mI (261366) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:43.645368 --> [0;32mI (261376) ADC1_CH3: converted temperature: 21.7 C[0m
+10:29:43.647855 --> [0;32mI (261376) ADC1_CH4: raw  data: 1805[0m
+10:29:43.649347 --> [0;32mI (261386) ADC1_CH4: cali data: 1309 mV[0m
+10:29:43.651279 --> [0;32mI (261386) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:43.656591 --> [0;32mI (261396) ADC1_CH4: converted temperature: 22.6 C[0m
+10:29:43.662082 --> [0;32mI (261396) measurement: 2024-08-30T10:29:43+0300[0m
+10:29:43.665709 --> [0;32mI (261406) mqtt: sent publish successful, msg_id=62692[0m
+10:29:44.654828 --> [0;32mI (262406) ADC1_CH0: raw  data: 0[0m
+10:29:44.662884 --> [0;32mI (262406) ADC1_CH0: cali data: 0 mV[0m
+10:29:44.669275 --> [0;32mI (262406) ADC1_CH1: raw  data: 1835[0m
+10:29:44.673811 --> [0;32mI (262406) ADC1_CH1: cali data: 1331 mV[0m
+10:29:44.680059 --> [0;32mI (262406) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:44.689216 --> [0;32mI (262416) ADC1_CH1: converted temperature: 22.2 C[0m
+10:29:44.694612 --> [0;32mI (262416) ADC1_CH2: raw  data: 4095[0m
+10:29:44.698915 --> [0;32mI (262426) ADC1_CH2: cali data: 2875 mV[0m
+10:29:44.706579 --> [0;32mI (262426) ADC1_CH3: raw  data: 1816[0m
+10:29:44.711446 --> [0;32mI (262436) ADC1_CH3: cali data: 1318 mV[0m
+10:29:44.714286 --> [0;32mI (262436) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:44.716134 --> [0;32mI (262446) ADC1_CH3: converted temperature: 22.2 C[0m
+10:29:44.717719 --> [0;32mI (262446) ADC1_CH4: raw  data: 1771[0m
+10:29:44.719232 --> [0;32mI (262456) ADC1_CH4: cali data: 1285 mV[0m
+10:29:44.721526 --> [0;32mI (262456) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:44.726356 --> [0;32mI (262466) ADC1_CH4: converted temperature: 23.6 C[0m
+10:29:44.730213 --> [0;32mI (262466) measurement: 2024-08-30T10:29:44+0300[0m
+10:29:44.735798 --> [0;32mI (262476) mqtt: sent publish successful, msg_id=49435[0m
+10:29:45.724882 --> [0;32mI (263476) ADC1_CH0: raw  data: 75[0m
+10:29:45.731403 --> [0;32mI (263476) ADC1_CH0: cali data: 56 mV[0m
+10:29:45.734258 --> [0;32mI (263476) ADC1_CH1: raw  data: 1849[0m
+10:29:45.738354 --> [0;32mI (263476) ADC1_CH1: cali data: 1341 mV[0m
+10:29:45.742094 --> [0;32mI (263476) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:45.747527 --> [0;32mI (263486) ADC1_CH1: converted temperature: 21.8 C[0m
+10:29:45.753229 --> [0;32mI (263486) ADC1_CH2: raw  data: 4094[0m
+10:29:45.756322 --> [0;32mI (263496) ADC1_CH2: cali data: 2875 mV[0m
+10:29:45.761128 --> [0;32mI (263496) ADC1_CH3: raw  data: 1833[0m
+10:29:45.766148 --> [0;32mI (263506) ADC1_CH3: cali data: 1329 mV[0m
+10:29:45.769523 --> [0;32mI (263506) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:45.775616 --> [0;32mI (263516) ADC1_CH3: converted temperature: 21.7 C[0m
+10:29:45.781070 --> [0;32mI (263516) ADC1_CH4: raw  data: 1790[0m
+10:29:45.786014 --> [0;32mI (263526) ADC1_CH4: cali data: 1298 mV[0m
+10:29:45.789140 --> [0;32mI (263526) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:45.796445 --> [0;32mI (263536) ADC1_CH4: converted temperature: 23.1 C[0m
+10:29:45.802090 --> [0;32mI (263536) measurement: 2024-08-30T10:29:45+0300[0m
+10:29:45.805723 --> [0;32mI (263546) mqtt: sent publish successful, msg_id=470[0m
+10:29:46.794848 --> [0;32mI (264546) ADC1_CH0: raw  data: 0[0m
+10:29:46.803444 --> [0;32mI (264546) ADC1_CH0: cali data: 0 mV[0m
+10:29:46.808605 --> [0;32mI (264546) ADC1_CH1: raw  data: 1815[0m
+10:29:46.813273 --> [0;32mI (264546) ADC1_CH1: cali data: 1317 mV[0m
+10:29:46.820636 --> [0;32mI (264546) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:46.829815 --> [0;32mI (264556) ADC1_CH1: converted temperature: 22.7 C[0m
+10:29:46.835656 --> [0;32mI (264556) ADC1_CH2: raw  data: 4095[0m
+10:29:46.839757 --> [0;32mI (264566) ADC1_CH2: cali data: 2875 mV[0m
+10:29:46.845933 --> [0;32mI (264566) ADC1_CH3: raw  data: 1807[0m
+10:29:46.849824 --> [0;32mI (264576) ADC1_CH3: cali data: 1312 mV[0m
+10:29:46.851873 --> [0;32mI (264576) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:46.854661 --> [0;32mI (264586) ADC1_CH3: converted temperature: 22.5 C[0m
+10:29:46.856392 --> [0;32mI (264586) ADC1_CH4: raw  data: 1773[0m
+10:29:46.857622 --> [0;32mI (264596) ADC1_CH4: cali data: 1287 mV[0m
+10:29:46.859298 --> [0;32mI (264596) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:46.866322 --> [0;32mI (264606) ADC1_CH4: converted temperature: 23.5 C[0m
+10:29:46.870201 --> [0;32mI (264606) measurement: 2024-08-30T10:29:47+0300[0m
+10:29:46.875716 --> [0;32mI (264616) mqtt: sent publish successful, msg_id=58846[0m
+10:29:47.864873 --> [0;32mI (265616) ADC1_CH0: raw  data: 0[0m
+10:29:47.873844 --> [0;32mI (265616) ADC1_CH0: cali data: 0 mV[0m
+10:29:47.880492 --> [0;32mI (265616) ADC1_CH1: raw  data: 1816[0m
+10:29:47.885718 --> [0;32mI (265616) ADC1_CH1: cali data: 1318 mV[0m
+10:29:47.892668 --> [0;32mI (265616) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:47.899774 --> [0;32mI (265626) ADC1_CH1: converted temperature: 22.7 C[0m
+10:29:47.907900 --> [0;32mI (265626) ADC1_CH2: raw  data: 4057[0m
+10:29:47.913044 --> [0;32mI (265636) ADC1_CH2: cali data: 2852 mV[0m
+10:29:47.918205 --> [0;32mI (265636) ADC1_CH3: raw  data: 1807[0m
+10:29:47.922067 --> [0;32mI (265646) ADC1_CH3: cali data: 1312 mV[0m
+10:29:47.927607 --> [0;32mI (265646) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:47.929450 --> [0;32mI (265656) ADC1_CH3: converted temperature: 22.5 C[0m
+10:29:47.930885 --> [0;32mI (265656) ADC1_CH4: raw  data: 1803[0m
+10:29:47.932210 --> [0;32mI (265666) ADC1_CH4: cali data: 1308 mV[0m
+10:29:47.934024 --> [0;32mI (265666) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:47.936360 --> [0;32mI (265676) ADC1_CH4: converted temperature: 22.7 C[0m
+10:29:47.940204 --> [0;32mI (265676) measurement: 2024-08-30T10:29:48+0300[0m
+10:29:47.945823 --> [0;32mI (265686) mqtt: sent publish successful, msg_id=44152[0m
+10:29:48.934500 --> [0;32mI (266686) ADC1_CH0: raw  data: 0[0m
+10:29:48.941088 --> [0;32mI (266686) ADC1_CH0: cali data: 0 mV[0m
+10:29:48.946614 --> [0;32mI (266686) ADC1_CH1: raw  data: 1817[0m
+10:29:48.952644 --> [0;32mI (266686) ADC1_CH1: cali data: 1319 mV[0m
+10:29:48.958873 --> [0;32mI (266686) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:48.966570 --> [0;32mI (266696) ADC1_CH1: converted temperature: 22.7 C[0m
+10:29:48.972265 --> [0;32mI (266696) ADC1_CH2: raw  data: 4095[0m
+10:29:48.976633 --> [0;32mI (266706) ADC1_CH2: cali data: 2875 mV[0m
+10:29:48.984078 --> [0;32mI (266706) ADC1_CH3: raw  data: 1817[0m
+10:29:48.987652 --> [0;32mI (266716) ADC1_CH3: cali data: 1319 mV[0m
+10:29:48.988754 --> [0;32mI (266716) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:48.990971 --> [0;32mI (266726) ADC1_CH3: converted temperature: 22.2 C[0m
+10:29:48.992295 --> [0;32mI (266726) ADC1_CH4: raw  data: 1831[0m
+10:29:48.995863 --> [0;32mI (266736) ADC1_CH4: cali data: 1328 mV[0m
+10:29:48.999084 --> [0;32mI (266736) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:49.006351 --> [0;32mI (266746) ADC1_CH4: converted temperature: 21.8 C[0m
+10:29:49.010211 --> [0;32mI (266746) measurement: 2024-08-30T10:29:49+0300[0m
+10:29:49.016422 --> [0;32mI (266756) mqtt: sent publish successful, msg_id=35384[0m
+10:29:50.004399 --> [0;32mI (267756) ADC1_CH0: raw  data: 0[0m
+10:29:50.007967 --> [0;32mI (267756) ADC1_CH0: cali data: 0 mV[0m
+10:29:50.011440 --> [0;32mI (267756) ADC1_CH1: raw  data: 1815[0m
+10:29:50.016732 --> [0;32mI (267756) ADC1_CH1: cali data: 1317 mV[0m
+10:29:50.021578 --> [0;32mI (267756) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:50.027974 --> [0;32mI (267766) ADC1_CH1: converted temperature: 22.7 C[0m
+10:29:50.032537 --> [0;32mI (267766) ADC1_CH2: raw  data: 4095[0m
+10:29:50.037080 --> [0;32mI (267776) ADC1_CH2: cali data: 2875 mV[0m
+10:29:50.041182 --> [0;32mI (267776) ADC1_CH3: raw  data: 1801[0m
+10:29:50.045944 --> [0;32mI (267786) ADC1_CH3: cali data: 1306 mV[0m
+10:29:50.050019 --> [0;32mI (267786) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:50.055157 --> [0;32mI (267796) ADC1_CH3: converted temperature: 22.7 C[0m
+10:29:50.061117 --> [0;32mI (267796) ADC1_CH4: raw  data: 1819[0m
+10:29:50.065766 --> [0;32mI (267806) ADC1_CH4: cali data: 1320 mV[0m
+10:29:50.069189 --> [0;32mI (267806) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:50.076358 --> [0;32mI (267816) ADC1_CH4: converted temperature: 22.1 C[0m
+10:29:50.080214 --> [0;32mI (267816) measurement: 2024-08-30T10:29:50+0300[0m
+10:29:50.086277 --> [0;32mI (267826) mqtt: sent publish successful, msg_id=34225[0m
+10:29:51.074817 --> [0;32mI (268826) ADC1_CH0: raw  data: 0[0m
+10:29:51.081490 --> [0;32mI (268826) ADC1_CH0: cali data: 0 mV[0m
+10:29:51.086904 --> [0;32mI (268826) ADC1_CH1: raw  data: 1782[0m
+10:29:51.093648 --> [0;32mI (268826) ADC1_CH1: cali data: 1294 mV[0m
+10:29:51.098969 --> [0;32mI (268826) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:51.106730 --> [0;32mI (268836) ADC1_CH1: converted temperature: 23.5 C[0m
+10:29:51.112481 --> [0;32mI (268836) ADC1_CH2: raw  data: 4095[0m
+10:29:51.120420 --> [0;32mI (268846) ADC1_CH2: cali data: 2875 mV[0m
+10:29:51.123498 --> [0;32mI (268846) ADC1_CH3: raw  data: 1822[0m
+10:29:51.127836 --> [0;32mI (268856) ADC1_CH3: cali data: 1322 mV[0m
+10:29:51.132841 --> [0;32mI (268856) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:51.134426 --> [0;32mI (268866) ADC1_CH3: converted temperature: 22.0 C[0m
+10:29:51.136124 --> [0;32mI (268866) ADC1_CH4: raw  data: 1767[0m
+10:29:51.138699 --> [0;32mI (268876) ADC1_CH4: cali data: 1283 mV[0m
+10:29:51.140080 --> [0;32mI (268876) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:51.146387 --> [0;32mI (268886) ADC1_CH4: converted temperature: 23.7 C[0m
+10:29:51.150509 --> [0;32mI (268886) measurement: 2024-08-30T10:29:51+0300[0m
+10:29:51.155840 --> [0;32mI (268896) mqtt: sent publish successful, msg_id=48143[0m
+10:29:52.144930 --> [0;32mI (269896) ADC1_CH0: raw  data: 0[0m
+10:29:52.153355 --> [0;32mI (269896) ADC1_CH0: cali data: 0 mV[0m
+10:29:52.160105 --> [0;32mI (269896) ADC1_CH1: raw  data: 1819[0m
+10:29:52.165077 --> [0;32mI (269896) ADC1_CH1: cali data: 1320 mV[0m
+10:29:52.170964 --> [0;32mI (269896) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:52.177368 --> [0;32mI (269906) ADC1_CH1: converted temperature: 22.6 C[0m
+10:29:52.186426 --> [0;32mI (269906) ADC1_CH2: raw  data: 4095[0m
+10:29:52.190782 --> [0;32mI (269916) ADC1_CH2: cali data: 2875 mV[0m
+10:29:52.195053 --> [0;32mI (269916) ADC1_CH3: raw  data: 1786[0m
+10:29:52.201894 --> [0;32mI (269926) ADC1_CH3: cali data: 1296 mV[0m
+10:29:52.204199 --> [0;32mI (269926) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:52.206000 --> [0;32mI (269936) ADC1_CH3: converted temperature: 23.2 C[0m
+10:29:52.208886 --> [0;32mI (269936) ADC1_CH4: raw  data: 1838[0m
+10:29:52.210065 --> [0;32mI (269946) ADC1_CH4: cali data: 1333 mV[0m
+10:29:52.211855 --> [0;32mI (269946) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:52.216400 --> [0;32mI (269956) ADC1_CH4: converted temperature: 21.6 C[0m
+10:29:52.220487 --> [0;32mI (269956) measurement: 2024-08-30T10:29:52+0300[0m
+10:29:52.226108 --> [0;32mI (269966) mqtt: sent publish successful, msg_id=62759[0m
+10:29:53.214961 --> [0;32mI (270966) ADC1_CH0: raw  data: 0[0m
+10:29:53.222005 --> [0;32mI (270966) ADC1_CH0: cali data: 0 mV[0m
+10:29:53.230515 --> [0;32mI (270966) ADC1_CH1: raw  data: 1815[0m
+10:29:53.235641 --> [0;32mI (270966) ADC1_CH1: cali data: 1317 mV[0m
+10:29:53.241671 --> [0;32mI (270966) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:53.248884 --> [0;32mI (270976) ADC1_CH1: converted temperature: 22.7 C[0m
+10:29:53.254564 --> [0;32mI (270976) ADC1_CH2: raw  data: 4095[0m
+10:29:53.257840 --> [0;32mI (270986) ADC1_CH2: cali data: 2875 mV[0m
+10:29:53.262943 --> [0;32mI (270986) ADC1_CH3: raw  data: 1804[0m
+10:29:53.268992 --> [0;32mI (270996) ADC1_CH3: cali data: 1308 mV[0m
+10:29:53.271369 --> [0;32mI (270996) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:53.273167 --> [0;32mI (271006) ADC1_CH3: converted temperature: 22.7 C[0m
+10:29:53.275499 --> [0;32mI (271006) ADC1_CH4: raw  data: 1884[0m
+10:29:53.277001 --> [0;32mI (271016) ADC1_CH4: cali data: 1367 mV[0m
+10:29:53.279196 --> [0;32mI (271016) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:53.286565 --> [0;32mI (271026) ADC1_CH4: converted temperature: 20.0 C[0m
+10:29:53.290383 --> [0;32mI (271026) measurement: 2024-08-30T10:29:53+0300[0m
+10:29:53.296395 --> [0;32mI (271036) mqtt: sent publish successful, msg_id=64374[0m
+10:29:54.284932 --> [0;32mI (272036) ADC1_CH0: raw  data: 0[0m
+10:29:54.292146 --> [0;32mI (272036) ADC1_CH0: cali data: 0 mV[0m
+10:29:54.299715 --> [0;32mI (272036) ADC1_CH1: raw  data: 1791[0m
+10:29:54.304137 --> [0;32mI (272036) ADC1_CH1: cali data: 1299 mV[0m
+10:29:54.310737 --> [0;32mI (272036) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:54.317289 --> [0;32mI (272046) ADC1_CH1: converted temperature: 23.4 C[0m
+10:29:54.324792 --> [0;32mI (272046) ADC1_CH2: raw  data: 4080[0m
+10:29:54.329433 --> [0;32mI (272056) ADC1_CH2: cali data: 2865 mV[0m
+10:29:54.336512 --> [0;32mI (272056) ADC1_CH3: raw  data: 1838[0m
+10:29:54.339401 --> [0;32mI (272066) ADC1_CH3: cali data: 1333 mV[0m
+10:29:54.341299 --> [0;32mI (272066) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:54.343148 --> [0;32mI (272076) ADC1_CH3: converted temperature: 21.6 C[0m
+10:29:54.345269 --> [0;32mI (272076) ADC1_CH4: raw  data: 1815[0m
+10:29:54.347055 --> [0;32mI (272086) ADC1_CH4: cali data: 1317 mV[0m
+10:29:54.349131 --> [0;32mI (272086) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:54.356396 --> [0;32mI (272096) ADC1_CH4: converted temperature: 22.3 C[0m
+10:29:54.360704 --> [0;32mI (272096) measurement: 2024-08-30T10:29:54+0300[0m
+10:29:54.366371 --> [0;32mI (272106) mqtt: sent publish successful, msg_id=19487[0m
+10:29:55.355888 --> [0;32mI (273106) ADC1_CH0: raw  data: 0[0m
+10:29:55.361754 --> [0;32mI (273106) ADC1_CH0: cali data: 0 mV[0m
+10:29:55.367428 --> [0;32mI (273106) ADC1_CH1: raw  data: 1806[0m
+10:29:55.375513 --> [0;32mI (273106) ADC1_CH1: cali data: 1311 mV[0m
+10:29:55.380787 --> [0;32mI (273106) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:55.389354 --> [0;32mI (273116) ADC1_CH1: converted temperature: 22.9 C[0m
+10:29:55.395159 --> [0;32mI (273116) ADC1_CH2: raw  data: 4095[0m
+10:29:55.401246 --> [0;32mI (273126) ADC1_CH2: cali data: 2875 mV[0m
+10:29:55.406200 --> [0;32mI (273126) ADC1_CH3: raw  data: 1818[0m
+10:29:55.410251 --> [0;32mI (273136) ADC1_CH3: cali data: 1320 mV[0m
+10:29:55.415409 --> [0;32mI (273136) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:55.417167 --> [0;32mI (273146) ADC1_CH3: converted temperature: 22.1 C[0m
+10:29:55.418905 --> [0;32mI (273146) ADC1_CH4: raw  data: 1819[0m
+10:29:55.420629 --> [0;32mI (273156) ADC1_CH4: cali data: 1320 mV[0m
+10:29:55.422203 --> [0;32mI (273156) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:55.426438 --> [0;32mI (273166) ADC1_CH4: converted temperature: 22.1 C[0m
+10:29:55.430321 --> [0;32mI (273166) measurement: 2024-08-30T10:29:55+0300[0m
+10:29:55.436467 --> [0;32mI (273176) mqtt: sent publish successful, msg_id=62510[0m
+10:29:56.424685 --> [0;32mI (274176) ADC1_CH0: raw  data: 0[0m
+10:29:56.430997 --> [0;32mI (274176) ADC1_CH0: cali data: 0 mV[0m
+10:29:56.435285 --> [0;32mI (274176) ADC1_CH1: raw  data: 1738[0m
+10:29:56.440531 --> [0;32mI (274176) ADC1_CH1: cali data: 1262 mV[0m
+10:29:56.445791 --> [0;32mI (274176) ADC1_CH1: using thermistor model: B57861S_103F_40[0m
+10:29:56.453792 --> [0;32mI (274186) ADC1_CH1: converted temperature: 24.6 C[0m
+10:29:56.461859 --> [0;32mI (274186) ADC1_CH2: raw  data: 4095[0m
+10:29:56.465928 --> [0;32mI (274196) ADC1_CH2: cali data: 2875 mV[0m
+10:29:56.471191 --> [0;32mI (274196) ADC1_CH3: raw  data: 1821[0m
+10:29:56.476493 --> [0;32mI (274206) ADC1_CH3: cali data: 1322 mV[0m
+10:29:56.478294 --> [0;32mI (274206) ADC1_CH3: using thermistor model: TH113H103[0m
+10:29:56.481068 --> [0;32mI (274216) ADC1_CH3: converted temperature: 22.0 C[0m
+10:29:56.482463 --> [0;32mI (274216) ADC1_CH4: raw  data: 1816[0m
+10:29:56.485840 --> [0;32mI (274226) ADC1_CH4: cali data: 1318 mV[0m
+10:29:56.489186 --> [0;32mI (274226) ADC1_CH4: using thermistor model: TH113H103[0m
+10:29:56.496473 --> [0;32mI (274236) ADC1_CH4: converted temperature: 22.2 C[0m
+10:29:56.500803 --> [0;32mI (274236) measurement: 2024-08-30T10:29:56+0300[0m
+10:29:56.506394 --> [0;32mI (274246) mqtt: sent publish successful, msg_id=44794[0m
+
+Tauno-Monitor log ended: 2024-08-30-10-29-56
+
