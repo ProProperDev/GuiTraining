@@ -7,10 +7,22 @@
 #include <string_view>
 #include <tuple>
 #include <regex>
+#include <utility>
+#include <string_view>
+#include <exception>
 
+#include "channel.hpp"
 // /home/sproper/Desktop/origin_log30.08.24.txt
 
 namespace fs = std::filesystem;
+/*
+enum class Match
+{
+    NOT_FOUND,
+    ADC_CH1,
+    ADC_CH3,
+    ADC_CH4
+};
 
 const Match SearchNameMatch(std::string &str)
 {
@@ -39,12 +51,6 @@ std::ostream &WriteTimeAndTempInStream(std::ostream &out, const std::string &tim
     std::cout << "Time: " << time << "   Temperature: " << temp << std::endl;
 #endif
     out << "Time: " << time << "   Temperature: " << temp << "\n";
-    return out;
-}
-
-std::ostream &PrintHelp(std::ostream &out = std::cout, const std::string_view msg_str_v = {})
-{
-    out << msg_str_v << std::endl;
     return out;
 }
 
@@ -116,28 +122,40 @@ int main()
     InputFileToConvertPath();
     return 0;
 }
-
+*/
 namespace Data
 {
+
     struct LogSettings
     {
-        std::string channel_reg_expr_str_{"ADC_CH[0-9]"};
+        std::string channel_reg_expr_str_{"ADC1_CH[0-9]"};
         bool create_save_in_diffrent_files_ = false;
+        bool parse_all_strings_ = true;
+        const std::regex &GetChannelNameRegExpr() const;
 
     private:
-        std::regex channel_reg_expr_;
+        std::regex channel_name_reg_expr_;
     };
 
-    class LogParser
+    class LogParser // TODO: do we need to use a singleton pattern?
     {
     public:
         LogParser();
-        bool IsFileExist(const fs::path &path_to_file) const;
         void ParseLogFile(const fs::path &path_to_file);
         void SetSettings(LogSettings &&new_settings);
         const LogSettings &GetSettings() const;
 
     private:
+        const float ParseTemperature(std::string &str);
+        const TimePoint ParseTime(std::string &str);
+        const float ParseVoltage(const std::string &str);
+        const Hardware::ThermistorModel ParseThermistorModel(const std::string &str);
+
+        bool IsFileExist(const fs::path &path_to_file) const;
+        fs::path CreateChannelLogFile(const std::string &filename);
+
         LogSettings settings_;
+        std::vector<fs::path> out_files_paths_;
     };
+
 } // namespace Data

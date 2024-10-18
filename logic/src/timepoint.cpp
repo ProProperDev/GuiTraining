@@ -4,7 +4,7 @@ namespace Data
 {
     bool TimePoint::operator==(const TimePoint &other) const
     {
-        if (month == other.month && day == other.day && hours == other.hours && seconds == other.seconds)
+        if (hours == other.hours && seconds == other.seconds)
         {
             return true;
         }

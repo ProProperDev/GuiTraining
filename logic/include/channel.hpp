@@ -12,11 +12,20 @@
 #include "timepoint.hpp"
 #include "thermistors.hpp"
 
+#ifndef LOG_POINT_STRINGS_COUNT
+#define LOG_POINT_STRINGS_COUNT (18)
+#endif
+
+#ifndef LOG_STRINGS_PER_CHANNEL
+#define LOG_STRINGS_PER_CHANNEL (3)
+#endif
+
 namespace Data
 {
     struct LogPoint
     {
         LogPoint(const TimePoint &time, const float &temperature, const float &voltage, const Hardware::ThermistorModel using_thermistor);
+        LogPoint(const LogPoint &&other_point);
 
         TimePoint time_;
         float temperature_;
@@ -36,15 +45,14 @@ namespace Data
     public:
         Channel();
         Channel(std::string &channel_name);
-        float GetPoint(const TimePoint timepoint) const;                                                                                // TODO: reload for index
-        const LogPoint &AddPoint(TimePoint &time, float &temp, const float &voltage, const Hardware::ThermistorModel using_thermistor); // TODO: end memory exception handler
+        float GetPoint(const TimePoint timepoint) const;     // TODO: reload for index
+        const LogPoint &AddPoint(const LogPoint &log_point); // TODO: end memory exception handler
         std::optional<ChannelMode> GetChannelMode() const;
         void SetChannelMode(const ChannelMode new_status);
-        void UpdateAllData();
         void ClearAllData();
 
     private:
-        std::string channel_name_{"Untitled"};
+        std::string name_{"Untitled"};
         ChannelMode mode_ = ChannelMode::CHANNEL_MODE_COUNT;
         std::deque<LogPoint> data_{};
     };

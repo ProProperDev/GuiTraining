@@ -15,12 +15,9 @@ namespace Data
     struct TimePoint
     {
         TimePoint() = default;
-        TimePoint(std::string date_and_time_str);
+        TimePoint(std::string &time_str);
         bool operator==(const TimePoint &other) const;
 
-        years_t year{};
-        months_t month{};
-        days_t day{};
         hours_t hours{};
         minutes_t minutes{};
         seconds_t seconds{};

@@ -1,4 +1,4 @@
-#include "../include/channel.hpp" // TODO add path in Makefile
+#include "../include/channel.hpp"
 
 namespace Data
 {
@@ -11,10 +11,18 @@ namespace Data
         using_thermistor_ = using_thermistor;
     }
 
+    LogPoint::LogPoint(const LogPoint &&other_point)
+    {
+        time_ = std::move(other_point.time_);
+        temperature_ = std::move(other_point.temperature_);
+        voltage_ = std::move(other_point.voltage_);
+        using_thermistor_ = std::move(other_point.using_thermistor_);
+    }
+
     Channel::Channel() = default;
 
     Channel::Channel(std::string &channel_name)
-        : channel_name_(std::move(channel_name)) {};
+        : name_(std::move(channel_name)) {};
     float Channel::GetPoint(const TimePoint timepoint) const
     {
         auto it = std::find_if(data_.begin(), data_.end(), [&timepoint](auto &point)
@@ -22,9 +30,9 @@ namespace Data
         return it->temperature_;
     }
 
-    const LogPoint &Channel::AddPoint(TimePoint &time, float &temp, const float &voltage, const Hardware::ThermistorModel using_thermistor)
+    const LogPoint &Channel::AddPoint(const LogPoint &log_point)
     {
-        return data_.emplace_back(time, temp, voltage, using_thermistor);
+        return data_.emplace_back(std::move(log_point));
     }
 
     std::optional<ChannelMode> Channel::GetChannelMode() const
@@ -35,6 +43,13 @@ namespace Data
     void Channel::SetChannelMode(const ChannelMode new_mode)
     {
         mode_ = new_mode;
+    }
+
+    void Channel::ClearAllData()
+    {
+        data_.clear();
+        name_ = "Untitled";
+        mode_ = ChannelMode::CHANNEL_MODE_COUNT;
     }
 
 } // namespace Data
