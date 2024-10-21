@@ -18,6 +18,11 @@ namespace Data
         return true;
     }
 
+    bool LogParser::IsDirExist(const fs::path &path_to_dir) const
+    {
+        return IsFileExist(path_to_dir);
+    }
+
     const LogSettings &LogParser::GetSettings() const
     {
         return settings_;
@@ -45,12 +50,28 @@ namespace Data
 
     const TimePoint LogParser::ParseTime(std::string &str)
     {
-        auto ParseHour = [](std::string &str) {};
+        auto ParseHour = [](std::string &abs_time_str)
+        {
+            size_t last_hour_index = abs_time_str.find(":");
+        };
+        auto ParseMinutes = [](std::string &abs_time_str)
+        {
+            size_t first_minutes_index = abs_time_str.find(":") + 1;
+                };
+        auto ParseSeconds = [](std::string &abs_time_str)
+        {
+            size_t seconds_index = abs_time_str.rfind(":");
+        };
+
         size_t time_first_char_index = 0; // : + space
         size_t time_last_char_index = str.find(".");
         std::string absolute_time_str = str.substr(time_first_char_index, time_last_char_index);
 
-        return;
+        hours_t parsed_hours = ParseHour(absolute_time_str);
+        minutes_t parsed_hours = ParseMinutes(absolute_time_str);
+        seconds_t parsed_hours = ParseSeconds(absolute_time_str);
+
+        return TimePoint(); // TODO: implement
     }
 
     const float LogParser::ParseVoltage(const std::string &str)
