@@ -16,10 +16,11 @@ namespace Data
     {
         TimePoint() = default;
         TimePoint(std::string &time_str);
+        TimePoint(const hours_t &hours, const minutes_t &minutes, const seconds_t &seconds);
         bool operator==(const TimePoint &other) const;
 
-        hours_t hours{};
-        minutes_t minutes{};
-        seconds_t seconds{};
+        hours_t hours_{0};
+        minutes_t minutes_{0};
+        seconds_t seconds_{0};
     };
 } // namespace Data

@@ -10,11 +10,20 @@
 #include <utility>
 #include <string_view>
 #include <exception>
+#include <chrono>
 
 #include "channel.hpp"
 // /home/sproper/Desktop/origin_log30.08.24.txt
 
 namespace fs = std::filesystem;
+
+#ifndef UNREAL_LOW_TEMPERATURE
+#define UNREAL_LOW_TEMPERATURE (-273.0f)
+#endif
+
+#ifndef ZERO_ADC_VOLTAGE
+#define ZERO_ADC_VOLTAGE (.0f)
+#endif
 /*
 enum class Match
 {
@@ -129,6 +138,7 @@ namespace Data
     struct LogSettings
     {
         std::string channel_reg_expr_str_{"ADC1_CH[0-9]"};
+        std::string parsed_files_dir_name_{"parsed_files"};
         bool create_save_in_diffrent_files_ = false;
         bool parse_all_strings_ = true;
         const std::regex &GetChannelNameRegExpr() const;
@@ -152,6 +162,7 @@ namespace Data
         const Hardware::ThermistorModel ParseThermistorModel(const std::string &str);
 
         bool IsFileExist(const fs::path &path_to_file) const;
+        bool IsDirExist(const fs::path &path_to_dir) const;
         fs::path CreateChannelLogFile(const std::string &filename);
 
         LogSettings settings_;
