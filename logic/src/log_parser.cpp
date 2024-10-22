@@ -45,45 +45,48 @@ namespace Data
     {
         size_t temp_first_char_index = str.rfind(":") + 2; // : + space
         size_t temp_last_char_index = str.substr(temp_first_char_index).find(" ");
-        return std::stof(str.substr(temp_first_char_index, temp_last_char_index));
+        static float parsed_temperature = UNREAL_LOW_TEMPERATURE;
+        try
+        {
+            parsed_temperature = std::stof(str.substr(temp_first_char_index, temp_last_char_index));
+        }
+        catch (const std::invalid_argument &e)
+        {
+        }
+        return parsed_temperature;
     }
 
     const TimePoint LogParser::ParseTime(std::string &str)
     {
-        auto ParseHour = [](std::string &abs_time_str)
-        {
-            size_t last_hour_index = abs_time_str.find(":");
-        };
-        auto ParseMinutes = [](std::string &abs_time_str)
-        {
-            size_t first_minutes_index = abs_time_str.find(":") + 1;
-                };
-        auto ParseSeconds = [](std::string &abs_time_str)
-        {
-            size_t seconds_index = abs_time_str.rfind(":");
-        };
-
         size_t time_first_char_index = 0; // : + space
         size_t time_last_char_index = str.find(".");
         std::string absolute_time_str = str.substr(time_first_char_index, time_last_char_index);
 
-        hours_t parsed_hours = ParseHour(absolute_time_str);
-        minutes_t parsed_hours = ParseMinutes(absolute_time_str);
-        seconds_t parsed_hours = ParseSeconds(absolute_time_str);
+        int64_t hour_int, minutes_int, seconds_int = 0;
+        try
+        {
+            sscanf(absolute_time_str.data(), "%ld:%ld:%ld", &hour_int, &minutes_int, &seconds_int);
+        }
+        catch (const std::exception &e)
+        {
+        }
 
-        return TimePoint(); // TODO: implement
+        hours_t parsed_hours = std::chrono::hours(hour_int);
+        minutes_t parsed_minutes = std::chrono::minutes(minutes_int);
+        seconds_t parsed_seconds = std::chrono::seconds(seconds_int);
+
+        return TimePoint(parsed_hours, parsed_minutes, parsed_seconds); // TODO: implement
     }
 
     const float LogParser::ParseVoltage(const std::string &str)
     {
-        float parsed_voltage = .0f;
+        static float parsed_voltage = ZERO_ADC_VOLTAGE;
         try
         {
             parsed_voltage = std::stof("plug");
         }
         catch (const std::invalid_argument &e)
         {
-            parsed_voltage = .0f;
         }
         return parsed_voltage; // TODO: implement
     }
@@ -96,7 +99,6 @@ namespace Data
 
     void LogParser::ParseLogFile(const fs::path &path_to_file)
     {
-
         if (!IsFileExist(path_to_file))
         {
             return;
