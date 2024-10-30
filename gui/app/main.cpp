@@ -12,6 +12,11 @@
 #include "imgui_impl_opengl3.h"
 #include "../implot/implot.h"
 #include "../implot/implot_internal.h"
+#include "../../logic/include/channel.hpp"
+#include "../../logic/include/log_parser.hpp"
+#include "../../logic/include/thermistors.hpp"
+#include "../../logic/include/timepoint.hpp"
+#include "../../ImGuiFileDialog/ImGuiFileDialog.h"
 #include <stdio.h>
 #include <cmath>
 #include <string_view>
@@ -38,7 +43,7 @@
 
 static void CustomHelpMarker(const char *desc)
 {
-    ImGui::TextDisabled("?");
+    // ImGui::TextDisabled("?");
     if (ImGui::BeginItemTooltip())
     {
         ImGui::PushTextWrapPos(ImGui::GetFontSize() * 35.0f);
@@ -222,7 +227,10 @@ int main(int, char **)
         DUMMY
     };
 
+    Data::LogParser log_parser;
+
     bool show_start_window = true;
+    bool show_offline_mode_window = false;
     bool show_about_app_window = true;
     bool show_storage_window = false;
     bool show_items = false;
@@ -240,6 +248,8 @@ int main(int, char **)
     bool show_adc_ch3_points = false;
     bool show_adc_ch4_points = false;
     bool exit_app_desire = false;
+
+    static std::string device_name{"Unknown device"};
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
     // Main loop
@@ -297,10 +307,35 @@ int main(int, char **)
             ImGui::SameLine();
             CustomHelpMarker("Load, Save, Clear and etc. actions\nthat you need to work with log files");
 
+            if (ImGui::BeginMenu("Offline Mode"))
+            {
+                show_offline_mode_window = true;
+
+                ImGui::EndMenu();
+            }
+            ImGui::SameLine();
+            CustomHelpMarker("Offline mode for log parsing and data analysis");
+
             if (ImGui::BeginMenu("Online mode"))
             {
+
+                if (ImGui::BeginMenu("Select Device"))
+                {
+                    // TODO: implement device selection
+                    if (ImGui::MenuItem("ESP two thermistors"))
+                    {
+                        device_name = "ESP two thermistors";
+                    }
+                    if (ImGui::MenuItem("Unknown  device"))
+                    {
+                        device_name = "Unknown device";
+                    }
+                    ImGui::EndMenu();
+                }
+                ImGui::SeparatorText(std::string("Current device: " + device_name).data());
                 if (ImGui::BeginMenu("Open Channel..."))
                 {
+
                     if (ImGui::MenuItem("ADC Channel 0", "", false, false))
                     {
                         show_adc_ch_0 = true;
@@ -452,6 +487,66 @@ int main(int, char **)
             ImGui::End();
         }
 
+        if (show_offline_mode_window)
+        {
+            ImGui::Begin("Offline mode", &show_offline_mode_window);
+            ImGui::Text("Selected device:");
+            ImGui::SameLine();
+            ImGui::TextColored({1, 0.2, 0.5, 1}, device_name.data());
+            if (ImGui::BeginTabBar("Channels"))
+            {
+                if (ImGui::BeginTabItem("ADC1_CH1"))
+                {
+                    ImGui::Text("This is the ADC1_CH1\n...");
+                    ImGui::EndTabItem();
+                }
+                if (ImGui::BeginTabItem("ADC1_CH3"))
+                {
+                    ImGui::Text("This is the ADC1_CH3\n...");
+                    // Generate samples and plot them
+                    std::vector<float> samples(500);
+                    for (int n = 0; n < 500; n++)
+                        samples[n] = sinf(n * 0.2f + ImGui::GetTime() * 1.5f);
+                    // void ImGui::PlotLines(const char* label, const float* values, int values_count, int values_offset, const char* overlay_text, float scale_min, float scale_max, ImVec2 graph_size, int stride)
+                    if (ImGui::Button("Open File Dialog"))
+                    {
+                        IGFD::FileDialogConfig config;
+                        config.path = ".";
+                        ImGuiFileDialog::Instance()->OpenDialog("ChooseFileDlgKey", "Choose File", ".cpp,.h,.hpp", config);
+                    }
+                    // display
+                    if (ImGuiFileDialog::Instance()->Display("ChooseFileDlgKey"))
+                    {
+                        if (ImGuiFileDialog::Instance()->IsOk())
+                        { // action if OK
+                            // std::string filePathName = ImGuiFileDialog::Instance()->GetFilePathName();
+                            // std::string filePath = ImGuiFileDialog::Instance()->GetCurrentPath();
+                            auto files = ImGuiFileDialog::Instance()->GetSelection();
+                            // action
+                        }
+
+                        // close
+                        ImGuiFileDialog::Instance()->Close();
+                    }
+                    if (ImGui::Button("Parse logfile.txt"))
+                    {
+                        fs::path log_file_path{"logfile.txt"};
+                        log_parser.ParseLogFile(log_file_path);
+                    }
+                    ImGui::PlotLines("ADC_CH1 Graph", samples.data(), 200, 0, "FFFGGG", -10, 10, {500, 200});
+                    ImGui::EndTabItem();
+                }
+                if (ImGui::BeginTabItem("ADC1_CH4"))
+                {
+                    ImGui::Text("This is the ADC1_CH4\n...");
+                    ImGui::EndTabItem();
+                }
+                ImGui::EndTabBar();
+            }
+
+            ImGui::End();
+        }
+
         // 1. Show the big demo window (Most of the sample code is in ImGui::ShowDemoWindow()! You can browse its code to learn more about Dear ImGui!).
         // if (show_demo_window)
         //     ImGui::ShowDemoWindow(&show_demo_window);
@@ -532,6 +627,7 @@ int main(int, char **)
         if (show_adc_ch_1)
         {
             ImGui::Begin("ADC Channel 1", &show_adc_ch_1);
+
             if (ImPlot::BeginPlot("Plot"))
             {
                 std::array<float, 10> exm;
