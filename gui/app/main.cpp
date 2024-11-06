@@ -228,6 +228,7 @@ int main(int, char **)
     };
 
     Data::LogParser log_parser;
+    std::map<std::string, std::shared_ptr<Data::Channel>> channels;
 
     bool show_start_window = true;
     bool show_offline_mode_window = false;
@@ -531,7 +532,7 @@ int main(int, char **)
                     if (ImGui::Button("Parse logfile.txt"))
                     {
                         fs::path log_file_path{"logfile.txt"};
-                        log_parser.ParseLogFile(log_file_path);
+                        channels = log_parser.ParseLogFile(log_file_path);
                     }
                     ImGui::PlotLines("ADC_CH1 Graph", samples.data(), 200, 0, "FFFGGG", -10, 10, {500, 200});
                     ImGui::EndTabItem();
@@ -630,17 +631,11 @@ int main(int, char **)
 
             if (ImPlot::BeginPlot("Plot"))
             {
-                std::array<float, 10> exm;
-                std::array<float, 10> exm1;
-                std::array<float, 10> exm2;
-                exm = {0, 1, 2.2, 3.3, 4.4, 5.5, 6, 7, 8, 9};
-                exm1 = {0, -1, -2.2, -3.3, -4.4, -5.5, -6, -7, -8, -9};
-                exm2 = {5, 8, 2, 6, 7, 2, 5.5, 2, 9, 6};
+                std::shared_ptr<Data::Channel> channel = channels["ADC1_CH1"];
 
                 // ImPlot::PlotScatter("My Bar Plot", exm.data(), 11);
-                ImPlot::PlotStairs("ADC Channel 1", exm.data(), exm1.data(), 9);
-                ImPlot::PlotStairs("ADC Channel 2", exm1.data(), exm.data(), 9);
-                ImPlot::PlotStairs("ADC Channel 3", exm1.data(), exm2.data(), 9);
+                ImPlot::PlotStairs("ADC Channel 1", channel->GetData(), channel->GetData(), channel->GetData().size());
+
                 ImPlot::EndPlot();
 
                 ImGui::SeparatorText("ADC_CH1 (X: time, s; Y: temperature, C)");
