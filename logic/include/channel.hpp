@@ -59,6 +59,7 @@ namespace Data
         std::optional<ChannelMode> GetChannelMode() const;
         std::optional<LogPoint *> GetLogPoint(const TimePoint &timepoint) const;
         void SetChannelMode(const ChannelMode new_status);
+        const std::deque<LogPoint> &GetData() const;
         void ClearAllData();
 
     private:

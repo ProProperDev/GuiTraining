@@ -106,4 +106,9 @@ namespace Data
         }
     }
 
+    const std::deque<LogPoint> &Channel::GetData() const
+    {
+        return data_;
+    }
+
 } // namespace Data

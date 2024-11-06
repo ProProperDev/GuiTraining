@@ -120,18 +120,19 @@ namespace Data
         return str.find("converted temperature") != std::string::npos;
     }
 
-    void LogParser::ParseLogFile(const fs::path &path_to_file)
+    std::map<std::string, std::shared_ptr<Channel>> LogParser::ParseLogFile(const fs::path &path_to_file)
     {
         if (!IsFileExist(path_to_file))
         {
-            return;
+            std::map<std::string, std::shared_ptr<Channel>> plug;
+            return plug;
         }
 
         std::ifstream input_stream_file;
         input_stream_file.open(path_to_file);
         std::smatch match;
         std::string var_str{};
-        static int count = 0;
+
         std::string parsed_channel_name{};
         TimePoint parsed_timepoint{};
         int parsed_voltage{};
@@ -140,7 +141,7 @@ namespace Data
         std::map<std::string, std::shared_ptr<Channel>> channels;
         std::map<std::string, std::ofstream> output_channel_fstreams;
 
-        const bool needs_write_in_files = this->GetSettings().create_save_in_diffrent_files_;
+        // const bool needs_write_in_files = GetSettings().create_save_in_diffrent_files_;
 
         while (std::getline(input_stream_file, var_str))
         {
@@ -165,7 +166,10 @@ namespace Data
             }
 
             parsed_timepoint = ParseTime(var_str);
-            output_channel_fstreams[parsed_channel_name] << parsed_timepoint << "\n";
+            if (IsStringContainTemperature(var_str) or IsStringContainThermistorModel(var_str) or IsStringContainVoltage(var_str))
+            {
+                output_channel_fstreams[parsed_channel_name] << parsed_timepoint << " ";
+            }
 
             if (!channels[parsed_channel_name]->GetLogPoint(parsed_timepoint))
             {
@@ -194,9 +198,10 @@ namespace Data
             {
                 parsed_temperature = ParseTemperature(var_str);
                 target_logpoint->SetTemperature(parsed_temperature);
-                output_channel_fstreams[parsed_channel_name] << parsed_temperature << "\n";
+                output_channel_fstreams[parsed_channel_name] << "Temperature: " << parsed_temperature << "\n";
                 continue;
             }
         }
+        return channels;
     }
 } // namespace Data
