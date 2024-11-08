@@ -631,12 +631,19 @@ int main(int, char **)
 
             if (ImPlot::BeginPlot("Plot"))
             {
-                std::shared_ptr<Data::Channel> channel = channels["ADC1_CH1"];
-
-                // ImPlot::PlotScatter("My Bar Plot", exm.data(), 11);
-                ImPlot::PlotStairs("ADC Channel 1", channel->GetData(), channel->GetData(), channel->GetData().size());
+                std::shared_ptr<Data::Channel> channel = std::move(channels["ADC1_CH1"]);
+                size_t arr_size = channel->GetData().size();
+                std::vector<int> temps_list(arr_size);
+                std::vector<int> hours_list(arr_size);
+                for (auto it = channel->GetData().begin(); it != channel->GetData().end(); ++it)
+                {
+                    temps_list.push_back(it->temperature_);
+                }
+                ImPlot::PlotScatter("My Bar Plot", temps_list.data(), arr_size);
+                //    ImPlot::PlotStairs("ADC Channel 1", temps_list.data(), hours_list.data(), arr_size - 1);
 
                 ImPlot::EndPlot();
+                ImGui::Text(std::to_string(arr_size).data());
 
                 ImGui::SeparatorText("ADC_CH1 (X: time, s; Y: temperature, C)");
                 ImGui::RadioButton("Show points", show_adc_ch1_points);
