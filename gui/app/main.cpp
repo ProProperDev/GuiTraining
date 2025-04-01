@@ -15,6 +15,7 @@
 #include "../../logic/include/log_parser.hpp"
 #include "../../logic/include/thermistors.hpp"
 #include "../../logic/include/timepoint.hpp"
+#include "internal_windows.h"
 #include "../implot/implot.h"
 #include "../implot/implot_internal.h"
 #include "imgui.h"
@@ -733,22 +734,7 @@ int main(int, char **) {
     }
 
     if (show_start_window) {
-      ImGui::Begin("Welcome!", &show_start_window);
-      char buf[255];
-      memset(buf, 0, 255);
-      ImGui::InputTextWithHint("Device name", "Input device name here", buf,
-                               254);
-      ImGui::TextColored(
-          {1, 0.2, 0.5, 1},
-          std::string(
-              "Online mode is not available now! Sorry, we are working on it!")
-              .data());
-
-      if (ImGui::Button("Continue in offline mode", {150, 20})) {
-        show_start_window = false;
-      }
-
-      ImGui::End();
+        ShowWelcomeWindow(&show_start_window);
     }
 
     // ImGui::Begin("OpenGL Texture Text");
