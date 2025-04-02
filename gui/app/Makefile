@@ -19,7 +19,9 @@ IMGUI_DIR = ../imgui
 IMPLOT_DIR = ../implot
 IMFILE_DIALOG_DIR = ../ImGuiFileDialog
 MODEL_DIR = ../../logic/src
-SOURCES += main.cpp internal_windows.cpp
+VIEW_DIR = ../../view/src
+SOURCES += main.cpp
+SOURCES += $(VIEW_DIR)/internal_windows.cpp
 SOURCES += $(MODEL_DIR)/channel.cpp $(MODEL_DIR)/thermistors.cpp $(MODEL_DIR)/timepoint.cpp $(MODEL_DIR)/log_parser.cpp
 SOURCES += $(IMGUI_DIR)/imgui.cpp $(IMGUI_DIR)/imgui_demo.cpp $(IMGUI_DIR)/imgui_draw.cpp $(IMGUI_DIR)/imgui_tables.cpp $(IMGUI_DIR)/imgui_widgets.cpp
 SOURCES += $(IMPLOT_DIR)/implot.cpp $(IMPLOT_DIR)/implot_items.cpp
@@ -83,6 +85,9 @@ endif
 	$(CXX) $(CXXFLAGS) -c -o $@ $<
 
 %.o:$(MODEL_DIR)/%.cpp
+	$(CXX) $(CXXFLAGS) -c -o $@ $<
+
+%.o:$(VIEW_DIR)/%.cpp
 	$(CXX) $(CXXFLAGS) -c -o $@ $<
 
 %.o:$(IMPLOT_DIR)/%.cpp

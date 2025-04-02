@@ -15,7 +15,7 @@
 #include "../../logic/include/log_parser.hpp"
 #include "../../logic/include/thermistors.hpp"
 #include "../../logic/include/timepoint.hpp"
-#include "internal_windows.h"
+#include "../../view/include/internal_windows.h"
 #include "../implot/implot.h"
 #include "../implot/implot_internal.h"
 #include "imgui.h"
@@ -584,10 +584,7 @@ int main(int, char **) {
     // }
 
     if (show_about_app_window) {
-      ImGui::Begin("About ESP_good_therm", &show_about_app_window);
-      ImGui::TextDisabled("Some description...");
-      ImGui::Separator();
-      ImGui::End();
+      AppView::ShowAboutWindow(&show_about_app_window);
     }
 
     // 3. Show another simple window.
@@ -734,7 +731,7 @@ int main(int, char **) {
     }
 
     if (show_start_window) {
-        ShowWelcomeWindow(&show_start_window);
+        AppView::ShowWelcomeWindow(&show_start_window);
     }
 
     // ImGui::Begin("OpenGL Texture Text");
