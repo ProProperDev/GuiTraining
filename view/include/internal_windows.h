@@ -4,15 +4,28 @@
 #pragma once
 
 #include <string>
+#include <string_view>
+#include <memory>
 
 #include "imgui.h"
+
+using namespace std::literals;
 
 namespace AppView{
 
     class Window {
     public:
-        Window();
+        Window() = delete;
+        explicit Window(bool window_show_flag)
+        : window_show_flag_(std::make_unique<bool>(window_show_flag)) {}
+        std::string_view SetWindowTitle(std::string& new_title);
+        std::string_view GetWindowTitle() const;
+
         virtual ~Window() = default;
+
+    private:
+        std::string title_ = "Untitled"s;
+        std::unique_ptr<bool> window_show_flag_;
     };
 
 /**

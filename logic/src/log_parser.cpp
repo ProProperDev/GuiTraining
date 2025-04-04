@@ -202,6 +202,6 @@ namespace Data
                 continue;
             }
         }
-        return channels;
+        return std::move(channels);
     }
 } // namespace Data
