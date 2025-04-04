@@ -258,7 +258,7 @@ int main(int, char **) {
   Data::LogParser log_parser;
   std::map<std::string, std::shared_ptr<Data::Channel>> channels;
 
-  bool show_start_window = true;
+  bool show_start_window = false;
   bool show_offline_mode_window = false;
   bool show_about_app_window = true;
   bool show_storage_window = false;
@@ -503,7 +503,9 @@ int main(int, char **) {
           ImGui::EndTabItem();
         }
         if (ImGui::BeginTabItem("ADC1_CH3")) {
-          ImGui::Text("This is the ADC1_CH3\n...");
+            static std::string filePathName(512,'\0');
+            filePathName.resize(512);
+            ImGui::InputTextWithHint("Path to the log file", "Type full path to the log file here (up to 512 characters)", filePathName.data(), filePathName.size());
           // Generate samples and plot them
           std::vector<float> samples(500);
           for (int n = 0; n < 500; n++)
@@ -511,18 +513,18 @@ int main(int, char **) {
           // void ImGui::PlotLines(const char* label, const float* values, int
           // values_count, int values_offset, const char* overlay_text, float
           // scale_min, float scale_max, ImVec2 graph_size, int stride)
-          if (ImGui::Button("Open File Dialog")) {
+          if (ImGui::Button("Choose log file...")) {
             IGFD::FileDialogConfig config;
             config.path = ".";
             ImGuiFileDialog::Instance()->OpenDialog(
-                "ChooseFileDlgKey", "Choose File", ".cpp,.h,.hpp", config);
+                "ChooseFileDlgKey", "Choose File", ".txt,", config);
           }
           // display
+          //static std::string filePathName{};
           if (ImGuiFileDialog::Instance()->Display("ChooseFileDlgKey")) {
             if (ImGuiFileDialog::Instance()->IsOk()) { // action if OK
-              // std::string filePathName =
-              // ImGuiFileDialog::Instance()->GetFilePathName(); std::string
-              // filePath = ImGuiFileDialog::Instance()->GetCurrentPath();
+              filePathName = ImGuiFileDialog::Instance()->GetFilePathName();
+              std::string filePath = ImGuiFileDialog::Instance()->GetCurrentPath();
               auto files = ImGuiFileDialog::Instance()->GetSelection();
               // action
             }
@@ -530,8 +532,9 @@ int main(int, char **) {
             // close
             ImGuiFileDialog::Instance()->Close();
           }
-          if (ImGui::Button("Parse logfile.txt")) {
-            fs::path log_file_path{"logfile.txt"};
+          ImGui::TextDisabled("Selected file: %s", filePathName.data());
+          if (ImGui::Button("Parse log")) {
+           fs::path log_file_path{filePathName};
             channels = log_parser.ParseLogFile(log_file_path);
           }
           ImGui::PlotLines("ADC_CH1 Graph", samples.data(), 200, 0, "FFFGGG",
