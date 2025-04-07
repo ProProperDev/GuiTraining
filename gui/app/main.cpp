@@ -256,7 +256,7 @@ int main(int, char **) {
   };
 
   Data::LogParser log_parser;
-  std::map<std::string, std::shared_ptr<Data::Channel>> channels;
+  static std::map<std::string, Data::Channel> channels;
 
   bool show_start_window = false;
   bool show_offline_mode_window = false;
@@ -642,18 +642,18 @@ int main(int, char **) {
       ImGui::Begin("ADC Channel 1", &show_adc_ch_1);
 
       if (ImPlot::BeginPlot("Plot")) {
-        // std::shared_ptr<Data::Channel> channel =
-        // std::move(channels["ADC1_CH1"]); size_t arr_size =
-        // channel->GetData().size(); std::vector<int> temps_list(arr_size);
-        // std::vector<int> hours_list(arr_size);
-        // for (auto it = channel->GetData().begin(); it !=
-        // channel->GetData().end(); ++it)
-        // {
-        //     temps_list.push_back(it->temperature_);
-        // }
-        // ImPlot::PlotScatter("My Bar Plot", temps_list.data(), arr_size);
-        // //    ImPlot::PlotStairs("ADC Channel 1", temps_list.data(),
-        // hours_list.data(), arr_size - 1);
+         Data::Channel channel = channels["ADC1_CH1"];
+         size_t arr_size = channel.GetData().size();
+         std::vector<int> temps_list(arr_size);
+         std::vector<int> hours_list(arr_size);
+         for (auto it = channel.GetData().begin(); it !=
+         channel.GetData().end(); ++it)
+         {
+             temps_list.push_back(it->temperature_);
+         }
+         ImPlot::PlotScatter("My Bar Plot", temps_list.data(), arr_size);
+         //    ImPlot::PlotStairs("ADC Channel 1", temps_list.data(),
+         //hours_list.data(), arr_size - 1);
 
         ImPlot::EndPlot();
         // ImGui::Text(std::to_string(arr_size).data());
@@ -662,6 +662,11 @@ int main(int, char **) {
         ImGui::RadioButton("Show points", show_adc_ch1_points);
         ImGui::SameLine();
         ImGui::Button("Stop writing this channel");
+        for(auto [h, x] : channels) {
+            for(auto d : x.GetData()) {
+                ImGui::Text(std::to_string(d.temperature_).data());
+            }
+        }
       }
       ImGui::End();
     }
@@ -681,6 +686,7 @@ int main(int, char **) {
         ImGui::RadioButton("Show points", show_adc_ch1_points);
         ImGui::SameLine();
         ImGui::Button("Stop writing this channel");
+
       }
       ImGui::End();
     }
