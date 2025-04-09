@@ -585,6 +585,14 @@ int main(int, char **) {
     //     ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f /
     //     io.Framerate, io.Framerate); ImGui::End();
     // }
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+    ////////////////////////////////////////////////////////////////////////////////////////
 
     if (show_about_app_window) {
       AppView::ShowAboutWindow(&show_about_app_window);
@@ -651,9 +659,10 @@ int main(int, char **) {
          {
              temps_list.push_back(it->temperature_);
          }
-         ImPlot::PlotScatter("My Bar Plot", temps_list.data(), arr_size);
-         //    ImPlot::PlotStairs("ADC Channel 1", temps_list.data(),
-         //hours_list.data(), arr_size - 1);
+         ImGui::Text(std::to_string(arr_size).data());
+         ImPlot::PlotShaded("My Bar Plot", temps_list.data(), arr_size);
+//              ImPlot::PlotStairs("ADC Channel 1", temps_list.data(),
+//          hours_list.data(), arr_size - 1);
 
         ImPlot::EndPlot();
         // ImGui::Text(std::to_string(arr_size).data());
@@ -663,9 +672,7 @@ int main(int, char **) {
         ImGui::SameLine();
         ImGui::Button("Stop writing this channel");
         for(auto [h, x] : channels) {
-            for(auto d : x.GetData()) {
-                ImGui::Text(std::to_string(d.temperature_).data());
-            }
+                ImGui::Text(x.GetChannelName().data());
         }
       }
       ImGui::End();
@@ -702,7 +709,7 @@ int main(int, char **) {
 
         if (ImPlot::BeginPlot("My Plot")) {
           ImPlot::PlotScatter("My Bar Plot", exm.data(), 11);
-          ImPlot::PlotLine("My Line Plot", exm.data(), exm1.data(), 9);
+          ImPlot::PlotShaded("My Line Plot", exm.data(), exm1.data(), 9);
           ImPlot::EndPlot();
         }
       }
@@ -716,8 +723,8 @@ int main(int, char **) {
 
         ImGui::BeginChild("Next point enumering in cycle");
         if (ImGui::BeginTabBar("MyTabBar")) {
-          if (ImGui::BeginTabItem("Avocado")) {
-            ImGui::Text("This is the Avocado tab!\nblah blah blah blah blah");
+            if (ImGui::BeginTabItem("Avocado")) {
+                ImGui::Text("This is the Avocado tab!\nblah blah blah blah blah");
             ImGui::EndTabItem();
           }
           if (ImGui::BeginTabItem("Broccoli")) {
