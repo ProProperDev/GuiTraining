@@ -152,7 +152,7 @@ namespace Data
     {
     public:
         LogParser();
-        std::map<std::string, std::shared_ptr<Channel>> ParseLogFile(const fs::path &path_to_file);
+        std::map<std::string, Channel> ParseLogFile(const fs::path &path_to_file);
         void SetSettings(LogSettings &&new_settings);
         const LogSettings &GetSettings() const;
 

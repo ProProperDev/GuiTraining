@@ -120,11 +120,11 @@ namespace Data
         return str.find("converted temperature") != std::string::npos;
     }
 
-    std::map<std::string, std::shared_ptr<Channel>> LogParser::ParseLogFile(const fs::path &path_to_file)
+    std::map<std::string, Channel> LogParser::ParseLogFile(const fs::path &path_to_file)
     {
         if (!IsFileExist(path_to_file))
         {
-            std::map<std::string, std::shared_ptr<Channel>> plug;
+            std::map<std::string, Channel> plug;
             return plug;
         }
 
@@ -138,7 +138,7 @@ namespace Data
         int parsed_voltage{};
         float parsed_temperature{};
         Hardware::ThermistorModel parsed_thermistor_model{};
-        std::map<std::string, std::shared_ptr<Channel>> channels;
+        std::map<std::string, Channel> channels;
         std::map<std::string, std::ofstream> output_channel_fstreams;
 
         // const bool needs_write_in_files = GetSettings().create_save_in_diffrent_files_;
@@ -158,8 +158,9 @@ namespace Data
             }
             catch (const std::out_of_range &e)
             {
-                channels[parsed_channel_name] = std::make_shared<Channel>(parsed_channel_name);
-                channels[parsed_channel_name]->SetChannelMode(ChannelMode::OFFLINE);
+                auto ch = Channel(parsed_channel_name);
+                channels[parsed_channel_name] = ch;
+                channels[parsed_channel_name].SetChannelMode(ChannelMode::OFFLINE);
                 CreateChannelLogFile(parsed_channel_name);
                 output_channel_fstreams[parsed_channel_name] = std::ofstream{};
                 output_channel_fstreams[parsed_channel_name].open(parsed_channel_name, std::ios::out);
@@ -171,12 +172,12 @@ namespace Data
                 output_channel_fstreams[parsed_channel_name] << parsed_timepoint << " ";
             }
 
-            if (!channels[parsed_channel_name]->GetLogPoint(parsed_timepoint))
+            if (!channels[parsed_channel_name].GetLogPoint(parsed_timepoint))
             {
-                channels[parsed_channel_name]->AddPoint(LogPoint(parsed_timepoint));
+                channels[parsed_channel_name].AddPoint(LogPoint(parsed_timepoint));
             }
 
-            LogPoint *target_logpoint = channels[parsed_channel_name]->GetLogPoint(parsed_timepoint).value();
+            LogPoint *target_logpoint = channels[parsed_channel_name].GetLogPoint(parsed_timepoint).value();
 
             if (IsStringContainVoltage(var_str))
             {
@@ -202,6 +203,6 @@ namespace Data
                 continue;
             }
         }
-        return std::move(channels);
+        return channels;
     }
 } // namespace Data

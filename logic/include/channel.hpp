@@ -53,9 +53,10 @@ namespace Data
     {
     public:
         Channel();
-        Channel(std::string &channel_name);
+        Channel(std::string channel_name);
         std::string GetChannelName() const;
         const LogPoint &AddPoint(const LogPoint &log_point); // TODO: end memory exception handler
+        const LogPoint &AddPoint(const LogPoint &&log_point);
         std::optional<ChannelMode> GetChannelMode() const;
         std::optional<LogPoint *> GetLogPoint(const TimePoint &timepoint) const;
         void SetChannelMode(const ChannelMode new_status);

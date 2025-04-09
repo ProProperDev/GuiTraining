@@ -61,7 +61,7 @@ namespace Data
 
     Channel::Channel() = default;
 
-    Channel::Channel(std::string &channel_name)
+    Channel::Channel(std::string channel_name)
         : name_(channel_name) {};
 
     std::string Channel::GetChannelName() const
@@ -71,6 +71,12 @@ namespace Data
 
     const LogPoint &Channel::AddPoint(const LogPoint &log_point)
     {
+        auto &emplaced_logpoint = data_.emplace_back(std::move(log_point));
+        timepoint_to_logpoint_[log_point.GetTime()] = &emplaced_logpoint;
+        return emplaced_logpoint;
+    }
+
+    const LogPoint &Channel::AddPoint(const LogPoint &&log_point) {
         auto &emplaced_logpoint = data_.emplace_back(std::move(log_point));
         timepoint_to_logpoint_[log_point.GetTime()] = &emplaced_logpoint;
         return emplaced_logpoint;
