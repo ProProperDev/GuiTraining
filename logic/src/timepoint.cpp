@@ -2,11 +2,18 @@
 
 namespace Data
 {
+    TimePoint& TimePoint::operator=(const TimePoint&& other) {
+        hours_ = std::move(other.hours_);
+        minutes_ = std::move(other.minutes_);
+        seconds_ = std::move(other.seconds_);
+        return *this;
+    }
 
-    TimePoint TimePoint::operator=(const TimePoint& other) {
+    TimePoint& TimePoint::operator=(const TimePoint& other) {
         hours_ = other.hours_;
         minutes_ = other.minutes_;
         seconds_ = other.seconds_;
+        return *this;
     }
 
     TimePoint::TimePoint(const TimePoint&& other) {

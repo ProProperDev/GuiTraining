@@ -23,6 +23,13 @@
 
 namespace Data
 {
+    enum class ChannelMode
+    {
+        OFFLINE,
+        ONLINE,
+        CHANNEL_MODE_COUNT
+    };
+
     struct LogPoint
     {
         LogPoint(const TimePoint &time, const float &temperature, const int voltage, const Hardware::ThermistorModel using_thermistor);
@@ -40,13 +47,6 @@ namespace Data
         float temperature_;
         int voltage_;
         Hardware::ThermistorModel using_thermistor_;
-    };
-
-    enum class ChannelMode
-    {
-        OFFLINE,
-        ONLINE,
-        CHANNEL_MODE_COUNT
     };
 
     class Channel

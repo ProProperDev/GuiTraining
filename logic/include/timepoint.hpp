@@ -24,7 +24,9 @@ namespace Data
         TimePoint(const hours_t &hours, const minutes_t &minutes, const seconds_t &seconds);
         bool operator==(const TimePoint &other) const;
         bool operator<(const TimePoint &other) const;
-        TimePoint operator=(const TimePoint& other);
+        TimePoint& operator=(const TimePoint& other);
+        TimePoint& operator=(const TimePoint&& other);
+
         friend std::ostream &operator<<(std::ostream &out, const TimePoint &timepoint);
 
         hours_t hours_{0};
