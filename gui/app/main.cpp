@@ -649,32 +649,35 @@ int main(int, char **) {
     if (show_adc_ch_1) {
       ImGui::Begin("ADC Channel 1", &show_adc_ch_1);
 
-      if (ImPlot::BeginPlot("Plot")) {
-         Data::Channel channel = channels["ADC1_CH1"];
-         size_t arr_size = channel.GetData().size();
-         std::vector<int> temps_list(arr_size);
-         std::vector<int> hours_list(arr_size);
-         for (auto it = channel.GetData().begin(); it !=
-         channel.GetData().end(); ++it)
-         {
-             temps_list.push_back(it->temperature_);
-         }
-         ImGui::Text(std::to_string(arr_size).data());
-         ImPlot::PlotShaded("My Bar Plot", temps_list.data(), arr_size);
-//              ImPlot::PlotStairs("ADC Channel 1", temps_list.data(),
-//          hours_list.data(), arr_size - 1);
-
-        ImPlot::EndPlot();
-        // ImGui::Text(std::to_string(arr_size).data());
-
-        ImGui::SeparatorText("ADC_CH1 (X: time, s; Y: temperature, C)");
+//      if (ImPlot::BeginPlot("Plot")) {
+//         Data::Channel channel = channels["ADC1_CH1"];
+//         size_t arr_size = channel.GetData().size();
+//         std::vector<int> temps_list(arr_size);
+//         std::vector<int> hours_list(arr_size);
+//         for (auto it = channel.GetData().begin(); it !=
+//         channel.GetData().end(); ++it)
+//         {
+//             temps_list.push_back(it->temperature_);
+//         }
+//         ImGui::Text(std::to_string(arr_size).data());
+//         ImPlot::PlotShaded("My Bar Plot", temps_list.data(), arr_size);
+////              ImPlot::PlotStairs("ADC Channel 1", temps_list.data(),
+////          hours_list.data(), arr_size - 1);
+//
+//        ImPlot::EndPlot();
+//        // ImGui::Text(std::to_string(arr_size).data());
+//
+//        ImGui::SeparatorText("ADC_CH1 (X: time, s; Y: temperature, C)");
         ImGui::RadioButton("Show points", show_adc_ch1_points);
         ImGui::SameLine();
         ImGui::Button("Stop writing this channel");
         for(auto [h, x] : channels) {
                 ImGui::Text(x.GetChannelName().data());
+                for(auto r : x.GetData()) {
+                    ImGui::Text(std::to_string(r.temperature_).data());
+                }
         }
-      }
+     // }
       ImGui::End();
     }
 
